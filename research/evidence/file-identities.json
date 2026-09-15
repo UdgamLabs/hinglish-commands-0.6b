@@ -1,0 +1,57 @@
+[
+  {
+    "path": "research/evidence/final-test/candidate.jsonl",
+    "bytes": 18847956,
+    "sha256": "78ae8a658cb0575dfc03a76aa6c0a12c41528870a0bc9ccac0e37125da17314f"
+  },
+  {
+    "path": "research/evidence/final-test/nearest.jsonl",
+    "bytes": 10515987,
+    "sha256": "a88862314d6940caff339c33133b13ea62fa724a803de45a45e82afcd069475d"
+  },
+  {
+    "path": "research/evidence/final-test/candidate-vs-base.json",
+    "bytes": 128573,
+    "sha256": "3eab2d7bcf644ff1166546b36e11242ec349671cef7becffe766533baf8d7e72"
+  },
+  {
+    "path": "research/evidence/final-test/kingnish-score.json",
+    "bytes": 116795,
+    "sha256": "c5104deb8e2d7fe9b96b62056d940e2e51d657f576473610909de3d8bcb4bfe0"
+  },
+  {
+    "path": "research/evidence/final-test/candidate-score.json",
+    "bytes": 115272,
+    "sha256": "036efdef3a6eb3abc1a9cb7d69de273ee6d565f066e9b862cef309a999de6927"
+  },
+  {
+    "path": "research/evidence/final-test/base.jsonl",
+    "bytes": 18974984,
+    "sha256": "b410302f455e80b73722eebdd8468151feedaa984bc96612faeb724b77223d4c"
+  },
+  {
+    "path": "research/evidence/final-test/candidate-vs-kingnish.json",
+    "bytes": 128556,
+    "sha256": "4222cbd954e3dc83e1c45712cedad1dfc3e1ed9bee4ad14c960a7ddf8a738003"
+  },
+  {
+    "path": "research/evidence/final-test/base-score.json",
+    "bytes": 116691,
+    "sha256": "70953041b2e413af8de441ed1afbe9fe23fd8900f9a592a7abe39ca1d52a79ea"
+  },
+  {
+    "path": "research/evidence/final-test/nearest-score.json",
+    "bytes": 113544,
+    "sha256": "c6113aabea424c53882143007c9b6f229b1e0b628706f11c54459697563a8725"
+  },
+  {
+    "path": "research/evidence/final-test/kingnish.jsonl",
+    "bytes": 20842876,
+    "sha256": "39c5bd9093f96be01c30b1906126f46a0d390a164d709768867579e0b22c1cdc"
+  },
+  {
+    "path": "research/evidence/final-test/candidate-vs-nearest.json",
+    "bytes": 128221,
+    "sha256": "c9e21f5fcd83e88482e072970ead251f242a64caba6c1bf43169920be8fe1b13"
+  }
+]

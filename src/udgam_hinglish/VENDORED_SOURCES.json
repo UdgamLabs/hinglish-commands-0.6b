@@ -1,0 +1,35 @@
+{
+  "purpose": "Scientific runtime provenance; source modules copied from the reviewed adapter export. No models or datasets included.",
+  "files": [
+    {
+      "file": "_vendor/__init__.py",
+      "sha256": "74a0332ccc26a81c53c25ab57a88ff600c7ea4644ac7465bacb0fde664946b4a",
+      "modifications": "none"
+    },
+    {
+      "file": "_vendor/runtime.py",
+      "sha256": "6136b6cab813441b304b7ee4164165cd04d7dfa87e3e411942affc164a1e8879",
+      "modifications": "none"
+    },
+    {
+      "file": "_vendor/prompts.py",
+      "sha256": "c2b95d095c6864238dd76cbc0418fefd2392d515b470e4454f8d6d5e25b67d5b",
+      "modifications": "none"
+    },
+    {
+      "file": "_vendor/retrieval.py",
+      "sha256": "1f72ea41c3c09efc9742d4546ab37ef100774fa7ac22e7f8b40d013d78022979",
+      "modifications": "none"
+    },
+    {
+      "file": "_vendor/top.py",
+      "sha256": "2e70d1eff5c0e291ca11ce557c8fde39fb43cbb691fd547e200f1510d0eecf3b",
+      "modifications": "none"
+    },
+    {
+      "file": "_demo.py",
+      "source_sha256": "a04218ad1f83d3a168177c5d37324bb7e027041fdf69e1fad60fd907be7aa7a5",
+      "modifications": "Relative vendor imports; legacy standalone model-loading CLI removed; status refers to package terms. HTTP server, UI, parsing checks and loopback boundaries retained."
+    }
+  ]
+}

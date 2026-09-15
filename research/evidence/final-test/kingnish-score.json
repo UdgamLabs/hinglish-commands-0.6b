@@ -1,0 +1,3368 @@
+{
+  "protocol_version": "1.0",
+  "rates_are_fractions": true,
+  "original": {
+    "overall": {
+      "n": 13026,
+      "correct": 1197,
+      "exact_match": 0.09189313680331644,
+      "generation_failed": 479,
+      "generation_success_rate": 0.9632273913711039,
+      "syntax_valid": 11738,
+      "syntax_valid_rate": 0.9011208352525718,
+      "gold_syntax_valid": 13026,
+      "gold_syntax_invalid": 0,
+      "valid_gold_exact_match": 0.09189313680331644,
+      "root_intent_accuracy": 0.7263165975740826,
+      "slot_tp": 8026,
+      "slot_fp": 8859,
+      "slot_fn": 16642,
+      "slot_precision": 0.47533313591945514,
+      "slot_recall": 0.3253607913085779,
+      "slot_f1": 0.3863018313960484,
+      "slot_evaluable_examples": 13026,
+      "source_checked_examples": 13026,
+      "source_valid_rate": 0.3914478734838016,
+      "predicted_leaf_spans": 32813,
+      "copied_leaf_spans": 22651,
+      "leaf_copy_rate": 0.6903056715326242,
+      "gold_source_invalid": 0
+    },
+    "by_language": {
+      "english": {
+        "n": 6513,
+        "correct": 810,
+        "exact_match": 0.12436665131275909,
+        "generation_failed": 160,
+        "generation_success_rate": 0.9754337478888377,
+        "syntax_valid": 5909,
+        "syntax_valid_rate": 0.9072623982803624,
+        "gold_syntax_valid": 6513,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.12436665131275909,
+        "root_intent_accuracy": 0.7483494549362812,
+        "slot_tp": 4575,
+        "slot_fp": 3278,
+        "slot_fn": 7748,
+        "slot_precision": 0.5825799057684962,
+        "slot_recall": 0.3712569991073602,
+        "slot_f1": 0.45350911974623315,
+        "slot_evaluable_examples": 6513,
+        "source_checked_examples": 6513,
+        "source_valid_rate": 0.447566405650238,
+        "predicted_leaf_spans": 16476,
+        "copied_leaf_spans": 12287,
+        "leaf_copy_rate": 0.7457513959698956,
+        "gold_source_invalid": 0
+      },
+      "hinglish": {
+        "n": 6513,
+        "correct": 387,
+        "exact_match": 0.05941962229387379,
+        "generation_failed": 319,
+        "generation_success_rate": 0.9510210348533702,
+        "syntax_valid": 5829,
+        "syntax_valid_rate": 0.8949792722247812,
+        "gold_syntax_valid": 6513,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.05941962229387379,
+        "root_intent_accuracy": 0.7042837402118839,
+        "slot_tp": 3451,
+        "slot_fp": 5581,
+        "slot_fn": 8894,
+        "slot_precision": 0.3820859167404783,
+        "slot_recall": 0.2795463750506278,
+        "slot_f1": 0.3228703747017823,
+        "slot_evaluable_examples": 6513,
+        "source_checked_examples": 6513,
+        "source_valid_rate": 0.33532934131736525,
+        "predicted_leaf_spans": 16337,
+        "copied_leaf_spans": 10364,
+        "leaf_copy_rate": 0.6343881985676685,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain": {
+      "alarm": {
+        "n": 2390,
+        "correct": 364,
+        "exact_match": 0.15230125523012553,
+        "generation_failed": 74,
+        "generation_success_rate": 0.9690376569037656,
+        "syntax_valid": 2165,
+        "syntax_valid_rate": 0.9058577405857741,
+        "gold_syntax_valid": 2390,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.15230125523012553,
+        "root_intent_accuracy": 0.7560669456066945,
+        "slot_tp": 798,
+        "slot_fp": 1331,
+        "slot_fn": 1888,
+        "slot_precision": 0.3748238609675904,
+        "slot_recall": 0.29709605361131797,
+        "slot_f1": 0.3314641744548287,
+        "slot_evaluable_examples": 2390,
+        "source_checked_examples": 2390,
+        "source_valid_rate": 0.4297071129707113,
+        "predicted_leaf_spans": 4388,
+        "copied_leaf_spans": 2859,
+        "leaf_copy_rate": 0.6515496809480401,
+        "gold_source_invalid": 0
+      },
+      "event": {
+        "n": 922,
+        "correct": 61,
+        "exact_match": 0.06616052060737528,
+        "generation_failed": 66,
+        "generation_success_rate": 0.928416485900217,
+        "syntax_valid": 789,
+        "syntax_valid_rate": 0.8557483731019523,
+        "gold_syntax_valid": 922,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.06616052060737528,
+        "root_intent_accuracy": 0.7744034707158352,
+        "slot_tp": 754,
+        "slot_fp": 857,
+        "slot_fn": 1620,
+        "slot_precision": 0.468032278088144,
+        "slot_recall": 0.3176074136478517,
+        "slot_f1": 0.3784190715181932,
+        "slot_evaluable_examples": 922,
+        "source_checked_examples": 922,
+        "source_valid_rate": 0.33947939262472887,
+        "predicted_leaf_spans": 2434,
+        "copied_leaf_spans": 1676,
+        "leaf_copy_rate": 0.6885784716516024,
+        "gold_source_invalid": 0
+      },
+      "messaging": {
+        "n": 1012,
+        "correct": 95,
+        "exact_match": 0.09387351778656126,
+        "generation_failed": 56,
+        "generation_success_rate": 0.9446640316205533,
+        "syntax_valid": 874,
+        "syntax_valid_rate": 0.8636363636363636,
+        "gold_syntax_valid": 1012,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.09387351778656126,
+        "root_intent_accuracy": 0.7164031620553359,
+        "slot_tp": 526,
+        "slot_fp": 566,
+        "slot_fn": 1573,
+        "slot_precision": 0.4816849816849817,
+        "slot_recall": 0.25059552167698906,
+        "slot_f1": 0.3296772171732999,
+        "slot_evaluable_examples": 1012,
+        "source_checked_examples": 1012,
+        "source_valid_rate": 0.4140316205533597,
+        "predicted_leaf_spans": 2318,
+        "copied_leaf_spans": 1606,
+        "leaf_copy_rate": 0.6928386540120793,
+        "gold_source_invalid": 0
+      },
+      "music": {
+        "n": 1446,
+        "correct": 102,
+        "exact_match": 0.07053941908713693,
+        "generation_failed": 39,
+        "generation_success_rate": 0.9730290456431535,
+        "syntax_valid": 1375,
+        "syntax_valid_rate": 0.9508990318118948,
+        "gold_syntax_valid": 1446,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.07053941908713693,
+        "root_intent_accuracy": 0.6728907330567082,
+        "slot_tp": 830,
+        "slot_fp": 685,
+        "slot_fn": 1448,
+        "slot_precision": 0.5478547854785478,
+        "slot_recall": 0.36435469710272167,
+        "slot_f1": 0.43764829949907724,
+        "slot_evaluable_examples": 1446,
+        "source_checked_examples": 1446,
+        "source_valid_rate": 0.5006915629322268,
+        "predicted_leaf_spans": 3489,
+        "copied_leaf_spans": 2503,
+        "leaf_copy_rate": 0.7173975351103468,
+        "gold_source_invalid": 0
+      },
+      "navigation": {
+        "n": 1996,
+        "correct": 162,
+        "exact_match": 0.0811623246492986,
+        "generation_failed": 110,
+        "generation_success_rate": 0.9448897795591182,
+        "syntax_valid": 1777,
+        "syntax_valid_rate": 0.8902805611222445,
+        "gold_syntax_valid": 1996,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.0811623246492986,
+        "root_intent_accuracy": 0.687374749498998,
+        "slot_tp": 1179,
+        "slot_fp": 1822,
+        "slot_fn": 3069,
+        "slot_precision": 0.39286904365211595,
+        "slot_recall": 0.2775423728813559,
+        "slot_f1": 0.3252862463788109,
+        "slot_evaluable_examples": 1996,
+        "source_checked_examples": 1996,
+        "source_valid_rate": 0.3532064128256513,
+        "predicted_leaf_spans": 5640,
+        "copied_leaf_spans": 3740,
+        "leaf_copy_rate": 0.6631205673758865,
+        "gold_source_invalid": 0
+      },
+      "reminder": {
+        "n": 1930,
+        "correct": 54,
+        "exact_match": 0.027979274611398965,
+        "generation_failed": 86,
+        "generation_success_rate": 0.9554404145077721,
+        "syntax_valid": 1621,
+        "syntax_valid_rate": 0.8398963730569948,
+        "gold_syntax_valid": 1930,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.027979274611398965,
+        "root_intent_accuracy": 0.6974093264248704,
+        "slot_tp": 1401,
+        "slot_fp": 2026,
+        "slot_fn": 4297,
+        "slot_precision": 0.40881237233732126,
+        "slot_recall": 0.24587574587574587,
+        "slot_f1": 0.3070684931506849,
+        "slot_evaluable_examples": 1930,
+        "source_checked_examples": 1930,
+        "source_valid_rate": 0.28808290155440414,
+        "predicted_leaf_spans": 5732,
+        "copied_leaf_spans": 3960,
+        "leaf_copy_rate": 0.6908583391486393,
+        "gold_source_invalid": 0
+      },
+      "timer": {
+        "n": 1386,
+        "correct": 107,
+        "exact_match": 0.0772005772005772,
+        "generation_failed": 25,
+        "generation_success_rate": 0.9819624819624819,
+        "syntax_valid": 1290,
+        "syntax_valid_rate": 0.9307359307359307,
+        "gold_syntax_valid": 1386,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.0772005772005772,
+        "root_intent_accuracy": 0.6551226551226551,
+        "slot_tp": 1074,
+        "slot_fp": 641,
+        "slot_fn": 1181,
+        "slot_precision": 0.6262390670553936,
+        "slot_recall": 0.4762749445676275,
+        "slot_f1": 0.5410579345088161,
+        "slot_evaluable_examples": 1386,
+        "source_checked_examples": 1386,
+        "source_valid_rate": 0.4004329004329004,
+        "predicted_leaf_spans": 3465,
+        "copied_leaf_spans": 2439,
+        "leaf_copy_rate": 0.7038961038961039,
+        "gold_source_invalid": 0
+      },
+      "weather": {
+        "n": 1944,
+        "correct": 252,
+        "exact_match": 0.12962962962962962,
+        "generation_failed": 23,
+        "generation_success_rate": 0.9881687242798354,
+        "syntax_valid": 1847,
+        "syntax_valid_rate": 0.9501028806584362,
+        "gold_syntax_valid": 1944,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.12962962962962962,
+        "root_intent_accuracy": 0.831275720164609,
+        "slot_tp": 1464,
+        "slot_fp": 931,
+        "slot_fn": 1566,
+        "slot_precision": 0.6112734864300626,
+        "slot_recall": 0.48316831683168315,
+        "slot_f1": 0.5397235023041475,
+        "slot_evaluable_examples": 1944,
+        "source_checked_examples": 1944,
+        "source_valid_rate": 0.411522633744856,
+        "predicted_leaf_spans": 5347,
+        "copied_leaf_spans": 3868,
+        "leaf_copy_rate": 0.7233962969889658,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain_language": {
+      "alarm:english": {
+        "n": 1195,
+        "correct": 233,
+        "exact_match": 0.19497907949790794,
+        "generation_failed": 22,
+        "generation_success_rate": 0.9815899581589959,
+        "syntax_valid": 1078,
+        "syntax_valid_rate": 0.902092050209205,
+        "gold_syntax_valid": 1195,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.19497907949790794,
+        "root_intent_accuracy": 0.7682008368200837,
+        "slot_tp": 475,
+        "slot_fp": 411,
+        "slot_fn": 868,
+        "slot_precision": 0.536117381489842,
+        "slot_recall": 0.3536857781087118,
+        "slot_f1": 0.42620008972633466,
+        "slot_evaluable_examples": 1195,
+        "source_checked_examples": 1195,
+        "source_valid_rate": 0.4845188284518828,
+        "predicted_leaf_spans": 2176,
+        "copied_leaf_spans": 1546,
+        "leaf_copy_rate": 0.7104779411764706,
+        "gold_source_invalid": 0
+      },
+      "alarm:hinglish": {
+        "n": 1195,
+        "correct": 131,
+        "exact_match": 0.1096234309623431,
+        "generation_failed": 52,
+        "generation_success_rate": 0.9564853556485355,
+        "syntax_valid": 1087,
+        "syntax_valid_rate": 0.9096234309623431,
+        "gold_syntax_valid": 1195,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.1096234309623431,
+        "root_intent_accuracy": 0.7439330543933055,
+        "slot_tp": 323,
+        "slot_fp": 920,
+        "slot_fn": 1020,
+        "slot_precision": 0.2598551890587289,
+        "slot_recall": 0.24050632911392406,
+        "slot_f1": 0.24980665119876258,
+        "slot_evaluable_examples": 1195,
+        "source_checked_examples": 1195,
+        "source_valid_rate": 0.37489539748953976,
+        "predicted_leaf_spans": 2212,
+        "copied_leaf_spans": 1313,
+        "leaf_copy_rate": 0.5935804701627486,
+        "gold_source_invalid": 0
+      },
+      "event:english": {
+        "n": 461,
+        "correct": 47,
+        "exact_match": 0.1019522776572668,
+        "generation_failed": 24,
+        "generation_success_rate": 0.9479392624728851,
+        "syntax_valid": 404,
+        "syntax_valid_rate": 0.8763557483731019,
+        "gold_syntax_valid": 461,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.1019522776572668,
+        "root_intent_accuracy": 0.7982646420824295,
+        "slot_tp": 461,
+        "slot_fp": 344,
+        "slot_fn": 725,
+        "slot_precision": 0.5726708074534161,
+        "slot_recall": 0.38870151770657674,
+        "slot_f1": 0.4630838774485183,
+        "slot_evaluable_examples": 461,
+        "source_checked_examples": 461,
+        "source_valid_rate": 0.420824295010846,
+        "predicted_leaf_spans": 1180,
+        "copied_leaf_spans": 899,
+        "leaf_copy_rate": 0.761864406779661,
+        "gold_source_invalid": 0
+      },
+      "event:hinglish": {
+        "n": 461,
+        "correct": 14,
+        "exact_match": 0.03036876355748373,
+        "generation_failed": 42,
+        "generation_success_rate": 0.9088937093275488,
+        "syntax_valid": 385,
+        "syntax_valid_rate": 0.8351409978308026,
+        "gold_syntax_valid": 461,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.03036876355748373,
+        "root_intent_accuracy": 0.7505422993492408,
+        "slot_tp": 293,
+        "slot_fp": 513,
+        "slot_fn": 895,
+        "slot_precision": 0.36352357320099254,
+        "slot_recall": 0.24663299663299662,
+        "slot_f1": 0.2938816449348044,
+        "slot_evaluable_examples": 461,
+        "source_checked_examples": 461,
+        "source_valid_rate": 0.25813449023861174,
+        "predicted_leaf_spans": 1254,
+        "copied_leaf_spans": 777,
+        "leaf_copy_rate": 0.6196172248803827,
+        "gold_source_invalid": 0
+      },
+      "messaging:english": {
+        "n": 506,
+        "correct": 57,
+        "exact_match": 0.11264822134387352,
+        "generation_failed": 22,
+        "generation_success_rate": 0.9565217391304348,
+        "syntax_valid": 437,
+        "syntax_valid_rate": 0.8636363636363636,
+        "gold_syntax_valid": 506,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.11264822134387352,
+        "root_intent_accuracy": 0.7154150197628458,
+        "slot_tp": 271,
+        "slot_fp": 199,
+        "slot_fn": 778,
+        "slot_precision": 0.5765957446808511,
+        "slot_recall": 0.2583412774070543,
+        "slot_f1": 0.3568136932192232,
+        "slot_evaluable_examples": 506,
+        "source_checked_examples": 506,
+        "source_valid_rate": 0.45454545454545453,
+        "predicted_leaf_spans": 1171,
+        "copied_leaf_spans": 861,
+        "leaf_copy_rate": 0.735269000853971,
+        "gold_source_invalid": 0
+      },
+      "messaging:hinglish": {
+        "n": 506,
+        "correct": 38,
+        "exact_match": 0.07509881422924901,
+        "generation_failed": 34,
+        "generation_success_rate": 0.932806324110672,
+        "syntax_valid": 437,
+        "syntax_valid_rate": 0.8636363636363636,
+        "gold_syntax_valid": 506,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.07509881422924901,
+        "root_intent_accuracy": 0.717391304347826,
+        "slot_tp": 255,
+        "slot_fp": 367,
+        "slot_fn": 795,
+        "slot_precision": 0.409967845659164,
+        "slot_recall": 0.24285714285714285,
+        "slot_f1": 0.3050239234449761,
+        "slot_evaluable_examples": 506,
+        "source_checked_examples": 506,
+        "source_valid_rate": 0.37351778656126483,
+        "predicted_leaf_spans": 1147,
+        "copied_leaf_spans": 745,
+        "leaf_copy_rate": 0.6495204882301656,
+        "gold_source_invalid": 0
+      },
+      "music:english": {
+        "n": 723,
+        "correct": 66,
+        "exact_match": 0.0912863070539419,
+        "generation_failed": 12,
+        "generation_success_rate": 0.983402489626556,
+        "syntax_valid": 692,
+        "syntax_valid_rate": 0.9571230982019364,
+        "gold_syntax_valid": 723,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.0912863070539419,
+        "root_intent_accuracy": 0.6970954356846473,
+        "slot_tp": 461,
+        "slot_fp": 263,
+        "slot_fn": 679,
+        "slot_precision": 0.6367403314917127,
+        "slot_recall": 0.4043859649122807,
+        "slot_f1": 0.4946351931330472,
+        "slot_evaluable_examples": 723,
+        "source_checked_examples": 723,
+        "source_valid_rate": 0.5587828492392808,
+        "predicted_leaf_spans": 1699,
+        "copied_leaf_spans": 1299,
+        "leaf_copy_rate": 0.7645673925838729,
+        "gold_source_invalid": 0
+      },
+      "music:hinglish": {
+        "n": 723,
+        "correct": 36,
+        "exact_match": 0.04979253112033195,
+        "generation_failed": 27,
+        "generation_success_rate": 0.9626556016597511,
+        "syntax_valid": 683,
+        "syntax_valid_rate": 0.9446749654218534,
+        "gold_syntax_valid": 723,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.04979253112033195,
+        "root_intent_accuracy": 0.648686030428769,
+        "slot_tp": 369,
+        "slot_fp": 422,
+        "slot_fn": 769,
+        "slot_precision": 0.4664981036662453,
+        "slot_recall": 0.3242530755711775,
+        "slot_f1": 0.38258164852255055,
+        "slot_evaluable_examples": 723,
+        "source_checked_examples": 723,
+        "source_valid_rate": 0.4426002766251729,
+        "predicted_leaf_spans": 1790,
+        "copied_leaf_spans": 1204,
+        "leaf_copy_rate": 0.6726256983240223,
+        "gold_source_invalid": 0
+      },
+      "navigation:english": {
+        "n": 998,
+        "correct": 107,
+        "exact_match": 0.10721442885771543,
+        "generation_failed": 42,
+        "generation_success_rate": 0.9579158316633266,
+        "syntax_valid": 907,
+        "syntax_valid_rate": 0.908817635270541,
+        "gold_syntax_valid": 998,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.10721442885771543,
+        "root_intent_accuracy": 0.7244488977955912,
+        "slot_tp": 691,
+        "slot_fp": 788,
+        "slot_fn": 1430,
+        "slot_precision": 0.4672075726842461,
+        "slot_recall": 0.3257897218293258,
+        "slot_f1": 0.3838888888888889,
+        "slot_evaluable_examples": 998,
+        "source_checked_examples": 998,
+        "source_valid_rate": 0.4288577154308617,
+        "predicted_leaf_spans": 2854,
+        "copied_leaf_spans": 2103,
+        "leaf_copy_rate": 0.7368605466012614,
+        "gold_source_invalid": 0
+      },
+      "navigation:hinglish": {
+        "n": 998,
+        "correct": 55,
+        "exact_match": 0.05511022044088176,
+        "generation_failed": 68,
+        "generation_success_rate": 0.9318637274549099,
+        "syntax_valid": 870,
+        "syntax_valid_rate": 0.8717434869739479,
+        "gold_syntax_valid": 998,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.05511022044088176,
+        "root_intent_accuracy": 0.6503006012024048,
+        "slot_tp": 488,
+        "slot_fp": 1034,
+        "slot_fn": 1639,
+        "slot_precision": 0.32063074901445465,
+        "slot_recall": 0.229431123648331,
+        "slot_f1": 0.26747053987393804,
+        "slot_evaluable_examples": 998,
+        "source_checked_examples": 998,
+        "source_valid_rate": 0.2775551102204409,
+        "predicted_leaf_spans": 2786,
+        "copied_leaf_spans": 1637,
+        "leaf_copy_rate": 0.5875807609475951,
+        "gold_source_invalid": 0
+      },
+      "reminder:english": {
+        "n": 965,
+        "correct": 41,
+        "exact_match": 0.04248704663212435,
+        "generation_failed": 24,
+        "generation_success_rate": 0.9751295336787564,
+        "syntax_valid": 794,
+        "syntax_valid_rate": 0.8227979274611399,
+        "gold_syntax_valid": 965,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.04248704663212435,
+        "root_intent_accuracy": 0.6922279792746114,
+        "slot_tp": 830,
+        "slot_fp": 702,
+        "slot_fn": 2010,
+        "slot_precision": 0.54177545691906,
+        "slot_recall": 0.29225352112676056,
+        "slot_f1": 0.3796889295516926,
+        "slot_evaluable_examples": 965,
+        "source_checked_examples": 965,
+        "source_valid_rate": 0.3170984455958549,
+        "predicted_leaf_spans": 2943,
+        "copied_leaf_spans": 2202,
+        "leaf_copy_rate": 0.7482161060142711,
+        "gold_source_invalid": 0
+      },
+      "reminder:hinglish": {
+        "n": 965,
+        "correct": 13,
+        "exact_match": 0.013471502590673576,
+        "generation_failed": 62,
+        "generation_success_rate": 0.9357512953367876,
+        "syntax_valid": 827,
+        "syntax_valid_rate": 0.8569948186528498,
+        "gold_syntax_valid": 965,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.013471502590673576,
+        "root_intent_accuracy": 0.7025906735751295,
+        "slot_tp": 571,
+        "slot_fp": 1324,
+        "slot_fn": 2287,
+        "slot_precision": 0.3013192612137203,
+        "slot_recall": 0.19979006298110566,
+        "slot_f1": 0.24026930359772775,
+        "slot_evaluable_examples": 965,
+        "source_checked_examples": 965,
+        "source_valid_rate": 0.25906735751295334,
+        "predicted_leaf_spans": 2789,
+        "copied_leaf_spans": 1758,
+        "leaf_copy_rate": 0.630333452850484,
+        "gold_source_invalid": 0
+      },
+      "timer:english": {
+        "n": 693,
+        "correct": 77,
+        "exact_match": 0.1111111111111111,
+        "generation_failed": 8,
+        "generation_success_rate": 0.9884559884559885,
+        "syntax_valid": 648,
+        "syntax_valid_rate": 0.935064935064935,
+        "gold_syntax_valid": 693,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.1111111111111111,
+        "root_intent_accuracy": 0.6897546897546898,
+        "slot_tp": 542,
+        "slot_fp": 268,
+        "slot_fn": 586,
+        "slot_precision": 0.6691358024691358,
+        "slot_recall": 0.4804964539007092,
+        "slot_f1": 0.5593395252837977,
+        "slot_evaluable_examples": 693,
+        "source_checked_examples": 693,
+        "source_valid_rate": 0.4314574314574315,
+        "predicted_leaf_spans": 1650,
+        "copied_leaf_spans": 1190,
+        "leaf_copy_rate": 0.7212121212121212,
+        "gold_source_invalid": 0
+      },
+      "timer:hinglish": {
+        "n": 693,
+        "correct": 30,
+        "exact_match": 0.04329004329004329,
+        "generation_failed": 17,
+        "generation_success_rate": 0.9754689754689755,
+        "syntax_valid": 642,
+        "syntax_valid_rate": 0.9264069264069265,
+        "gold_syntax_valid": 693,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.04329004329004329,
+        "root_intent_accuracy": 0.6204906204906205,
+        "slot_tp": 532,
+        "slot_fp": 373,
+        "slot_fn": 595,
+        "slot_precision": 0.5878453038674033,
+        "slot_recall": 0.4720496894409938,
+        "slot_f1": 0.5236220472440944,
+        "slot_evaluable_examples": 693,
+        "source_checked_examples": 693,
+        "source_valid_rate": 0.3694083694083694,
+        "predicted_leaf_spans": 1815,
+        "copied_leaf_spans": 1249,
+        "leaf_copy_rate": 0.6881542699724518,
+        "gold_source_invalid": 0
+      },
+      "weather:english": {
+        "n": 972,
+        "correct": 182,
+        "exact_match": 0.18724279835390947,
+        "generation_failed": 6,
+        "generation_success_rate": 0.9938271604938271,
+        "syntax_valid": 949,
+        "syntax_valid_rate": 0.9763374485596708,
+        "gold_syntax_valid": 972,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.18724279835390947,
+        "root_intent_accuracy": 0.8775720164609053,
+        "slot_tp": 844,
+        "slot_fp": 303,
+        "slot_fn": 672,
+        "slot_precision": 0.7358326068003488,
+        "slot_recall": 0.5567282321899736,
+        "slot_f1": 0.6338715734134435,
+        "slot_evaluable_examples": 972,
+        "source_checked_examples": 972,
+        "source_valid_rate": 0.4886831275720165,
+        "predicted_leaf_spans": 2803,
+        "copied_leaf_spans": 2187,
+        "leaf_copy_rate": 0.7802354620049946,
+        "gold_source_invalid": 0
+      },
+      "weather:hinglish": {
+        "n": 972,
+        "correct": 70,
+        "exact_match": 0.0720164609053498,
+        "generation_failed": 17,
+        "generation_success_rate": 0.9825102880658436,
+        "syntax_valid": 898,
+        "syntax_valid_rate": 0.9238683127572016,
+        "gold_syntax_valid": 972,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.0720164609053498,
+        "root_intent_accuracy": 0.7849794238683128,
+        "slot_tp": 620,
+        "slot_fp": 628,
+        "slot_fn": 894,
+        "slot_precision": 0.4967948717948718,
+        "slot_recall": 0.4095112285336856,
+        "slot_f1": 0.4489500362056481,
+        "slot_evaluable_examples": 972,
+        "source_checked_examples": 972,
+        "source_valid_rate": 0.3343621399176955,
+        "predicted_leaf_spans": 2544,
+        "copied_leaf_spans": 1681,
+        "leaf_copy_rate": 0.6607704402515723,
+        "gold_source_invalid": 0
+      }
+    },
+    "gold_issues": []
+  },
+  "deduplicated": {
+    "overall": {
+      "n": 12692,
+      "correct": 1123,
+      "exact_match": 0.0884809328710999,
+      "generation_failed": 466,
+      "generation_success_rate": 0.9632839583989915,
+      "syntax_valid": 11435,
+      "syntax_valid_rate": 0.9009612354238891,
+      "gold_syntax_valid": 12692,
+      "gold_syntax_invalid": 0,
+      "valid_gold_exact_match": 0.0884809328710999,
+      "root_intent_accuracy": 0.7253387960920264,
+      "slot_tp": 7818,
+      "slot_fp": 8764,
+      "slot_fn": 16481,
+      "slot_precision": 0.4714750934748522,
+      "slot_recall": 0.3217416354582493,
+      "slot_f1": 0.38247596683055696,
+      "slot_evaluable_examples": 12692,
+      "source_checked_examples": 12692,
+      "source_valid_rate": 0.3885912385754806,
+      "predicted_leaf_spans": 32143,
+      "copied_leaf_spans": 22162,
+      "leaf_copy_rate": 0.6894813800827552,
+      "gold_source_invalid": 0
+    },
+    "by_language": {
+      "english": {
+        "n": 6302,
+        "correct": 749,
+        "exact_match": 0.11885115836242463,
+        "generation_failed": 157,
+        "generation_success_rate": 0.9750872738813076,
+        "syntax_valid": 5711,
+        "syntax_valid_rate": 0.9062202475404634,
+        "gold_syntax_valid": 6302,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.11885115836242463,
+        "root_intent_accuracy": 0.7465883846397969,
+        "slot_tp": 4436,
+        "slot_fp": 3241,
+        "slot_fn": 7638,
+        "slot_precision": 0.5778298814641136,
+        "slot_recall": 0.36740102700016564,
+        "slot_f1": 0.44919244595210367,
+        "slot_evaluable_examples": 6302,
+        "source_checked_examples": 6302,
+        "source_valid_rate": 0.4439860361789908,
+        "predicted_leaf_spans": 16050,
+        "copied_leaf_spans": 11963,
+        "leaf_copy_rate": 0.7453582554517134,
+        "gold_source_invalid": 0
+      },
+      "hinglish": {
+        "n": 6390,
+        "correct": 374,
+        "exact_match": 0.05852895148669796,
+        "generation_failed": 309,
+        "generation_success_rate": 0.9516431924882629,
+        "syntax_valid": 5724,
+        "syntax_valid_rate": 0.895774647887324,
+        "gold_syntax_valid": 6390,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.05852895148669796,
+        "root_intent_accuracy": 0.7043818466353677,
+        "slot_tp": 3382,
+        "slot_fp": 5523,
+        "slot_fn": 8843,
+        "slot_precision": 0.3797866367209433,
+        "slot_recall": 0.27664621676891615,
+        "slot_f1": 0.3201135825840038,
+        "slot_evaluable_examples": 6390,
+        "source_checked_examples": 6390,
+        "source_valid_rate": 0.3339593114241002,
+        "predicted_leaf_spans": 16093,
+        "copied_leaf_spans": 10199,
+        "leaf_copy_rate": 0.6337538060026098,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain": {
+      "alarm": {
+        "n": 2299,
+        "correct": 335,
+        "exact_match": 0.14571552849064812,
+        "generation_failed": 65,
+        "generation_success_rate": 0.9717268377555459,
+        "syntax_valid": 2088,
+        "syntax_valid_rate": 0.9082209656372335,
+        "gold_syntax_valid": 2299,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.14571552849064812,
+        "root_intent_accuracy": 0.7564158329708569,
+        "slot_tp": 778,
+        "slot_fp": 1302,
+        "slot_fn": 1865,
+        "slot_precision": 0.37403846153846154,
+        "slot_recall": 0.2943624668936814,
+        "slot_f1": 0.3294516197332204,
+        "slot_evaluable_examples": 2299,
+        "source_checked_examples": 2299,
+        "source_valid_rate": 0.4297520661157025,
+        "predicted_leaf_spans": 4264,
+        "copied_leaf_spans": 2783,
+        "leaf_copy_rate": 0.6526735459662288,
+        "gold_source_invalid": 0
+      },
+      "event": {
+        "n": 921,
+        "correct": 60,
+        "exact_match": 0.06514657980456026,
+        "generation_failed": 66,
+        "generation_success_rate": 0.9283387622149837,
+        "syntax_valid": 788,
+        "syntax_valid_rate": 0.8555917480998915,
+        "gold_syntax_valid": 921,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.06514657980456026,
+        "root_intent_accuracy": 0.7741585233441911,
+        "slot_tp": 751,
+        "slot_fp": 857,
+        "slot_fn": 1620,
+        "slot_precision": 0.4670398009950249,
+        "slot_recall": 0.31674398987768876,
+        "slot_f1": 0.3774817793415431,
+        "slot_evaluable_examples": 921,
+        "source_checked_examples": 921,
+        "source_valid_rate": 0.33876221498371334,
+        "predicted_leaf_spans": 2430,
+        "copied_leaf_spans": 1672,
+        "leaf_copy_rate": 0.6880658436213992,
+        "gold_source_invalid": 0
+      },
+      "messaging": {
+        "n": 1000,
+        "correct": 93,
+        "exact_match": 0.093,
+        "generation_failed": 54,
+        "generation_success_rate": 0.946,
+        "syntax_valid": 866,
+        "syntax_valid_rate": 0.866,
+        "gold_syntax_valid": 1000,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.093,
+        "root_intent_accuracy": 0.717,
+        "slot_tp": 517,
+        "slot_fp": 562,
+        "slot_fn": 1557,
+        "slot_precision": 0.47914735866543096,
+        "slot_recall": 0.24927675988428158,
+        "slot_f1": 0.32794164287979705,
+        "slot_evaluable_examples": 1000,
+        "source_checked_examples": 1000,
+        "source_valid_rate": 0.416,
+        "predicted_leaf_spans": 2289,
+        "copied_leaf_spans": 1584,
+        "leaf_copy_rate": 0.6920052424639581,
+        "gold_source_invalid": 0
+      },
+      "music": {
+        "n": 1380,
+        "correct": 91,
+        "exact_match": 0.06594202898550725,
+        "generation_failed": 37,
+        "generation_success_rate": 0.9731884057971014,
+        "syntax_valid": 1313,
+        "syntax_valid_rate": 0.9514492753623188,
+        "gold_syntax_valid": 1380,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.06594202898550725,
+        "root_intent_accuracy": 0.6731884057971015,
+        "slot_tp": 790,
+        "slot_fp": 672,
+        "slot_fn": 1392,
+        "slot_precision": 0.5403556771545828,
+        "slot_recall": 0.3620531622364803,
+        "slot_f1": 0.433589462129528,
+        "slot_evaluable_examples": 1380,
+        "source_checked_examples": 1380,
+        "source_valid_rate": 0.49782608695652175,
+        "predicted_leaf_spans": 3367,
+        "copied_leaf_spans": 2414,
+        "leaf_copy_rate": 0.7169587169587169,
+        "gold_source_invalid": 0
+      },
+      "navigation": {
+        "n": 1992,
+        "correct": 159,
+        "exact_match": 0.07981927710843373,
+        "generation_failed": 110,
+        "generation_success_rate": 0.9447791164658634,
+        "syntax_valid": 1773,
+        "syntax_valid_rate": 0.8900602409638554,
+        "gold_syntax_valid": 1992,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.07981927710843373,
+        "root_intent_accuracy": 0.6867469879518072,
+        "slot_tp": 1178,
+        "slot_fp": 1819,
+        "slot_fn": 3067,
+        "slot_precision": 0.39305972639305975,
+        "slot_recall": 0.2775029446407538,
+        "slot_f1": 0.32532449599558133,
+        "slot_evaluable_examples": 1992,
+        "source_checked_examples": 1992,
+        "source_valid_rate": 0.35240963855421686,
+        "predicted_leaf_spans": 5631,
+        "copied_leaf_spans": 3735,
+        "leaf_copy_rate": 0.6632924880127864,
+        "gold_source_invalid": 0
+      },
+      "reminder": {
+        "n": 1929,
+        "correct": 54,
+        "exact_match": 0.027993779160186624,
+        "generation_failed": 86,
+        "generation_success_rate": 0.9554173146708139,
+        "syntax_valid": 1620,
+        "syntax_valid_rate": 0.8398133748055988,
+        "gold_syntax_valid": 1929,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.027993779160186624,
+        "root_intent_accuracy": 0.6977708657335407,
+        "slot_tp": 1400,
+        "slot_fp": 2025,
+        "slot_fn": 4296,
+        "slot_precision": 0.40875912408759124,
+        "slot_recall": 0.24578651685393257,
+        "slot_f1": 0.3069838833461243,
+        "slot_evaluable_examples": 1929,
+        "source_checked_examples": 1929,
+        "source_valid_rate": 0.288232244686366,
+        "predicted_leaf_spans": 5728,
+        "copied_leaf_spans": 3957,
+        "leaf_copy_rate": 0.6908170391061452,
+        "gold_source_invalid": 0
+      },
+      "timer": {
+        "n": 1284,
+        "correct": 95,
+        "exact_match": 0.07398753894080996,
+        "generation_failed": 25,
+        "generation_success_rate": 0.9805295950155763,
+        "syntax_valid": 1196,
+        "syntax_valid_rate": 0.9314641744548287,
+        "gold_syntax_valid": 1284,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.07398753894080996,
+        "root_intent_accuracy": 0.6464174454828661,
+        "slot_tp": 999,
+        "slot_fp": 609,
+        "slot_fn": 1139,
+        "slot_precision": 0.621268656716418,
+        "slot_recall": 0.46725912067352665,
+        "slot_f1": 0.5333689268553123,
+        "slot_evaluable_examples": 1284,
+        "source_checked_examples": 1284,
+        "source_valid_rate": 0.3925233644859813,
+        "predicted_leaf_spans": 3254,
+        "copied_leaf_spans": 2285,
+        "leaf_copy_rate": 0.7022126613398894,
+        "gold_source_invalid": 0
+      },
+      "weather": {
+        "n": 1887,
+        "correct": 236,
+        "exact_match": 0.12506624271330152,
+        "generation_failed": 23,
+        "generation_success_rate": 0.9878113407525172,
+        "syntax_valid": 1791,
+        "syntax_valid_rate": 0.9491255961844197,
+        "gold_syntax_valid": 1887,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.12506624271330152,
+        "root_intent_accuracy": 0.8288288288288288,
+        "slot_tp": 1405,
+        "slot_fp": 918,
+        "slot_fn": 1545,
+        "slot_precision": 0.6048213517003874,
+        "slot_recall": 0.47627118644067795,
+        "slot_f1": 0.5329034705101461,
+        "slot_evaluable_examples": 1887,
+        "source_checked_examples": 1887,
+        "source_valid_rate": 0.40646528881823,
+        "predicted_leaf_spans": 5180,
+        "copied_leaf_spans": 3732,
+        "leaf_copy_rate": 0.7204633204633205,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain_language": {
+      "alarm:english": {
+        "n": 1144,
+        "correct": 213,
+        "exact_match": 0.1861888111888112,
+        "generation_failed": 22,
+        "generation_success_rate": 0.9807692307692307,
+        "syntax_valid": 1030,
+        "syntax_valid_rate": 0.9003496503496503,
+        "gold_syntax_valid": 1144,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.1861888111888112,
+        "root_intent_accuracy": 0.7666083916083916,
+        "slot_tp": 462,
+        "slot_fp": 401,
+        "slot_fn": 854,
+        "slot_precision": 0.5353418308227115,
+        "slot_recall": 0.35106382978723405,
+        "slot_f1": 0.42404772831574117,
+        "slot_evaluable_examples": 1144,
+        "source_checked_examples": 1144,
+        "source_valid_rate": 0.48426573426573427,
+        "predicted_leaf_spans": 2102,
+        "copied_leaf_spans": 1499,
+        "leaf_copy_rate": 0.7131303520456708,
+        "gold_source_invalid": 0
+      },
+      "alarm:hinglish": {
+        "n": 1155,
+        "correct": 122,
+        "exact_match": 0.10562770562770563,
+        "generation_failed": 43,
+        "generation_success_rate": 0.9627705627705627,
+        "syntax_valid": 1058,
+        "syntax_valid_rate": 0.9160173160173161,
+        "gold_syntax_valid": 1155,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.10562770562770563,
+        "root_intent_accuracy": 0.7463203463203463,
+        "slot_tp": 316,
+        "slot_fp": 901,
+        "slot_fn": 1011,
+        "slot_precision": 0.25965488907148726,
+        "slot_recall": 0.23813112283345894,
+        "slot_f1": 0.24842767295597484,
+        "slot_evaluable_examples": 1155,
+        "source_checked_examples": 1155,
+        "source_valid_rate": 0.37575757575757573,
+        "predicted_leaf_spans": 2162,
+        "copied_leaf_spans": 1284,
+        "leaf_copy_rate": 0.5938945420906568,
+        "gold_source_invalid": 0
+      },
+      "event:english": {
+        "n": 460,
+        "correct": 46,
+        "exact_match": 0.1,
+        "generation_failed": 24,
+        "generation_success_rate": 0.9478260869565217,
+        "syntax_valid": 403,
+        "syntax_valid_rate": 0.8760869565217392,
+        "gold_syntax_valid": 460,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.1,
+        "root_intent_accuracy": 0.7978260869565217,
+        "slot_tp": 458,
+        "slot_fp": 344,
+        "slot_fn": 725,
+        "slot_precision": 0.571072319201995,
+        "slot_recall": 0.3871513102282333,
+        "slot_f1": 0.46146095717884134,
+        "slot_evaluable_examples": 460,
+        "source_checked_examples": 460,
+        "source_valid_rate": 0.41956521739130437,
+        "predicted_leaf_spans": 1176,
+        "copied_leaf_spans": 895,
+        "leaf_copy_rate": 0.7610544217687075,
+        "gold_source_invalid": 0
+      },
+      "event:hinglish": {
+        "n": 461,
+        "correct": 14,
+        "exact_match": 0.03036876355748373,
+        "generation_failed": 42,
+        "generation_success_rate": 0.9088937093275488,
+        "syntax_valid": 385,
+        "syntax_valid_rate": 0.8351409978308026,
+        "gold_syntax_valid": 461,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.03036876355748373,
+        "root_intent_accuracy": 0.7505422993492408,
+        "slot_tp": 293,
+        "slot_fp": 513,
+        "slot_fn": 895,
+        "slot_precision": 0.36352357320099254,
+        "slot_recall": 0.24663299663299662,
+        "slot_f1": 0.2938816449348044,
+        "slot_evaluable_examples": 461,
+        "source_checked_examples": 461,
+        "source_valid_rate": 0.25813449023861174,
+        "predicted_leaf_spans": 1254,
+        "copied_leaf_spans": 777,
+        "leaf_copy_rate": 0.6196172248803827,
+        "gold_source_invalid": 0
+      },
+      "messaging:english": {
+        "n": 495,
+        "correct": 55,
+        "exact_match": 0.1111111111111111,
+        "generation_failed": 20,
+        "generation_success_rate": 0.9595959595959596,
+        "syntax_valid": 430,
+        "syntax_valid_rate": 0.8686868686868687,
+        "gold_syntax_valid": 495,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.1111111111111111,
+        "root_intent_accuracy": 0.7171717171717171,
+        "slot_tp": 262,
+        "slot_fp": 195,
+        "slot_fn": 762,
+        "slot_precision": 0.5733041575492341,
+        "slot_recall": 0.255859375,
+        "slot_f1": 0.3538149898717083,
+        "slot_evaluable_examples": 495,
+        "source_checked_examples": 495,
+        "source_valid_rate": 0.4585858585858586,
+        "predicted_leaf_spans": 1143,
+        "copied_leaf_spans": 839,
+        "leaf_copy_rate": 0.7340332458442694,
+        "gold_source_invalid": 0
+      },
+      "messaging:hinglish": {
+        "n": 505,
+        "correct": 38,
+        "exact_match": 0.07524752475247524,
+        "generation_failed": 34,
+        "generation_success_rate": 0.9326732673267327,
+        "syntax_valid": 436,
+        "syntax_valid_rate": 0.8633663366336634,
+        "gold_syntax_valid": 505,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.07524752475247524,
+        "root_intent_accuracy": 0.7168316831683168,
+        "slot_tp": 255,
+        "slot_fp": 367,
+        "slot_fn": 795,
+        "slot_precision": 0.409967845659164,
+        "slot_recall": 0.24285714285714285,
+        "slot_f1": 0.3050239234449761,
+        "slot_evaluable_examples": 505,
+        "source_checked_examples": 505,
+        "source_valid_rate": 0.37425742574257426,
+        "predicted_leaf_spans": 1146,
+        "copied_leaf_spans": 745,
+        "leaf_copy_rate": 0.650087260034904,
+        "gold_source_invalid": 0
+      },
+      "music:english": {
+        "n": 676,
+        "correct": 57,
+        "exact_match": 0.08431952662721894,
+        "generation_failed": 11,
+        "generation_success_rate": 0.9837278106508875,
+        "syntax_valid": 648,
+        "syntax_valid_rate": 0.9585798816568047,
+        "gold_syntax_valid": 676,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.08431952662721894,
+        "root_intent_accuracy": 0.6982248520710059,
+        "slot_tp": 434,
+        "slot_fp": 260,
+        "slot_fn": 639,
+        "slot_precision": 0.6253602305475504,
+        "slot_recall": 0.4044734389561976,
+        "slot_f1": 0.49122807017543857,
+        "slot_evaluable_examples": 676,
+        "source_checked_examples": 676,
+        "source_valid_rate": 0.5591715976331361,
+        "predicted_leaf_spans": 1621,
+        "copied_leaf_spans": 1240,
+        "leaf_copy_rate": 0.7649599012954966,
+        "gold_source_invalid": 0
+      },
+      "music:hinglish": {
+        "n": 704,
+        "correct": 34,
+        "exact_match": 0.048295454545454544,
+        "generation_failed": 26,
+        "generation_success_rate": 0.9630681818181818,
+        "syntax_valid": 665,
+        "syntax_valid_rate": 0.9446022727272727,
+        "gold_syntax_valid": 704,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.048295454545454544,
+        "root_intent_accuracy": 0.6491477272727273,
+        "slot_tp": 356,
+        "slot_fp": 412,
+        "slot_fn": 753,
+        "slot_precision": 0.4635416666666667,
+        "slot_recall": 0.32100991884580704,
+        "slot_f1": 0.37932871603622803,
+        "slot_evaluable_examples": 704,
+        "source_checked_examples": 704,
+        "source_valid_rate": 0.43892045454545453,
+        "predicted_leaf_spans": 1746,
+        "copied_leaf_spans": 1174,
+        "leaf_copy_rate": 0.6723940435280642,
+        "gold_source_invalid": 0
+      },
+      "navigation:english": {
+        "n": 996,
+        "correct": 105,
+        "exact_match": 0.10542168674698796,
+        "generation_failed": 42,
+        "generation_success_rate": 0.9578313253012049,
+        "syntax_valid": 905,
+        "syntax_valid_rate": 0.9086345381526104,
+        "gold_syntax_valid": 996,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.10542168674698796,
+        "root_intent_accuracy": 0.7238955823293173,
+        "slot_tp": 691,
+        "slot_fp": 788,
+        "slot_fn": 1430,
+        "slot_precision": 0.4672075726842461,
+        "slot_recall": 0.3257897218293258,
+        "slot_f1": 0.3838888888888889,
+        "slot_evaluable_examples": 996,
+        "source_checked_examples": 996,
+        "source_valid_rate": 0.42771084337349397,
+        "predicted_leaf_spans": 2852,
+        "copied_leaf_spans": 2101,
+        "leaf_copy_rate": 0.7366760168302945,
+        "gold_source_invalid": 0
+      },
+      "navigation:hinglish": {
+        "n": 996,
+        "correct": 54,
+        "exact_match": 0.05421686746987952,
+        "generation_failed": 68,
+        "generation_success_rate": 0.9317269076305221,
+        "syntax_valid": 868,
+        "syntax_valid_rate": 0.8714859437751004,
+        "gold_syntax_valid": 996,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.05421686746987952,
+        "root_intent_accuracy": 0.6495983935742972,
+        "slot_tp": 487,
+        "slot_fp": 1031,
+        "slot_fn": 1637,
+        "slot_precision": 0.3208168642951252,
+        "slot_recall": 0.2292843691148776,
+        "slot_f1": 0.2674354750137287,
+        "slot_evaluable_examples": 996,
+        "source_checked_examples": 996,
+        "source_valid_rate": 0.27710843373493976,
+        "predicted_leaf_spans": 2779,
+        "copied_leaf_spans": 1634,
+        "leaf_copy_rate": 0.5879812882331774,
+        "gold_source_invalid": 0
+      },
+      "reminder:english": {
+        "n": 965,
+        "correct": 41,
+        "exact_match": 0.04248704663212435,
+        "generation_failed": 24,
+        "generation_success_rate": 0.9751295336787564,
+        "syntax_valid": 794,
+        "syntax_valid_rate": 0.8227979274611399,
+        "gold_syntax_valid": 965,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.04248704663212435,
+        "root_intent_accuracy": 0.6922279792746114,
+        "slot_tp": 830,
+        "slot_fp": 702,
+        "slot_fn": 2010,
+        "slot_precision": 0.54177545691906,
+        "slot_recall": 0.29225352112676056,
+        "slot_f1": 0.3796889295516926,
+        "slot_evaluable_examples": 965,
+        "source_checked_examples": 965,
+        "source_valid_rate": 0.3170984455958549,
+        "predicted_leaf_spans": 2943,
+        "copied_leaf_spans": 2202,
+        "leaf_copy_rate": 0.7482161060142711,
+        "gold_source_invalid": 0
+      },
+      "reminder:hinglish": {
+        "n": 964,
+        "correct": 13,
+        "exact_match": 0.013485477178423237,
+        "generation_failed": 62,
+        "generation_success_rate": 0.9356846473029046,
+        "syntax_valid": 826,
+        "syntax_valid_rate": 0.8568464730290456,
+        "gold_syntax_valid": 964,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.013485477178423237,
+        "root_intent_accuracy": 0.7033195020746889,
+        "slot_tp": 570,
+        "slot_fp": 1323,
+        "slot_fn": 2286,
+        "slot_precision": 0.3011093502377179,
+        "slot_recall": 0.19957983193277312,
+        "slot_f1": 0.24005053695514844,
+        "slot_evaluable_examples": 964,
+        "source_checked_examples": 964,
+        "source_valid_rate": 0.25933609958506226,
+        "predicted_leaf_spans": 2785,
+        "copied_leaf_spans": 1755,
+        "leaf_copy_rate": 0.63016157989228,
+        "gold_source_invalid": 0
+      },
+      "timer:english": {
+        "n": 637,
+        "correct": 66,
+        "exact_match": 0.10361067503924647,
+        "generation_failed": 8,
+        "generation_success_rate": 0.9874411302982732,
+        "syntax_valid": 594,
+        "syntax_valid_rate": 0.9324960753532182,
+        "gold_syntax_valid": 637,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.10361067503924647,
+        "root_intent_accuracy": 0.6766091051805337,
+        "slot_tp": 506,
+        "slot_fp": 251,
+        "slot_fn": 559,
+        "slot_precision": 0.6684280052840158,
+        "slot_recall": 0.4751173708920188,
+        "slot_f1": 0.5554335894621295,
+        "slot_evaluable_examples": 637,
+        "source_checked_examples": 637,
+        "source_valid_rate": 0.4207221350078493,
+        "predicted_leaf_spans": 1542,
+        "copied_leaf_spans": 1113,
+        "leaf_copy_rate": 0.7217898832684825,
+        "gold_source_invalid": 0
+      },
+      "timer:hinglish": {
+        "n": 647,
+        "correct": 29,
+        "exact_match": 0.04482225656877898,
+        "generation_failed": 17,
+        "generation_success_rate": 0.973724884080371,
+        "syntax_valid": 602,
+        "syntax_valid_rate": 0.9304482225656878,
+        "gold_syntax_valid": 647,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.04482225656877898,
+        "root_intent_accuracy": 0.616692426584235,
+        "slot_tp": 493,
+        "slot_fp": 358,
+        "slot_fn": 580,
+        "slot_precision": 0.5793184488836662,
+        "slot_recall": 0.4594594594594595,
+        "slot_f1": 0.5124740124740125,
+        "slot_evaluable_examples": 647,
+        "source_checked_examples": 647,
+        "source_valid_rate": 0.36476043276661513,
+        "predicted_leaf_spans": 1712,
+        "copied_leaf_spans": 1172,
+        "leaf_copy_rate": 0.6845794392523364,
+        "gold_source_invalid": 0
+      },
+      "weather:english": {
+        "n": 929,
+        "correct": 166,
+        "exact_match": 0.17868675995694294,
+        "generation_failed": 6,
+        "generation_success_rate": 0.9935414424111948,
+        "syntax_valid": 907,
+        "syntax_valid_rate": 0.976318622174381,
+        "gold_syntax_valid": 929,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.17868675995694294,
+        "root_intent_accuracy": 0.876210979547901,
+        "slot_tp": 793,
+        "slot_fp": 300,
+        "slot_fn": 659,
+        "slot_precision": 0.7255260750228728,
+        "slot_recall": 0.5461432506887053,
+        "slot_f1": 0.6231827111984283,
+        "slot_evaluable_examples": 929,
+        "source_checked_examples": 929,
+        "source_valid_rate": 0.48008611410118407,
+        "predicted_leaf_spans": 2671,
+        "copied_leaf_spans": 2074,
+        "leaf_copy_rate": 0.7764882066641707,
+        "gold_source_invalid": 0
+      },
+      "weather:hinglish": {
+        "n": 958,
+        "correct": 70,
+        "exact_match": 0.07306889352818371,
+        "generation_failed": 17,
+        "generation_success_rate": 0.9822546972860126,
+        "syntax_valid": 884,
+        "syntax_valid_rate": 0.9227557411273486,
+        "gold_syntax_valid": 958,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.07306889352818371,
+        "root_intent_accuracy": 0.7828810020876826,
+        "slot_tp": 612,
+        "slot_fp": 618,
+        "slot_fn": 886,
+        "slot_precision": 0.4975609756097561,
+        "slot_recall": 0.40854472630173566,
+        "slot_f1": 0.44868035190615835,
+        "slot_evaluable_examples": 958,
+        "source_checked_examples": 958,
+        "source_valid_rate": 0.33507306889352817,
+        "predicted_leaf_spans": 2509,
+        "copied_leaf_spans": 1658,
+        "leaf_copy_rate": 0.6608210442407334,
+        "gold_source_invalid": 0
+      }
+    },
+    "gold_issues": []
+  },
+  "deduplication": {
+    "key": "language + NFKC/casefold/whitespace-normalized input text",
+    "representative": "lexicographically smallest id",
+    "removed_ids": [
+      "htop-test-006313-english",
+      "htop-test-004448-english",
+      "htop-test-005126-english",
+      "htop-test-003389-english",
+      "htop-test-004408-english",
+      "htop-test-003489-english",
+      "htop-test-001133-english",
+      "htop-test-005367-english",
+      "htop-test-001461-english",
+      "htop-test-000755-english",
+      "htop-test-001658-english",
+      "htop-test-004970-english",
+      "htop-test-005063-english",
+      "htop-test-003569-english",
+      "htop-test-002493-english",
+      "htop-test-000345-english",
+      "htop-test-003675-english",
+      "htop-test-004634-english",
+      "htop-test-005715-english",
+      "htop-test-006164-english",
+      "htop-test-001993-english",
+      "htop-test-001681-english",
+      "htop-test-001128-english",
+      "htop-test-006346-english",
+      "htop-test-000625-english",
+      "htop-test-002165-english",
+      "htop-test-002194-english",
+      "htop-test-001642-english",
+      "htop-test-003156-english",
+      "htop-test-005834-english",
+      "htop-test-006489-english",
+      "htop-test-004122-english",
+      "htop-test-005597-english",
+      "htop-test-003249-english",
+      "htop-test-003796-english",
+      "htop-test-003617-english",
+      "htop-test-004763-english",
+      "htop-test-006367-english",
+      "htop-test-003743-english",
+      "htop-test-005385-english",
+      "htop-test-000662-english",
+      "htop-test-001205-english",
+      "htop-test-002531-english",
+      "htop-test-002860-english",
+      "htop-test-005229-english",
+      "htop-test-005826-english",
+      "htop-test-000919-english",
+      "htop-test-005817-english",
+      "htop-test-001225-english",
+      "htop-test-001245-english",
+      "htop-test-000382-english",
+      "htop-test-000560-english",
+      "htop-test-000686-english",
+      "htop-test-003816-english",
+      "htop-test-000430-english",
+      "htop-test-000602-english",
+      "htop-test-002496-english",
+      "htop-test-002100-english",
+      "htop-test-006004-english",
+      "htop-test-006369-english",
+      "htop-test-004503-english",
+      "htop-test-000379-english",
+      "htop-test-000793-english",
+      "htop-test-002880-english",
+      "htop-test-004646-english",
+      "htop-test-001691-english",
+      "htop-test-003566-english",
+      "htop-test-006169-english",
+      "htop-test-004287-english",
+      "htop-test-001878-english",
+      "htop-test-002115-english",
+      "htop-test-005104-english",
+      "htop-test-004262-english",
+      "htop-test-005268-english",
+      "htop-test-005324-english",
+      "htop-test-005610-english",
+      "htop-test-006095-english",
+      "htop-test-000452-english",
+      "htop-test-006063-english",
+      "htop-test-003284-english",
+      "htop-test-001547-english",
+      "htop-test-002926-english",
+      "htop-test-004347-english",
+      "htop-test-000155-english",
+      "htop-test-000781-english",
+      "htop-test-000806-english",
+      "htop-test-000533-english",
+      "htop-test-005045-english",
+      "htop-test-001263-english",
+      "htop-test-002267-english",
+      "htop-test-004124-english",
+      "htop-test-000471-english",
+      "htop-test-000736-english",
+      "htop-test-004973-english",
+      "htop-test-002326-english",
+      "htop-test-002981-english",
+      "htop-test-004283-english",
+      "htop-test-002877-english",
+      "htop-test-000814-english",
+      "htop-test-002985-english",
+      "htop-test-002669-english",
+      "htop-test-001782-english",
+      "htop-test-001833-english",
+      "htop-test-002223-english",
+      "htop-test-001741-english",
+      "htop-test-000481-english",
+      "htop-test-001907-english",
+      "htop-test-000974-english",
+      "htop-test-000168-english",
+      "htop-test-002394-english",
+      "htop-test-002820-english",
+      "htop-test-005101-english",
+      "htop-test-005780-english",
+      "htop-test-001247-english",
+      "htop-test-000852-english",
+      "htop-test-001370-english",
+      "htop-test-000417-english",
+      "htop-test-000639-english",
+      "htop-test-000943-english",
+      "htop-test-001805-english",
+      "htop-test-005093-english",
+      "htop-test-005351-english",
+      "htop-test-004370-english",
+      "htop-test-005539-english",
+      "htop-test-000712-english",
+      "htop-test-001662-english",
+      "htop-test-001750-english",
+      "htop-test-003536-english",
+      "htop-test-002734-english",
+      "htop-test-006453-english",
+      "htop-test-002597-english",
+      "htop-test-002031-english",
+      "htop-test-006173-english",
+      "htop-test-005108-english",
+      "htop-test-005170-english",
+      "htop-test-006198-english",
+      "htop-test-002006-english",
+      "htop-test-004056-english",
+      "htop-test-001434-english",
+      "htop-test-005739-english",
+      "htop-test-000671-english",
+      "htop-test-006195-english",
+      "htop-test-000151-english",
+      "htop-test-001319-english",
+      "htop-test-003624-english",
+      "htop-test-000683-english",
+      "htop-test-004675-english",
+      "htop-test-005756-english",
+      "htop-test-001480-english",
+      "htop-test-003667-english",
+      "htop-test-003377-english",
+      "htop-test-003578-english",
+      "htop-test-000099-english",
+      "htop-test-000233-english",
+      "htop-test-000267-english",
+      "htop-test-004113-english",
+      "htop-test-000669-english",
+      "htop-test-004328-english",
+      "htop-test-003523-english",
+      "htop-test-002248-english",
+      "htop-test-002870-english",
+      "htop-test-003259-english",
+      "htop-test-005489-english",
+      "htop-test-004168-english",
+      "htop-test-001619-english",
+      "htop-test-001643-english",
+      "htop-test-000587-english",
+      "htop-test-002718-english",
+      "htop-test-002806-english",
+      "htop-test-005650-english",
+      "htop-test-002268-english",
+      "htop-test-005085-english",
+      "htop-test-005361-english",
+      "htop-test-000756-english",
+      "htop-test-000789-english",
+      "htop-test-000381-english",
+      "htop-test-004495-english",
+      "htop-test-005402-english",
+      "htop-test-004216-english",
+      "htop-test-004396-english",
+      "htop-test-006268-english",
+      "htop-test-004845-english",
+      "htop-test-005611-english",
+      "htop-test-006392-english",
+      "htop-test-004891-english",
+      "htop-test-006354-english",
+      "htop-test-003859-english",
+      "htop-test-005080-english",
+      "htop-test-005064-english",
+      "htop-test-001945-english",
+      "htop-test-001899-english",
+      "htop-test-002088-english",
+      "htop-test-003876-english",
+      "htop-test-001002-english",
+      "htop-test-005613-english",
+      "htop-test-005955-english",
+      "htop-test-006345-english",
+      "htop-test-004530-english",
+      "htop-test-004573-english",
+      "htop-test-002058-english",
+      "htop-test-005583-english",
+      "htop-test-005542-english",
+      "htop-test-005605-english",
+      "htop-test-004410-english",
+      "htop-test-006374-english",
+      "htop-test-002250-english",
+      "htop-test-006271-english",
+      "htop-test-002154-english",
+      "htop-test-002252-english",
+      "htop-test-004260-english",
+      "htop-test-004302-english",
+      "htop-test-005489-hinglish",
+      "htop-test-001750-hinglish",
+      "htop-test-005187-hinglish",
+      "htop-test-001334-hinglish",
+      "htop-test-005581-hinglish",
+      "htop-test-005463-hinglish",
+      "htop-test-005064-hinglish",
+      "htop-test-004278-hinglish",
+      "htop-test-003939-hinglish",
+      "htop-test-005610-hinglish",
+      "htop-test-005324-hinglish",
+      "htop-test-006095-hinglish",
+      "htop-test-001021-hinglish",
+      "htop-test-003855-hinglish",
+      "htop-test-002565-hinglish",
+      "htop-test-001218-hinglish",
+      "htop-test-003709-hinglish",
+      "htop-test-004216-hinglish",
+      "htop-test-004448-hinglish",
+      "htop-test-005550-hinglish",
+      "htop-test-005650-hinglish",
+      "htop-test-001461-hinglish",
+      "htop-test-000680-hinglish",
+      "htop-test-002801-hinglish",
+      "htop-test-003764-hinglish",
+      "htop-test-003938-hinglish",
+      "htop-test-004647-hinglish",
+      "htop-test-005377-hinglish",
+      "htop-test-001105-hinglish",
+      "htop-test-004300-hinglish",
+      "htop-test-002101-hinglish",
+      "htop-test-001725-hinglish",
+      "htop-test-000487-hinglish",
+      "htop-test-002851-hinglish",
+      "htop-test-003667-hinglish",
+      "htop-test-002696-hinglish",
+      "htop-test-005861-hinglish",
+      "htop-test-002735-hinglish",
+      "htop-test-003290-hinglish",
+      "htop-test-004163-hinglish",
+      "htop-test-006510-hinglish",
+      "htop-test-001741-hinglish",
+      "htop-test-006489-hinglish",
+      "htop-test-005402-hinglish",
+      "htop-test-002088-hinglish",
+      "htop-test-004572-hinglish",
+      "htop-test-003596-hinglish",
+      "htop-test-001668-hinglish",
+      "htop-test-006271-hinglish",
+      "htop-test-002154-hinglish",
+      "htop-test-000538-hinglish",
+      "htop-test-005367-hinglish",
+      "htop-test-001232-hinglish",
+      "htop-test-002572-hinglish",
+      "htop-test-001691-hinglish",
+      "htop-test-005122-hinglish",
+      "htop-test-000908-hinglish",
+      "htop-test-000814-hinglish",
+      "htop-test-001101-hinglish",
+      "htop-test-001782-hinglish",
+      "htop-test-003997-hinglish",
+      "htop-test-005826-hinglish",
+      "htop-test-002657-hinglish",
+      "htop-test-001599-hinglish",
+      "htop-test-000587-hinglish",
+      "htop-test-001225-hinglish",
+      "htop-test-001245-hinglish",
+      "htop-test-004806-hinglish",
+      "htop-test-000481-hinglish",
+      "htop-test-000602-hinglish",
+      "htop-test-000430-hinglish",
+      "htop-test-004973-hinglish",
+      "htop-test-001480-hinglish",
+      "htop-test-002346-hinglish",
+      "htop-test-005085-hinglish",
+      "htop-test-005361-hinglish",
+      "htop-test-003284-hinglish",
+      "htop-test-002669-hinglish",
+      "htop-test-002326-hinglish",
+      "htop-test-004283-hinglish",
+      "htop-test-000625-hinglish",
+      "htop-test-004845-hinglish",
+      "htop-test-004675-hinglish",
+      "htop-test-001547-hinglish",
+      "htop-test-003902-hinglish",
+      "htop-test-005170-hinglish",
+      "htop-test-005558-hinglish",
+      "htop-test-005108-hinglish",
+      "htop-test-004573-hinglish",
+      "htop-test-006341-hinglish",
+      "htop-test-000556-hinglish",
+      "htop-test-003675-hinglish",
+      "htop-test-004634-hinglish",
+      "htop-test-005715-hinglish",
+      "htop-test-006164-hinglish",
+      "htop-test-000512-hinglish",
+      "htop-test-001060-hinglish",
+      "htop-test-001102-hinglish",
+      "htop-test-001642-hinglish",
+      "htop-test-000464-hinglish",
+      "htop-test-000781-hinglish",
+      "htop-test-004347-hinglish",
+      "htop-test-000639-hinglish",
+      "htop-test-001805-hinglish",
+      "htop-test-004950-hinglish",
+      "htop-test-005950-hinglish",
+      "htop-test-000890-hinglish",
+      "htop-test-001907-hinglish",
+      "htop-test-002394-hinglish",
+      "htop-test-002820-hinglish",
+      "htop-test-004501-hinglish",
+      "htop-test-000410-hinglish",
+      "htop-test-000852-hinglish",
+      "htop-test-001370-hinglish",
+      "htop-test-001281-hinglish",
+      "htop-test-004168-hinglish",
+      "htop-test-000381-hinglish",
+      "htop-test-000756-hinglish",
+      "htop-test-000677-hinglish",
+      "htop-test-004746-hinglish",
+      "htop-test-005683-hinglish",
+      "htop-test-006369-hinglish",
+      "htop-test-004763-hinglish"
+    ],
+    "removed_count": 334,
+    "conflicting_gold_groups": [
+      {
+        "representative_id": "htop-test-003640-english",
+        "ids": [
+          "htop-test-003640-english",
+          "htop-test-006313-english"
+        ],
+        "targets": [
+          "[IN:ADD_TIME_TIMER add [SL:DATE_TIME 30 seconds ] to my [SL:METHOD_TIMER timer ] ]",
+          "[IN:ADD_TIME_TIMER Add [SL:DATE_TIME 30 seconds ] to my [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000680-english",
+        "ids": [
+          "htop-test-000680-english",
+          "htop-test-004448-english",
+          "htop-test-005126-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM alarm off ]",
+          "[IN:SILENCE_ALARM Alarm off ]",
+          "[IN:SILENCE_ALARM Alarm OFF ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001890-english",
+        "ids": [
+          "htop-test-001890-english",
+          "htop-test-004408-english"
+        ],
+        "targets": [
+          "[IN:GET_INFO_TRAFFIC Are there any accidents ]",
+          "[IN:GET_INFO_TRAFFIC are there any accidents ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000211-english",
+        "ids": [
+          "htop-test-000211-english",
+          "htop-test-001461-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM cancel alarm ]",
+          "[IN:DELETE_ALARM Cancel alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000738-english",
+        "ids": [
+          "htop-test-000738-english",
+          "htop-test-000755-english",
+          "htop-test-001658-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Cancel [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM Cancel [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM cancel [SL:AMOUNT all ] alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004806-english",
+        "ids": [
+          "htop-test-004806-english",
+          "htop-test-005063-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Cancel [SL:AMOUNT all ] my alarms ]",
+          "[IN:DELETE_ALARM cancel [SL:AMOUNT all ] my alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002817-english",
+        "ids": [
+          "htop-test-002817-english",
+          "htop-test-003569-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER cancel [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]",
+          "[IN:DELETE_TIMER Cancel [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001684-english",
+        "ids": [
+          "htop-test-001684-english",
+          "htop-test-002493-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Cancel my Alarm . ]",
+          "[IN:DELETE_ALARM Cancel my alarm . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003295-english",
+        "ids": [
+          "htop-test-003295-english",
+          "htop-test-003675-english",
+          "htop-test-004634-english",
+          "htop-test-005715-english",
+          "htop-test-006164-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER Cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER Cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER Cancel the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000006-english",
+        "ids": [
+          "htop-test-000006-english",
+          "htop-test-001993-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER Cancel [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER cancel [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000273-english",
+        "ids": [
+          "htop-test-000273-english",
+          "htop-test-001681-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER clear [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]",
+          "[IN:DELETE_TIMER Clear [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000254-english",
+        "ids": [
+          "htop-test-000254-english",
+          "htop-test-000625-english",
+          "htop-test-002165-english",
+          "htop-test-002194-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Delete [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM Delete [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM delete [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM delete [SL:AMOUNT all ] alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001060-english",
+        "ids": [
+          "htop-test-001060-english",
+          "htop-test-001642-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER Delete the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER delete the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001102-english",
+        "ids": [
+          "htop-test-001102-english",
+          "htop-test-003156-english",
+          "htop-test-005834-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER delete [SL:METHOD_TIMER timer ] . ]",
+          "[IN:DELETE_TIMER Delete [SL:METHOD_TIMER timer ] . ]",
+          "[IN:DELETE_TIMER Delete [SL:METHOD_TIMER timer ] . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000225-english",
+        "ids": [
+          "htop-test-000225-english",
+          "htop-test-006489-english"
+        ],
+        "targets": [
+          "[IN:DISLIKE_MUSIC Dislike this [SL:MUSIC_TYPE song ] ]",
+          "[IN:DISLIKE_MUSIC dislike this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000842-english",
+        "ids": [
+          "htop-test-000842-english",
+          "htop-test-004122-english",
+          "htop-test-005597-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER do i need a [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER Do i need a [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER do I need a [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000743-english",
+        "ids": [
+          "htop-test-000743-english",
+          "htop-test-003249-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER do I need an [SL:WEATHER_ATTRIBUTE umbrella ] ]",
+          "[IN:GET_WEATHER do i need an [SL:WEATHER_ATTRIBUTE umbrella ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001834-english",
+        "ids": [
+          "htop-test-001834-english",
+          "htop-test-003617-english"
+        ],
+        "targets": [
+          "[IN:REPLAY_MUSIC Go back two [SL:MUSIC_TYPE songs ] ]",
+          "[IN:REPLAY_MUSIC go back two [SL:MUSIC_TYPE songs ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003095-english",
+        "ids": [
+          "htop-test-003095-english",
+          "htop-test-004763-english"
+        ],
+        "targets": [
+          "[IN:GET_INFO_TRAFFIC How ' s traffic ]",
+          "[IN:GET_INFO_TRAFFIC how ' s traffic ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000264-english",
+        "ids": [
+          "htop-test-000264-english",
+          "htop-test-003743-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001275-english",
+        "ids": [
+          "htop-test-001275-english",
+          "htop-test-005385-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000620-english",
+        "ids": [
+          "htop-test-000620-english",
+          "htop-test-000662-english",
+          "htop-test-001205-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE hot ] will it be [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE hot ] will it be [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE hot ] will it be [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001697-english",
+        "ids": [
+          "htop-test-001697-english",
+          "htop-test-002531-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE hot ] will it get [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE hot ] will it get [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000441-english",
+        "ids": [
+          "htop-test-000441-english",
+          "htop-test-000919-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much longer ]",
+          "[IN:GET_TIMER how much longer ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002783-english",
+        "ids": [
+          "htop-test-002783-english",
+          "htop-test-005817-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM how much time before my alarm goes off ]",
+          "[IN:GET_ALARM How much time before my alarm goes off ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000037-english",
+        "ids": [
+          "htop-test-000037-english",
+          "htop-test-001225-english",
+          "htop-test-001245-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] do I have left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] do i have left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] do I have left ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000284-english",
+        "ids": [
+          "htop-test-000284-english",
+          "htop-test-000560-english",
+          "htop-test-000686-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] is left ]",
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] is left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] is left ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003797-english",
+        "ids": [
+          "htop-test-003797-english",
+          "htop-test-003816-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM how much time is left on alarm ]",
+          "[IN:GET_ALARM How much time is left on alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000100-english",
+        "ids": [
+          "htop-test-000100-english",
+          "htop-test-000430-english",
+          "htop-test-000602-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER how much time is left on my [SL:METHOD_TIMER timer ] ]",
+          "[IN:GET_TIMER How much time is left on my [SL:METHOD_TIMER timer ] ]",
+          "[IN:GET_TIMER How much time is left on my [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000265-english",
+        "ids": [
+          "htop-test-000265-english",
+          "htop-test-002496-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much time is left on my [SL:METHOD_TIMER timer ] ? ]",
+          "[IN:GET_TIMER how much time is left on my [SL:METHOD_TIMER timer ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001668-english",
+        "ids": [
+          "htop-test-001668-english",
+          "htop-test-006004-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] left ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004419-english",
+        "ids": [
+          "htop-test-004419-english",
+          "htop-test-004503-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER is it [SL:WEATHER_ATTRIBUTE cold ] outside ? ]",
+          "[IN:GET_WEATHER Is it [SL:WEATHER_ATTRIBUTE cold ] outside ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000771-english",
+        "ids": [
+          "htop-test-000771-english",
+          "htop-test-000793-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER is it going to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER Is it going to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000409-english",
+        "ids": [
+          "htop-test-000409-english",
+          "htop-test-002880-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER is it going to [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER Is it going to [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001470-english",
+        "ids": [
+          "htop-test-001470-english",
+          "htop-test-004646-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Is it supposed to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER is it supposed to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000367-english",
+        "ids": [
+          "htop-test-000367-english",
+          "htop-test-006169-english"
+        ],
+        "targets": [
+          "[IN:LIKE_MUSIC like [SL:MUSIC_TYPE song ] ]",
+          "[IN:LIKE_MUSIC Like [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002897-english",
+        "ids": [
+          "htop-test-002897-english",
+          "htop-test-004287-english"
+        ],
+        "targets": [
+          "[IN:LIKE_MUSIC Like this [SL:MUSIC_TYPE song ] ]",
+          "[IN:LIKE_MUSIC like this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001122-english",
+        "ids": [
+          "htop-test-001122-english",
+          "htop-test-004262-english"
+        ],
+        "targets": [
+          "[IN:REMOVE_FROM_PLAYLIST_MUSIC never play this [SL:MUSIC_TYPE song ] again ]",
+          "[IN:REMOVE_FROM_PLAYLIST_MUSIC Never play this [SL:MUSIC_TYPE song ] again ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003223-english",
+        "ids": [
+          "htop-test-003223-english",
+          "htop-test-005268-english",
+          "htop-test-005324-english",
+          "htop-test-005610-english",
+          "htop-test-006095-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL Next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL Next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL NEXT ] [SL:MUSIC_TYPE SONG ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000098-english",
+        "ids": [
+          "htop-test-000098-english",
+          "htop-test-000452-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC pause [SL:MUSIC_TYPE music ] ]",
+          "[IN:PAUSE_MUSIC Pause [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000729-english",
+        "ids": [
+          "htop-test-000729-english",
+          "htop-test-006063-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC Pause [SL:MUSIC_TYPE song ] ]",
+          "[IN:PAUSE_MUSIC pause [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000666-english",
+        "ids": [
+          "htop-test-000666-english",
+          "htop-test-003284-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC Pause the [SL:MUSIC_TYPE music ] ]",
+          "[IN:PAUSE_MUSIC pause the [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000280-english",
+        "ids": [
+          "htop-test-000280-english",
+          "htop-test-002926-english",
+          "htop-test-004347-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER pause the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER Pause the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER Pause the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000141-english",
+        "ids": [
+          "htop-test-000141-english",
+          "htop-test-000155-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC Pause this [SL:MUSIC_TYPE song ] ]",
+          "[IN:PAUSE_MUSIC pause this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000464-english",
+        "ids": [
+          "htop-test-000464-english",
+          "htop-test-000781-english",
+          "htop-test-000806-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER Pause [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER pause [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER pause [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000259-english",
+        "ids": [
+          "htop-test-000259-english",
+          "htop-test-001263-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_GENRE country ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_GENRE country ] [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002472-english",
+        "ids": [
+          "htop-test-002472-english",
+          "htop-test-004124-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play me some [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play me some [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000443-english",
+        "ids": [
+          "htop-test-000443-english",
+          "htop-test-000471-english",
+          "htop-test-000736-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004673-english",
+        "ids": [
+          "htop-test-004673-english",
+          "htop-test-004973-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play my [SL:MUSIC_PLAYLIST_TITLE cleaning ] [SL:MUSIC_TYPE playlist ] ]",
+          "[IN:PLAY_MUSIC play my [SL:MUSIC_PLAYLIST_TITLE cleaning ] [SL:MUSIC_TYPE playlist ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000309-english",
+        "ids": [
+          "htop-test-000309-english",
+          "htop-test-002326-english",
+          "htop-test-002981-english",
+          "htop-test-004283-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_GENRE Rock ] [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001108-english",
+        "ids": [
+          "htop-test-001108-english",
+          "htop-test-002877-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC play [SL:MUSIC_ARTIST_NAME taylor swift ] ]",
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_ARTIST_NAME Taylor Swift ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000663-english",
+        "ids": [
+          "htop-test-000663-english",
+          "htop-test-000814-english"
+        ],
+        "targets": [
+          "[IN:PREVIOUS_TRACK_MUSIC play the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] again ]",
+          "[IN:PREVIOUS_TRACK_MUSIC Play the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] again ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001206-english",
+        "ids": [
+          "htop-test-001206-english",
+          "htop-test-002669-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM Please turn off ]",
+          "[IN:SILENCE_ALARM please turn off ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000391-english",
+        "ids": [
+          "htop-test-000391-english",
+          "htop-test-001782-english"
+        ],
+        "targets": [
+          "[IN:PREVIOUS_TRACK_MUSIC Repeat [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:PREVIOUS_TRACK_MUSIC repeat [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001685-english",
+        "ids": [
+          "htop-test-001685-english",
+          "htop-test-001833-english"
+        ],
+        "targets": [
+          "[IN:REPLAY_MUSIC Repeat that [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:PREVIOUS_TRACK_MUSIC repeat that [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000352-english",
+        "ids": [
+          "htop-test-000352-english",
+          "htop-test-002223-english"
+        ],
+        "targets": [
+          "[IN:PREVIOUS_TRACK_MUSIC repeat the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:PREVIOUS_TRACK_MUSIC Repeat the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001301-english",
+        "ids": [
+          "htop-test-001301-english",
+          "htop-test-001741-english"
+        ],
+        "targets": [
+          "[IN:REPLAY_MUSIC repeat this [SL:MUSIC_TYPE song ] ]",
+          "[IN:REPLAY_MUSIC Repeat this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000798-english",
+        "ids": [
+          "htop-test-000798-english",
+          "htop-test-000974-english"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER Reset [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESTART_TIMER reset [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000133-english",
+        "ids": [
+          "htop-test-000133-english",
+          "htop-test-000168-english"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER Reset [SL:METHOD_TIMER timer ] . ]",
+          "[IN:RESTART_TIMER reset [SL:METHOD_TIMER timer ] . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000577-english",
+        "ids": [
+          "htop-test-000577-english",
+          "htop-test-002394-english",
+          "htop-test-002820-english"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER Restart the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESTART_TIMER restart the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESTART_TIMER restart the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001052-english",
+        "ids": [
+          "htop-test-001052-english",
+          "htop-test-001247-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER resume my [SL:METHOD_TIMER timer ] please ]",
+          "[IN:RESUME_TIMER Resume my [SL:METHOD_TIMER timer ] please ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000637-english",
+        "ids": [
+          "htop-test-000637-english",
+          "htop-test-000852-english",
+          "htop-test-001370-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER Resume the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000410-english",
+        "ids": [
+          "htop-test-000410-english",
+          "htop-test-000417-english",
+          "htop-test-000639-english",
+          "htop-test-000943-english",
+          "htop-test-001805-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER Resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER Resume [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000366-english",
+        "ids": [
+          "htop-test-000366-english",
+          "htop-test-005093-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER Resume [SL:METHOD_TIMER timer ] . ]",
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000330-english",
+        "ids": [
+          "htop-test-000330-english",
+          "htop-test-003536-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 5 : 30 am ] ]",
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 5 : 30 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002152-english",
+        "ids": [
+          "htop-test-002152-english",
+          "htop-test-002734-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 5 am ] ]",
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 5 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-005604-english",
+        "ids": [
+          "htop-test-005604-english",
+          "htop-test-006453-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 7 am ] ]",
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 7 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000624-english",
+        "ids": [
+          "htop-test-000624-english",
+          "htop-test-002597-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 7 am tomorrow ] ]",
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 7 am tomorrow ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001725-english",
+        "ids": [
+          "htop-test-001725-english",
+          "htop-test-002031-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set an alarm ]",
+          "[IN:CREATE_ALARM Set an alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-005026-english",
+        "ids": [
+          "htop-test-005026-english",
+          "htop-test-005108-english",
+          "htop-test-005170-english",
+          "htop-test-006198-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 6 am ] ]",
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 6 am ] ]",
+          "[IN:CREATE_ALARM set an alarm [SL:DATE_TIME for 6 am ] ]",
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 6 AM ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000910-english",
+        "ids": [
+          "htop-test-000910-english",
+          "htop-test-002006-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set an alarm [SL:DATE_TIME for 7 : 30 am ] ]",
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 7 : 30 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000521-english",
+        "ids": [
+          "htop-test-000521-english",
+          "htop-test-004056-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 7 am ] ]",
+          "[IN:CREATE_ALARM set an alarm [SL:DATE_TIME for 7 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000210-english",
+        "ids": [
+          "htop-test-000210-english",
+          "htop-test-005739-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER set my [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 30 minutes ] ]",
+          "[IN:CREATE_TIMER Set my [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 30 minutes ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000131-english",
+        "ids": [
+          "htop-test-000131-english",
+          "htop-test-000671-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER set [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 2 hours ] ]",
+          "[IN:CREATE_TIMER Set [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 2 hours ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000727-english",
+        "ids": [
+          "htop-test-000727-english",
+          "htop-test-001319-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set up an alarm ]",
+          "[IN:CREATE_ALARM Set up an alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000260-english",
+        "ids": [
+          "htop-test-000260-english",
+          "htop-test-000683-english",
+          "htop-test-004675-english",
+          "htop-test-005756-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM show [SL:AMOUNT all ] alarms ]",
+          "[IN:GET_ALARM show [SL:AMOUNT all ] alarms ]",
+          "[IN:GET_ALARM Show [SL:AMOUNT all ] alarms ]",
+          "[IN:GET_ALARM Show [SL:AMOUNT all ] alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000492-english",
+        "ids": [
+          "htop-test-000492-english",
+          "htop-test-001480-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM Show me my alarms ]",
+          "[IN:GET_ALARM show me my alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000332-english",
+        "ids": [
+          "htop-test-000332-english",
+          "htop-test-003377-english",
+          "htop-test-003578-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC skip the [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC Skip the [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC Skip the [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000050-english",
+        "ids": [
+          "htop-test-000050-english",
+          "htop-test-000099-english",
+          "htop-test-000233-english",
+          "htop-test-000267-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC Skip this [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC Skip this [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip this [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000087-english",
+        "ids": [
+          "htop-test-000087-english",
+          "htop-test-000669-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC Skip this [SL:MUSIC_TYPE track ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip this [SL:MUSIC_TYPE track ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001298-english",
+        "ids": [
+          "htop-test-001298-english",
+          "htop-test-003523-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC Skip [SL:MUSIC_TYPE track ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip [SL:MUSIC_TYPE track ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000714-english",
+        "ids": [
+          "htop-test-000714-english",
+          "htop-test-002248-english"
+        ],
+        "targets": [
+          "[IN:SNOOZE_ALARM Snooze alarm ]",
+          "[IN:SNOOZE_ALARM snooze alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000312-english",
+        "ids": [
+          "htop-test-000312-english",
+          "htop-test-002870-english"
+        ],
+        "targets": [
+          "[IN:SNOOZE_ALARM Snooze my alarm ]",
+          "[IN:SNOOZE_ALARM snooze my alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000046-english",
+        "ids": [
+          "htop-test-000046-english",
+          "htop-test-004168-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER start [SL:METHOD_TIMER timer ] ]",
+          "[IN:CREATE_TIMER Start [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001082-english",
+        "ids": [
+          "htop-test-001082-english",
+          "htop-test-001619-english",
+          "htop-test-001643-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM stop alarm ]",
+          "[IN:SILENCE_ALARM stop alarm ]",
+          "[IN:SILENCE_ALARM Stop alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000203-english",
+        "ids": [
+          "htop-test-000203-english",
+          "htop-test-000587-english",
+          "htop-test-002718-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM stop my alarm ]",
+          "[IN:SILENCE_ALARM stop my alarm ]",
+          "[IN:SILENCE_ALARM Stop my alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000249-english",
+        "ids": [
+          "htop-test-000249-english",
+          "htop-test-002806-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM stop now ]",
+          "[IN:SILENCE_ALARM Stop now ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001105-english",
+        "ids": [
+          "htop-test-001105-english",
+          "htop-test-005650-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM Stop the alarm ]",
+          "[IN:SILENCE_ALARM stop the alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001645-english",
+        "ids": [
+          "htop-test-001645-english",
+          "htop-test-002268-english",
+          "htop-test-005085-english",
+          "htop-test-005361-english"
+        ],
+        "targets": [
+          "[IN:STOP_MUSIC Stop the [SL:MUSIC_TYPE music ] ]",
+          "[IN:STOP_MUSIC Stop the [SL:MUSIC_TYPE music ] ]",
+          "[IN:STOP_MUSIC stop the [SL:MUSIC_TYPE music ] ]",
+          "[IN:STOP_MUSIC stop the [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000433-english",
+        "ids": [
+          "htop-test-000433-english",
+          "htop-test-000756-english",
+          "htop-test-000789-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER stop the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER Stop the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER stop the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000116-english",
+        "ids": [
+          "htop-test-000116-english",
+          "htop-test-000381-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER Stop [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER stop [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000230-english",
+        "ids": [
+          "htop-test-000230-english",
+          "htop-test-004216-english",
+          "htop-test-004396-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM turn off alarm ]",
+          "[IN:SILENCE_ALARM Turn off alarm ]",
+          "[IN:SILENCE_ALARM Turn off alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002245-english",
+        "ids": [
+          "htop-test-002245-english",
+          "htop-test-005611-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC turn on the [SL:MUSIC_TYPE radio ] ]",
+          "[IN:PLAY_MUSIC Turn on the [SL:MUSIC_TYPE radio ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001673-english",
+        "ids": [
+          "htop-test-001673-english",
+          "htop-test-006392-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER Turn the [SL:METHOD_TIMER timer ] on ]",
+          "[IN:CREATE_TIMER turn the [SL:METHOD_TIMER timer ] on ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000206-english",
+        "ids": [
+          "htop-test-000206-english",
+          "htop-test-006354-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM What alarms are set ? ]",
+          "[IN:GET_ALARM what alarms are set ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002262-english",
+        "ids": [
+          "htop-test-002262-english",
+          "htop-test-003859-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER what is the [SL:DATE_TIME 10 day ] forecast ? ]",
+          "[IN:GET_WEATHER What is the [SL:DATE_TIME 10 day ] forecast ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002376-english",
+        "ids": [
+          "htop-test-002376-english",
+          "htop-test-005080-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER what is the forecast [SL:DATE_TIME for next week ] ? ]",
+          "[IN:GET_WEATHER What is the forecast [SL:DATE_TIME for next week ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002502-english",
+        "ids": [
+          "htop-test-002502-english",
+          "htop-test-005064-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the high temperature [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER what is the high temperature [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000053-english",
+        "ids": [
+          "htop-test-000053-english",
+          "htop-test-001899-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the temperature [SL:DATE_TIME for today ] ? ]",
+          "[IN:GET_WEATHER what is the temperature [SL:DATE_TIME for today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000272-english",
+        "ids": [
+          "htop-test-000272-english",
+          "htop-test-002088-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the temperature going to be [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER what is the temperature going to be [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003769-english",
+        "ids": [
+          "htop-test-003769-english",
+          "htop-test-003876-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the temperature [SL:DATE_TIME tomorrow ] ]",
+          "[IN:GET_WEATHER what is the temperature [SL:DATE_TIME tomorrow ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000977-english",
+        "ids": [
+          "htop-test-000977-english",
+          "htop-test-001002-english",
+          "htop-test-005613-english"
+        ],
+        "targets": [
+          "[IN:GET_SUNSET What time does the sun set ]",
+          "[IN:GET_SUNSET What time does the sun set ]",
+          "[IN:GET_SUNSET what time does the sun set ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004336-english",
+        "ids": [
+          "htop-test-004336-english",
+          "htop-test-004530-english",
+          "htop-test-004573-english"
+        ],
+        "targets": [
+          "[IN:GET_SUNSET when is sunset ]",
+          "[IN:GET_SUNSET When is sunset ]",
+          "[IN:GET_SUNSET when is sunset ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000763-english",
+        "ids": [
+          "htop-test-000763-english",
+          "htop-test-002058-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER When will it [SL:WEATHER_ATTRIBUTE snow ] again ]",
+          "[IN:GET_WEATHER when will it [SL:WEATHER_ATTRIBUTE snow ] again ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000039-english",
+        "ids": [
+          "htop-test-000039-english",
+          "htop-test-005583-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will I need an [SL:WEATHER_ATTRIBUTE umbrella ] [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER Will i need an [SL:WEATHER_ATTRIBUTE umbrella ] [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001159-english",
+        "ids": [
+          "htop-test-001159-english",
+          "htop-test-005605-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000719-english",
+        "ids": [
+          "htop-test-000719-english",
+          "htop-test-004410-english",
+          "htop-test-006374-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER Will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER Will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002218-english",
+        "ids": [
+          "htop-test-002218-english",
+          "htop-test-002250-english",
+          "htop-test-006271-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER Will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000324-english",
+        "ids": [
+          "htop-test-000324-english",
+          "htop-test-002154-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000908-english",
+        "ids": [
+          "htop-test-000908-english",
+          "htop-test-002252-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001662-hinglish",
+        "ids": [
+          "htop-test-001662-hinglish",
+          "htop-test-001750-hinglish",
+          "htop-test-005187-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER [SL:DATE_TIME 15 minutes ke liye ] [SL:METHOD_TIMER timer ] set kare ]",
+          "[IN:CREATE_TIMER [SL:DATE_TIME 15 minutes ] ke liye [SL:METHOD_TIMER timer ] set kare ]",
+          "[IN:CREATE_TIMER [SL:DATE_TIME 15 minutes ke liye ] [SL:METHOD_TIMER timer ] set kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002502-hinglish",
+        "ids": [
+          "htop-test-002502-hinglish",
+          "htop-test-005064-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER [SL:DATE_TIME aaj ka ] high temperature kya hai ]",
+          "[IN:GET_WEATHER [SL:DATE_TIME aaj ] ka high temperature kya hai ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000246-hinglish",
+        "ids": [
+          "htop-test-000246-hinglish",
+          "htop-test-001021-hinglish"
+        ],
+        "targets": [
+          "[IN:START_SHUFFLE_MUSIC [SL:ORDINAL agle ] five [SL:MUSIC_TYPE songs ] ko shuffle kardo ]",
+          "[IN:START_SHUFFLE_MUSIC agle five [SL:MUSIC_TYPE songs ] ko shuffle kardo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001619-hinglish",
+        "ids": [
+          "htop-test-001619-hinglish",
+          "htop-test-002801-hinglish",
+          "htop-test-003764-hinglish",
+          "htop-test-003938-hinglish",
+          "htop-test-004647-hinglish",
+          "htop-test-005377-hinglish"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM Alarm ko band karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000608-hinglish",
+        "ids": [
+          "htop-test-000608-hinglish",
+          "htop-test-005861-hinglish"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL current ] [SL:MUSIC_TYPE track ] ko skip karo ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL current track ] ko skip karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004777-hinglish",
+        "ids": [
+          "htop-test-004777-hinglish",
+          "htop-test-006510-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM [SL:PERIOD har ghante ] ke liye alarm set kare ]",
+          "[IN:CREATE_ALARM [SL:PERIOD Har ghante ] ke liye alarm set kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000225-hinglish",
+        "ids": [
+          "htop-test-000225-hinglish",
+          "htop-test-006489-hinglish"
+        ],
+        "targets": [
+          "[IN:DISLIKE_MUSIC Is [SL:MUSIC_TYPE song ] ko dislike kare ]",
+          "[IN:DISLIKE_MUSIC is [SL:MUSIC_TYPE song ] ko dislike kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001900-hinglish",
+        "ids": [
+          "htop-test-001900-hinglish",
+          "htop-test-003596-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM [SL:DATE_TIME kal subha 9 baje ke liye ] alarm set karen ]",
+          "[IN:CREATE_ALARM [SL:DATE_TIME Kal subha 9 baje ke liye ] alarm set karen ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000324-hinglish",
+        "ids": [
+          "htop-test-000324-hinglish",
+          "htop-test-002154-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Kya [SL:DATE_TIME aaj ] [SL:WEATHER_ATTRIBUTE baarish ] hogi ? ]",
+          "[IN:GET_WEATHER kya [SL:DATE_TIME aaj ] [SL:WEATHER_ATTRIBUTE baarish ] hogi ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000537-hinglish",
+        "ids": [
+          "htop-test-000537-hinglish",
+          "htop-test-000538-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER kya [SL:DATE_TIME aaj ] [SL:WEATHER_ATTRIBUTE barf ] padne wali hai ? ]",
+          "[IN:CREATE_REMINDER kya [SL:DATE_TIME aaj ] [SL:TODO barf ] padne wali hai ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001792-hinglish",
+        "ids": [
+          "htop-test-001792-hinglish",
+          "htop-test-003997-hinglish"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER [SL:ORDINAL Last ] [SL:METHOD_TIMER timer ] ko repeat karo ]",
+          "[IN:RESTART_TIMER [SL:ORDINAL last ] [SL:METHOD_TIMER timer ] ko repeat karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002382-hinglish",
+        "ids": [
+          "htop-test-002382-hinglish",
+          "htop-test-002657-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_INFO_TRAFFIC [SL:LOCATION [IN:GET_LOCATION [SL:LOCATION_USER Mere ] [SL:SEARCH_RADIUS aas paas ] ] ] traffic kaisa hai ]",
+          "[IN:GET_INFO_TRAFFIC [SL:LOCATION [IN:GET_LOCATION [SL:LOCATION_USER mere ] [SL:SEARCH_RADIUS aas paas ] ] ] traffic kaisa hai ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000037-hinglish",
+        "ids": [
+          "htop-test-000037-hinglish",
+          "htop-test-001225-hinglish",
+          "htop-test-001245-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_TIMER mere paas kitna [SL:METHOD_TIMER time ] bacha hai ]",
+          "[IN:GET_TIMER mere paas kitna [SL:METHOD_TIMER time ] bacha hai ]",
+          "[IN:GET_TIMER Mere paas kitna [SL:METHOD_TIMER time ] bacha hai ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001830-hinglish",
+        "ids": [
+          "htop-test-001830-hinglish",
+          "htop-test-002346-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_ALARM mujhe [SL:DATE_TIME kal ke liye ] alarms dikhao ]",
+          "[IN:GET_ALARM mujhe [SL:ALARM_NAME [IN:GET_TIME [SL:DATE_TIME kal ke liye ] ] ] alarms dikhao ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000452-hinglish",
+        "ids": [
+          "htop-test-000452-hinglish",
+          "htop-test-003284-hinglish"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC [SL:MUSIC_TYPE Music ] ko pause kare ]",
+          "[IN:PAUSE_MUSIC [SL:MUSIC_TYPE music ] ko pause kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002981-hinglish",
+        "ids": [
+          "htop-test-002981-hinglish",
+          "htop-test-004283-hinglish"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] play kare ]",
+          "[IN:PLAY_MUSIC [SL:MUSIC_GENRE Rock ] [SL:MUSIC_TYPE music ] play kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003375-hinglish",
+        "ids": [
+          "htop-test-003375-hinglish",
+          "htop-test-004675-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_ALARM [SL:AMOUNT Sabhi ] alarms dikhao ]",
+          "[IN:GET_ALARM [SL:AMOUNT sabhi ] alarms dikhao ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002674-hinglish",
+        "ids": [
+          "htop-test-002674-hinglish",
+          "htop-test-003902-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER [SL:METHOD_TIMER stopwatch ] ko start karo ]",
+          "[IN:CREATE_TIMER [SL:METHOD_TIMER Stopwatch ] ko start karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000941-hinglish",
+        "ids": [
+          "htop-test-000941-hinglish",
+          "htop-test-005170-hinglish",
+          "htop-test-005558-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM [SL:DATE_TIME subah 6 baje ke liye ] alarm set kare ]",
+          "[IN:CREATE_ALARM [SL:DATE_TIME Subah 6 baje ke liye ] alarm set kare ]",
+          "[IN:CREATE_ALARM [SL:DATE_TIME subah 6 baje ke liye ] alarm set kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000006-hinglish",
+        "ids": [
+          "htop-test-000006-hinglish",
+          "htop-test-000512-hinglish"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER Timer ] ko cancel kijiye ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko cancel kijiye ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000514-hinglish",
+        "ids": [
+          "htop-test-000514-hinglish",
+          "htop-test-001060-hinglish",
+          "htop-test-001102-hinglish",
+          "htop-test-001642-hinglish"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER Timer ] ko delete kare ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko delete kare ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko delete kare ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko delete kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000280-hinglish",
+        "ids": [
+          "htop-test-000280-hinglish",
+          "htop-test-000464-hinglish",
+          "htop-test-000781-hinglish",
+          "htop-test-004347-hinglish"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER Timer ] ko pause kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko pause kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko pause kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko pause kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000577-hinglish",
+        "ids": [
+          "htop-test-000577-hinglish",
+          "htop-test-002394-hinglish",
+          "htop-test-002820-hinglish",
+          "htop-test-004501-hinglish"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER Timer ] ko restart kare ]",
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER timer ] ko restart kare ]",
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER timer ] ko restart kare ]",
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER timer ] ko restart kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000223-hinglish",
+        "ids": [
+          "htop-test-000223-hinglish",
+          "htop-test-000381-hinglish",
+          "htop-test-000756-hinglish"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER Timer ] ko stop kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko stop kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko stop kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000495-hinglish",
+        "ids": [
+          "htop-test-000495-hinglish",
+          "htop-test-000677-hinglish"
+        ],
+        "targets": [
+          "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] me [SL:DATE_TIME 2 minutes ] add karen ]",
+          "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] me [SL:DATE_TIME 2 minutes ] add karen ]"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,3734 @@
+{
+  "protocol_version": "1.0",
+  "rates_are_fractions": true,
+  "original": {
+    "overall": {
+      "n": 13026,
+      "correct": 7149,
+      "exact_match": 0.5488254260709351,
+      "generation_failed": 3,
+      "generation_success_rate": 0.9997696913864579,
+      "syntax_valid": 13021,
+      "syntax_valid_rate": 0.9996161523107631,
+      "gold_syntax_valid": 13026,
+      "gold_syntax_invalid": 0,
+      "valid_gold_exact_match": 0.5488254260709351,
+      "root_intent_accuracy": 0.8654997696913864,
+      "slot_tp": 17569,
+      "slot_fp": 5944,
+      "slot_fn": 7099,
+      "slot_precision": 0.7472036745630077,
+      "slot_recall": 0.712218258472515,
+      "slot_f1": 0.7292916294805006,
+      "slot_evaluable_examples": 13026,
+      "source_checked_examples": 13026,
+      "source_valid_rate": 0.9976201443267312,
+      "predicted_leaf_spans": 44470,
+      "copied_leaf_spans": 44444,
+      "leaf_copy_rate": 0.9994153361816955,
+      "gold_source_invalid": 0
+    },
+    "by_language": {
+      "english": {
+        "n": 6513,
+        "correct": 4098,
+        "exact_match": 0.6292031321971442,
+        "generation_failed": 2,
+        "generation_success_rate": 0.9996929218486105,
+        "syntax_valid": 6509,
+        "syntax_valid_rate": 0.9993858436972209,
+        "gold_syntax_valid": 6513,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6292031321971442,
+        "root_intent_accuracy": 0.8969752802088131,
+        "slot_tp": 9647,
+        "slot_fp": 2209,
+        "slot_fn": 2676,
+        "slot_precision": 0.8136808367071525,
+        "slot_recall": 0.7828450864237605,
+        "slot_f1": 0.7979651763927375,
+        "slot_evaluable_examples": 6513,
+        "source_checked_examples": 6513,
+        "source_valid_rate": 0.9975433747888838,
+        "predicted_leaf_spans": 22615,
+        "copied_leaf_spans": 22603,
+        "leaf_copy_rate": 0.9994693787309308,
+        "gold_source_invalid": 0
+      },
+      "hinglish": {
+        "n": 6513,
+        "correct": 3051,
+        "exact_match": 0.46844771994472595,
+        "generation_failed": 1,
+        "generation_success_rate": 0.9998464609243052,
+        "syntax_valid": 6512,
+        "syntax_valid_rate": 0.9998464609243052,
+        "gold_syntax_valid": 6513,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.46844771994472595,
+        "root_intent_accuracy": 0.8340242591739597,
+        "slot_tp": 7922,
+        "slot_fp": 3735,
+        "slot_fn": 4423,
+        "slot_precision": 0.6795916616625204,
+        "slot_recall": 0.6417172944511949,
+        "slot_f1": 0.6601116573618865,
+        "slot_evaluable_examples": 6513,
+        "source_checked_examples": 6513,
+        "source_valid_rate": 0.9976969138645785,
+        "predicted_leaf_spans": 21855,
+        "copied_leaf_spans": 21841,
+        "leaf_copy_rate": 0.9993594143216655,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain": {
+      "alarm": {
+        "n": 2390,
+        "correct": 1473,
+        "exact_match": 0.6163179916317991,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 2390,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 2390,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6163179916317991,
+        "root_intent_accuracy": 0.8598326359832636,
+        "slot_tp": 1858,
+        "slot_fp": 726,
+        "slot_fn": 828,
+        "slot_precision": 0.7190402476780186,
+        "slot_recall": 0.691734921816828,
+        "slot_f1": 0.705123339658444,
+        "slot_evaluable_examples": 2390,
+        "source_checked_examples": 2390,
+        "source_valid_rate": 0.997907949790795,
+        "predicted_leaf_spans": 5592,
+        "copied_leaf_spans": 5587,
+        "leaf_copy_rate": 0.9991058655221745,
+        "gold_source_invalid": 0
+      },
+      "event": {
+        "n": 922,
+        "correct": 516,
+        "exact_match": 0.559652928416486,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 922,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 922,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.559652928416486,
+        "root_intent_accuracy": 0.93058568329718,
+        "slot_tp": 1795,
+        "slot_fp": 449,
+        "slot_fn": 579,
+        "slot_precision": 0.7999108734402852,
+        "slot_recall": 0.7561078348778433,
+        "slot_f1": 0.7773928107405803,
+        "slot_evaluable_examples": 922,
+        "source_checked_examples": 922,
+        "source_valid_rate": 0.9967462039045553,
+        "predicted_leaf_spans": 3485,
+        "copied_leaf_spans": 3482,
+        "leaf_copy_rate": 0.9991391678622669,
+        "gold_source_invalid": 0
+      },
+      "messaging": {
+        "n": 1012,
+        "correct": 646,
+        "exact_match": 0.6383399209486166,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1012,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1012,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6383399209486166,
+        "root_intent_accuracy": 0.9486166007905138,
+        "slot_tp": 1646,
+        "slot_fp": 438,
+        "slot_fn": 453,
+        "slot_precision": 0.789827255278311,
+        "slot_recall": 0.784182944259171,
+        "slot_f1": 0.7869949796796557,
+        "slot_evaluable_examples": 1012,
+        "source_checked_examples": 1012,
+        "source_valid_rate": 0.9970355731225297,
+        "predicted_leaf_spans": 3781,
+        "copied_leaf_spans": 3778,
+        "leaf_copy_rate": 0.9992065591113463,
+        "gold_source_invalid": 0
+      },
+      "music": {
+        "n": 1446,
+        "correct": 773,
+        "exact_match": 0.5345781466113416,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1446,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1446,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5345781466113416,
+        "root_intent_accuracy": 0.793222683264177,
+        "slot_tp": 1766,
+        "slot_fp": 524,
+        "slot_fn": 512,
+        "slot_precision": 0.77117903930131,
+        "slot_recall": 0.7752414398595259,
+        "slot_f1": 0.7732049036777583,
+        "slot_evaluable_examples": 1446,
+        "source_checked_examples": 1446,
+        "source_valid_rate": 0.9986168741355463,
+        "predicted_leaf_spans": 4794,
+        "copied_leaf_spans": 4792,
+        "leaf_copy_rate": 0.9995828118481435,
+        "gold_source_invalid": 0
+      },
+      "navigation": {
+        "n": 1996,
+        "correct": 853,
+        "exact_match": 0.4273547094188377,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1996,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1996,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.4273547094188377,
+        "root_intent_accuracy": 0.8491983967935872,
+        "slot_tp": 2610,
+        "slot_fp": 1456,
+        "slot_fn": 1638,
+        "slot_precision": 0.6419085095917364,
+        "slot_recall": 0.614406779661017,
+        "slot_f1": 0.6278566273755112,
+        "slot_evaluable_examples": 1996,
+        "source_checked_examples": 1996,
+        "source_valid_rate": 0.9974949899799599,
+        "predicted_leaf_spans": 7336,
+        "copied_leaf_spans": 7331,
+        "leaf_copy_rate": 0.9993184296619411,
+        "gold_source_invalid": 0
+      },
+      "reminder": {
+        "n": 1930,
+        "correct": 702,
+        "exact_match": 0.36373056994818653,
+        "generation_failed": 3,
+        "generation_success_rate": 0.9984455958549223,
+        "syntax_valid": 1925,
+        "syntax_valid_rate": 0.9974093264248705,
+        "gold_syntax_valid": 1930,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.36373056994818653,
+        "root_intent_accuracy": 0.8497409326424871,
+        "slot_tp": 3561,
+        "slot_fp": 1505,
+        "slot_fn": 2137,
+        "slot_precision": 0.7029214370311884,
+        "slot_recall": 0.624956124956125,
+        "slot_f1": 0.6616499442586399,
+        "slot_evaluable_examples": 1930,
+        "source_checked_examples": 1930,
+        "source_valid_rate": 0.9968911917098445,
+        "predicted_leaf_spans": 8569,
+        "copied_leaf_spans": 8568,
+        "leaf_copy_rate": 0.9998833002684094,
+        "gold_source_invalid": 0
+      },
+      "timer": {
+        "n": 1386,
+        "correct": 756,
+        "exact_match": 0.5454545454545454,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1386,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1386,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5454545454545454,
+        "root_intent_accuracy": 0.7756132756132756,
+        "slot_tp": 1677,
+        "slot_fp": 366,
+        "slot_fn": 578,
+        "slot_precision": 0.8208516886930984,
+        "slot_recall": 0.743680709534368,
+        "slot_f1": 0.780362959516054,
+        "slot_evaluable_examples": 1386,
+        "source_checked_examples": 1386,
+        "source_valid_rate": 0.9992784992784993,
+        "predicted_leaf_spans": 4267,
+        "copied_leaf_spans": 4266,
+        "leaf_copy_rate": 0.9997656433091164,
+        "gold_source_invalid": 0
+      },
+      "weather": {
+        "n": 1944,
+        "correct": 1430,
+        "exact_match": 0.73559670781893,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1944,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1944,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.73559670781893,
+        "root_intent_accuracy": 0.948559670781893,
+        "slot_tp": 2656,
+        "slot_fp": 480,
+        "slot_fn": 374,
+        "slot_precision": 0.8469387755102041,
+        "slot_recall": 0.8765676567656766,
+        "slot_f1": 0.8614985403827441,
+        "slot_evaluable_examples": 1944,
+        "source_checked_examples": 1944,
+        "source_valid_rate": 0.9969135802469136,
+        "predicted_leaf_spans": 6646,
+        "copied_leaf_spans": 6640,
+        "leaf_copy_rate": 0.9990972013241047,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain_language": {
+      "alarm:english": {
+        "n": 1195,
+        "correct": 835,
+        "exact_match": 0.698744769874477,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1195,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1195,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.698744769874477,
+        "root_intent_accuracy": 0.8920502092050209,
+        "slot_tp": 1057,
+        "slot_fp": 266,
+        "slot_fn": 286,
+        "slot_precision": 0.798941798941799,
+        "slot_recall": 0.7870439314966493,
+        "slot_f1": 0.7929482370592649,
+        "slot_evaluable_examples": 1195,
+        "source_checked_examples": 1195,
+        "source_valid_rate": 0.9974895397489539,
+        "predicted_leaf_spans": 2852,
+        "copied_leaf_spans": 2849,
+        "leaf_copy_rate": 0.9989481065918654,
+        "gold_source_invalid": 0
+      },
+      "alarm:hinglish": {
+        "n": 1195,
+        "correct": 638,
+        "exact_match": 0.5338912133891214,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1195,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1195,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5338912133891214,
+        "root_intent_accuracy": 0.8276150627615063,
+        "slot_tp": 801,
+        "slot_fp": 460,
+        "slot_fn": 542,
+        "slot_precision": 0.6352101506740682,
+        "slot_recall": 0.5964259121370067,
+        "slot_f1": 0.6152073732718893,
+        "slot_evaluable_examples": 1195,
+        "source_checked_examples": 1195,
+        "source_valid_rate": 0.998326359832636,
+        "predicted_leaf_spans": 2740,
+        "copied_leaf_spans": 2738,
+        "leaf_copy_rate": 0.9992700729927008,
+        "gold_source_invalid": 0
+      },
+      "event:english": {
+        "n": 461,
+        "correct": 289,
+        "exact_match": 0.6268980477223427,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 461,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 461,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6268980477223427,
+        "root_intent_accuracy": 0.9522776572668112,
+        "slot_tp": 942,
+        "slot_fp": 182,
+        "slot_fn": 244,
+        "slot_precision": 0.8380782918149466,
+        "slot_recall": 0.7942664418212478,
+        "slot_f1": 0.8155844155844156,
+        "slot_evaluable_examples": 461,
+        "source_checked_examples": 461,
+        "source_valid_rate": 0.9956616052060737,
+        "predicted_leaf_spans": 1625,
+        "copied_leaf_spans": 1623,
+        "leaf_copy_rate": 0.9987692307692307,
+        "gold_source_invalid": 0
+      },
+      "event:hinglish": {
+        "n": 461,
+        "correct": 227,
+        "exact_match": 0.4924078091106291,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 461,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 461,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.4924078091106291,
+        "root_intent_accuracy": 0.9088937093275488,
+        "slot_tp": 853,
+        "slot_fp": 267,
+        "slot_fn": 335,
+        "slot_precision": 0.7616071428571428,
+        "slot_recall": 0.718013468013468,
+        "slot_f1": 0.7391681109185442,
+        "slot_evaluable_examples": 461,
+        "source_checked_examples": 461,
+        "source_valid_rate": 0.9978308026030369,
+        "predicted_leaf_spans": 1860,
+        "copied_leaf_spans": 1859,
+        "leaf_copy_rate": 0.9994623655913979,
+        "gold_source_invalid": 0
+      },
+      "messaging:english": {
+        "n": 506,
+        "correct": 354,
+        "exact_match": 0.6996047430830039,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 506,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 506,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6996047430830039,
+        "root_intent_accuracy": 0.9703557312252964,
+        "slot_tp": 869,
+        "slot_fp": 173,
+        "slot_fn": 180,
+        "slot_precision": 0.8339731285988484,
+        "slot_recall": 0.8284080076263107,
+        "slot_f1": 0.8311812529890005,
+        "slot_evaluable_examples": 506,
+        "source_checked_examples": 506,
+        "source_valid_rate": 0.9980237154150198,
+        "predicted_leaf_spans": 2055,
+        "copied_leaf_spans": 2054,
+        "leaf_copy_rate": 0.9995133819951338,
+        "gold_source_invalid": 0
+      },
+      "messaging:hinglish": {
+        "n": 506,
+        "correct": 292,
+        "exact_match": 0.5770750988142292,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 506,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 506,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5770750988142292,
+        "root_intent_accuracy": 0.9268774703557312,
+        "slot_tp": 777,
+        "slot_fp": 265,
+        "slot_fn": 273,
+        "slot_precision": 0.7456813819577736,
+        "slot_recall": 0.74,
+        "slot_f1": 0.7428298279158699,
+        "slot_evaluable_examples": 506,
+        "source_checked_examples": 506,
+        "source_valid_rate": 0.9960474308300395,
+        "predicted_leaf_spans": 1726,
+        "copied_leaf_spans": 1724,
+        "leaf_copy_rate": 0.9988412514484357,
+        "gold_source_invalid": 0
+      },
+      "music:english": {
+        "n": 723,
+        "correct": 428,
+        "exact_match": 0.5919778699861687,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 723,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 723,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5919778699861687,
+        "root_intent_accuracy": 0.8409405255878285,
+        "slot_tp": 919,
+        "slot_fp": 232,
+        "slot_fn": 221,
+        "slot_precision": 0.7984361424847958,
+        "slot_recall": 0.8061403508771929,
+        "slot_f1": 0.8022697512003492,
+        "slot_evaluable_examples": 723,
+        "source_checked_examples": 723,
+        "source_valid_rate": 0.9986168741355463,
+        "predicted_leaf_spans": 2342,
+        "copied_leaf_spans": 2341,
+        "leaf_copy_rate": 0.9995730145175064,
+        "gold_source_invalid": 0
+      },
+      "music:hinglish": {
+        "n": 723,
+        "correct": 345,
+        "exact_match": 0.47717842323651455,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 723,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 723,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.47717842323651455,
+        "root_intent_accuracy": 0.7455048409405256,
+        "slot_tp": 847,
+        "slot_fp": 292,
+        "slot_fn": 291,
+        "slot_precision": 0.7436347673397717,
+        "slot_recall": 0.7442882249560633,
+        "slot_f1": 0.7439613526570048,
+        "slot_evaluable_examples": 723,
+        "source_checked_examples": 723,
+        "source_valid_rate": 0.9986168741355463,
+        "predicted_leaf_spans": 2452,
+        "copied_leaf_spans": 2451,
+        "leaf_copy_rate": 0.9995921696574225,
+        "gold_source_invalid": 0
+      },
+      "navigation:english": {
+        "n": 998,
+        "correct": 511,
+        "exact_match": 0.5120240480961924,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 998,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 998,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5120240480961924,
+        "root_intent_accuracy": 0.8777555110220441,
+        "slot_tp": 1518,
+        "slot_fp": 578,
+        "slot_fn": 603,
+        "slot_precision": 0.7242366412213741,
+        "slot_recall": 0.7157001414427157,
+        "slot_f1": 0.7199430875029642,
+        "slot_evaluable_examples": 998,
+        "source_checked_examples": 998,
+        "source_valid_rate": 0.996993987975952,
+        "predicted_leaf_spans": 3670,
+        "copied_leaf_spans": 3667,
+        "leaf_copy_rate": 0.999182561307902,
+        "gold_source_invalid": 0
+      },
+      "navigation:hinglish": {
+        "n": 998,
+        "correct": 342,
+        "exact_match": 0.342685370741483,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 998,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 998,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.342685370741483,
+        "root_intent_accuracy": 0.8206412825651302,
+        "slot_tp": 1092,
+        "slot_fp": 878,
+        "slot_fn": 1035,
+        "slot_precision": 0.5543147208121827,
+        "slot_recall": 0.5133991537376587,
+        "slot_f1": 0.5330729802294362,
+        "slot_evaluable_examples": 998,
+        "source_checked_examples": 998,
+        "source_valid_rate": 0.9979959919839679,
+        "predicted_leaf_spans": 3666,
+        "copied_leaf_spans": 3664,
+        "leaf_copy_rate": 0.9994544462629569,
+        "gold_source_invalid": 0
+      },
+      "reminder:english": {
+        "n": 965,
+        "correct": 484,
+        "exact_match": 0.5015544041450777,
+        "generation_failed": 2,
+        "generation_success_rate": 0.9979274611398964,
+        "syntax_valid": 961,
+        "syntax_valid_rate": 0.9958549222797928,
+        "gold_syntax_valid": 965,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5015544041450777,
+        "root_intent_accuracy": 0.8880829015544042,
+        "slot_tp": 2078,
+        "slot_fp": 474,
+        "slot_fn": 762,
+        "slot_precision": 0.8142633228840125,
+        "slot_recall": 0.7316901408450704,
+        "slot_f1": 0.7707715133531158,
+        "slot_evaluable_examples": 965,
+        "source_checked_examples": 965,
+        "source_valid_rate": 0.9958549222797928,
+        "predicted_leaf_spans": 4661,
+        "copied_leaf_spans": 4661,
+        "leaf_copy_rate": 1.0,
+        "gold_source_invalid": 0
+      },
+      "reminder:hinglish": {
+        "n": 965,
+        "correct": 218,
+        "exact_match": 0.22590673575129533,
+        "generation_failed": 1,
+        "generation_success_rate": 0.9989637305699481,
+        "syntax_valid": 964,
+        "syntax_valid_rate": 0.9989637305699481,
+        "gold_syntax_valid": 965,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.22590673575129533,
+        "root_intent_accuracy": 0.81139896373057,
+        "slot_tp": 1483,
+        "slot_fp": 1031,
+        "slot_fn": 1375,
+        "slot_precision": 0.5898965791567223,
+        "slot_recall": 0.5188943317004898,
+        "slot_f1": 0.5521221146686522,
+        "slot_evaluable_examples": 965,
+        "source_checked_examples": 965,
+        "source_valid_rate": 0.9979274611398964,
+        "predicted_leaf_spans": 3908,
+        "copied_leaf_spans": 3907,
+        "leaf_copy_rate": 0.9997441146366428,
+        "gold_source_invalid": 0
+      },
+      "timer:english": {
+        "n": 693,
+        "correct": 423,
+        "exact_match": 0.6103896103896104,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 693,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 693,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6103896103896104,
+        "root_intent_accuracy": 0.836940836940837,
+        "slot_tp": 874,
+        "slot_fp": 138,
+        "slot_fn": 254,
+        "slot_precision": 0.8636363636363636,
+        "slot_recall": 0.774822695035461,
+        "slot_f1": 0.8168224299065421,
+        "slot_evaluable_examples": 693,
+        "source_checked_examples": 693,
+        "source_valid_rate": 0.9985569985569985,
+        "predicted_leaf_spans": 2077,
+        "copied_leaf_spans": 2076,
+        "leaf_copy_rate": 0.9995185363505056,
+        "gold_source_invalid": 0
+      },
+      "timer:hinglish": {
+        "n": 693,
+        "correct": 333,
+        "exact_match": 0.4805194805194805,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 693,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 693,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.4805194805194805,
+        "root_intent_accuracy": 0.7142857142857143,
+        "slot_tp": 803,
+        "slot_fp": 228,
+        "slot_fn": 324,
+        "slot_precision": 0.7788554801163918,
+        "slot_recall": 0.712511091393079,
+        "slot_f1": 0.7442075996292864,
+        "slot_evaluable_examples": 693,
+        "source_checked_examples": 693,
+        "source_valid_rate": 1.0,
+        "predicted_leaf_spans": 2190,
+        "copied_leaf_spans": 2190,
+        "leaf_copy_rate": 1.0,
+        "gold_source_invalid": 0
+      },
+      "weather:english": {
+        "n": 972,
+        "correct": 774,
+        "exact_match": 0.7962962962962963,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 972,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 972,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.7962962962962963,
+        "root_intent_accuracy": 0.9516460905349794,
+        "slot_tp": 1390,
+        "slot_fp": 166,
+        "slot_fn": 126,
+        "slot_precision": 0.8933161953727506,
+        "slot_recall": 0.91688654353562,
+        "slot_f1": 0.9049479166666666,
+        "slot_evaluable_examples": 972,
+        "source_checked_examples": 972,
+        "source_valid_rate": 0.9989711934156379,
+        "predicted_leaf_spans": 3333,
+        "copied_leaf_spans": 3332,
+        "leaf_copy_rate": 0.9996999699969997,
+        "gold_source_invalid": 0
+      },
+      "weather:hinglish": {
+        "n": 972,
+        "correct": 656,
+        "exact_match": 0.6748971193415638,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 972,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 972,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6748971193415638,
+        "root_intent_accuracy": 0.9454732510288066,
+        "slot_tp": 1266,
+        "slot_fp": 314,
+        "slot_fn": 248,
+        "slot_precision": 0.8012658227848102,
+        "slot_recall": 0.8361955085865258,
+        "slot_f1": 0.8183581124757595,
+        "slot_evaluable_examples": 972,
+        "source_checked_examples": 972,
+        "source_valid_rate": 0.9948559670781894,
+        "predicted_leaf_spans": 3313,
+        "copied_leaf_spans": 3308,
+        "leaf_copy_rate": 0.9984907938424389,
+        "gold_source_invalid": 0
+      }
+    },
+    "gold_issues": []
+  },
+  "deduplicated": {
+    "overall": {
+      "n": 12692,
+      "correct": 6875,
+      "exact_match": 0.5416797982981406,
+      "generation_failed": 3,
+      "generation_success_rate": 0.99976363063347,
+      "syntax_valid": 12687,
+      "syntax_valid_rate": 0.9996060510557832,
+      "gold_syntax_valid": 12692,
+      "gold_syntax_invalid": 0,
+      "valid_gold_exact_match": 0.5416797982981406,
+      "root_intent_accuracy": 0.865427040655531,
+      "slot_tp": 17222,
+      "slot_fp": 5924,
+      "slot_fn": 7077,
+      "slot_precision": 0.7440594487168409,
+      "slot_recall": 0.7087534466438948,
+      "slot_f1": 0.7259774475708716,
+      "slot_evaluable_examples": 12692,
+      "source_checked_examples": 12692,
+      "source_valid_rate": 0.9975575165458557,
+      "predicted_leaf_spans": 43681,
+      "copied_leaf_spans": 43655,
+      "leaf_copy_rate": 0.9994047755316957,
+      "gold_source_invalid": 0
+    },
+    "by_language": {
+      "english": {
+        "n": 6302,
+        "correct": 3915,
+        "exact_match": 0.621231355125357,
+        "generation_failed": 2,
+        "generation_success_rate": 0.999682640431609,
+        "syntax_valid": 6298,
+        "syntax_valid_rate": 0.9993652808632181,
+        "gold_syntax_valid": 6302,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.621231355125357,
+        "root_intent_accuracy": 0.8965407807045382,
+        "slot_tp": 9411,
+        "slot_fp": 2200,
+        "slot_fn": 2663,
+        "slot_precision": 0.8105245026268194,
+        "slot_recall": 0.7794434321682955,
+        "slot_f1": 0.7946801773274225,
+        "slot_evaluable_examples": 6302,
+        "source_checked_examples": 6302,
+        "source_valid_rate": 0.9974611234528721,
+        "predicted_leaf_spans": 22091,
+        "copied_leaf_spans": 22079,
+        "leaf_copy_rate": 0.9994567923588792,
+        "gold_source_invalid": 0
+      },
+      "hinglish": {
+        "n": 6390,
+        "correct": 2960,
+        "exact_match": 0.46322378716744916,
+        "generation_failed": 1,
+        "generation_success_rate": 0.9998435054773083,
+        "syntax_valid": 6389,
+        "syntax_valid_rate": 0.9998435054773083,
+        "gold_syntax_valid": 6390,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.46322378716744916,
+        "root_intent_accuracy": 0.8347417840375587,
+        "slot_tp": 7811,
+        "slot_fp": 3724,
+        "slot_fn": 4414,
+        "slot_precision": 0.6771564802774166,
+        "slot_recall": 0.6389366053169734,
+        "slot_f1": 0.6574915824915825,
+        "slot_evaluable_examples": 6390,
+        "source_checked_examples": 6390,
+        "source_valid_rate": 0.9976525821596244,
+        "predicted_leaf_spans": 21590,
+        "copied_leaf_spans": 21576,
+        "leaf_copy_rate": 0.9993515516442798,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain": {
+      "alarm": {
+        "n": 2299,
+        "correct": 1400,
+        "exact_match": 0.6089604175728578,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 2299,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 2299,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6089604175728578,
+        "root_intent_accuracy": 0.8608090474119182,
+        "slot_tp": 1819,
+        "slot_fp": 723,
+        "slot_fn": 824,
+        "slot_precision": 0.7155782848151062,
+        "slot_recall": 0.6882330684827848,
+        "slot_f1": 0.7016393442622951,
+        "slot_evaluable_examples": 2299,
+        "source_checked_examples": 2299,
+        "source_valid_rate": 0.9978251413658112,
+        "predicted_leaf_spans": 5444,
+        "copied_leaf_spans": 5439,
+        "leaf_copy_rate": 0.9990815576781779,
+        "gold_source_invalid": 0
+      },
+      "event": {
+        "n": 921,
+        "correct": 515,
+        "exact_match": 0.5591748099891423,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 921,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 921,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5591748099891423,
+        "root_intent_accuracy": 0.9305103148751357,
+        "slot_tp": 1792,
+        "slot_fp": 449,
+        "slot_fn": 579,
+        "slot_precision": 0.7996430165104864,
+        "slot_recall": 0.7557992408266554,
+        "slot_f1": 0.777103209019948,
+        "slot_evaluable_examples": 921,
+        "source_checked_examples": 921,
+        "source_valid_rate": 0.996742671009772,
+        "predicted_leaf_spans": 3481,
+        "copied_leaf_spans": 3478,
+        "leaf_copy_rate": 0.9991381786842861,
+        "gold_source_invalid": 0
+      },
+      "messaging": {
+        "n": 1000,
+        "correct": 636,
+        "exact_match": 0.636,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1000,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1000,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.636,
+        "root_intent_accuracy": 0.948,
+        "slot_tp": 1623,
+        "slot_fp": 436,
+        "slot_fn": 451,
+        "slot_precision": 0.7882467217095678,
+        "slot_recall": 0.7825458052073289,
+        "slot_f1": 0.7853859182192112,
+        "slot_evaluable_examples": 1000,
+        "source_checked_examples": 1000,
+        "source_valid_rate": 0.997,
+        "predicted_leaf_spans": 3735,
+        "copied_leaf_spans": 3732,
+        "leaf_copy_rate": 0.9991967871485944,
+        "gold_source_invalid": 0
+      },
+      "music": {
+        "n": 1380,
+        "correct": 720,
+        "exact_match": 0.5217391304347826,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1380,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1380,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5217391304347826,
+        "root_intent_accuracy": 0.7898550724637681,
+        "slot_tp": 1677,
+        "slot_fp": 517,
+        "slot_fn": 505,
+        "slot_precision": 0.7643573381950775,
+        "slot_recall": 0.7685609532538955,
+        "slot_f1": 0.7664533820840951,
+        "slot_evaluable_examples": 1380,
+        "source_checked_examples": 1380,
+        "source_valid_rate": 0.9985507246376811,
+        "predicted_leaf_spans": 4627,
+        "copied_leaf_spans": 4625,
+        "leaf_copy_rate": 0.9995677544845473,
+        "gold_source_invalid": 0
+      },
+      "navigation": {
+        "n": 1992,
+        "correct": 849,
+        "exact_match": 0.42620481927710846,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1992,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1992,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.42620481927710846,
+        "root_intent_accuracy": 0.8488955823293173,
+        "slot_tp": 2607,
+        "slot_fp": 1456,
+        "slot_fn": 1638,
+        "slot_precision": 0.6416441053408811,
+        "slot_recall": 0.6141342756183745,
+        "slot_f1": 0.6275878671160328,
+        "slot_evaluable_examples": 1992,
+        "source_checked_examples": 1992,
+        "source_valid_rate": 0.9974899598393574,
+        "predicted_leaf_spans": 7330,
+        "copied_leaf_spans": 7325,
+        "leaf_copy_rate": 0.9993178717598908,
+        "gold_source_invalid": 0
+      },
+      "reminder": {
+        "n": 1929,
+        "correct": 702,
+        "exact_match": 0.36391912908242613,
+        "generation_failed": 3,
+        "generation_success_rate": 0.9984447900466563,
+        "syntax_valid": 1924,
+        "syntax_valid_rate": 0.9974079834110938,
+        "gold_syntax_valid": 1929,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.36391912908242613,
+        "root_intent_accuracy": 0.8501814411612234,
+        "slot_tp": 3560,
+        "slot_fp": 1504,
+        "slot_fn": 2136,
+        "slot_precision": 0.7030015797788309,
+        "slot_recall": 0.625,
+        "slot_f1": 0.6617100371747212,
+        "slot_evaluable_examples": 1929,
+        "source_checked_examples": 1929,
+        "source_valid_rate": 0.9968895800933126,
+        "predicted_leaf_spans": 8565,
+        "copied_leaf_spans": 8564,
+        "leaf_copy_rate": 0.9998832457676591,
+        "gold_source_invalid": 0
+      },
+      "timer": {
+        "n": 1284,
+        "correct": 675,
+        "exact_match": 0.5257009345794392,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1284,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1284,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5257009345794392,
+        "root_intent_accuracy": 0.7702492211838006,
+        "slot_tp": 1567,
+        "slot_fp": 363,
+        "slot_fn": 571,
+        "slot_precision": 0.8119170984455959,
+        "slot_recall": 0.7329279700654817,
+        "slot_f1": 0.7704031465093412,
+        "slot_evaluable_examples": 1284,
+        "source_checked_examples": 1284,
+        "source_valid_rate": 0.9992211838006231,
+        "predicted_leaf_spans": 4031,
+        "copied_leaf_spans": 4030,
+        "leaf_copy_rate": 0.9997519225998511,
+        "gold_source_invalid": 0
+      },
+      "weather": {
+        "n": 1887,
+        "correct": 1378,
+        "exact_match": 0.730259671436142,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1887,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1887,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.730259671436142,
+        "root_intent_accuracy": 0.9485956544780074,
+        "slot_tp": 2577,
+        "slot_fp": 476,
+        "slot_fn": 373,
+        "slot_precision": 0.8440877825090075,
+        "slot_recall": 0.8735593220338983,
+        "slot_f1": 0.8585707146426786,
+        "slot_evaluable_examples": 1887,
+        "source_checked_examples": 1887,
+        "source_valid_rate": 0.9968203497615262,
+        "predicted_leaf_spans": 6468,
+        "copied_leaf_spans": 6462,
+        "leaf_copy_rate": 0.9990723562152134,
+        "gold_source_invalid": 0
+      }
+    },
+    "by_domain_language": {
+      "alarm:english": {
+        "n": 1144,
+        "correct": 792,
+        "exact_match": 0.6923076923076923,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1144,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1144,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6923076923076923,
+        "root_intent_accuracy": 0.8942307692307693,
+        "slot_tp": 1032,
+        "slot_fp": 265,
+        "slot_fn": 284,
+        "slot_precision": 0.7956823438704703,
+        "slot_recall": 0.78419452887538,
+        "slot_f1": 0.7898966704936854,
+        "slot_evaluable_examples": 1144,
+        "source_checked_examples": 1144,
+        "source_valid_rate": 0.9973776223776224,
+        "predicted_leaf_spans": 2763,
+        "copied_leaf_spans": 2760,
+        "leaf_copy_rate": 0.998914223669924,
+        "gold_source_invalid": 0
+      },
+      "alarm:hinglish": {
+        "n": 1155,
+        "correct": 608,
+        "exact_match": 0.5264069264069264,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 1155,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 1155,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5264069264069264,
+        "root_intent_accuracy": 0.8277056277056277,
+        "slot_tp": 787,
+        "slot_fp": 458,
+        "slot_fn": 540,
+        "slot_precision": 0.6321285140562249,
+        "slot_recall": 0.5930670685757348,
+        "slot_f1": 0.6119751166407466,
+        "slot_evaluable_examples": 1155,
+        "source_checked_examples": 1155,
+        "source_valid_rate": 0.9982683982683983,
+        "predicted_leaf_spans": 2681,
+        "copied_leaf_spans": 2679,
+        "leaf_copy_rate": 0.9992540096978739,
+        "gold_source_invalid": 0
+      },
+      "event:english": {
+        "n": 460,
+        "correct": 288,
+        "exact_match": 0.6260869565217392,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 460,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 460,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6260869565217392,
+        "root_intent_accuracy": 0.9521739130434783,
+        "slot_tp": 939,
+        "slot_fp": 182,
+        "slot_fn": 244,
+        "slot_precision": 0.8376449598572703,
+        "slot_recall": 0.7937447168216399,
+        "slot_f1": 0.8151041666666666,
+        "slot_evaluable_examples": 460,
+        "source_checked_examples": 460,
+        "source_valid_rate": 0.9956521739130435,
+        "predicted_leaf_spans": 1621,
+        "copied_leaf_spans": 1619,
+        "leaf_copy_rate": 0.9987661937075879,
+        "gold_source_invalid": 0
+      },
+      "event:hinglish": {
+        "n": 461,
+        "correct": 227,
+        "exact_match": 0.4924078091106291,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 461,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 461,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.4924078091106291,
+        "root_intent_accuracy": 0.9088937093275488,
+        "slot_tp": 853,
+        "slot_fp": 267,
+        "slot_fn": 335,
+        "slot_precision": 0.7616071428571428,
+        "slot_recall": 0.718013468013468,
+        "slot_f1": 0.7391681109185442,
+        "slot_evaluable_examples": 461,
+        "source_checked_examples": 461,
+        "source_valid_rate": 0.9978308026030369,
+        "predicted_leaf_spans": 1860,
+        "copied_leaf_spans": 1859,
+        "leaf_copy_rate": 0.9994623655913979,
+        "gold_source_invalid": 0
+      },
+      "messaging:english": {
+        "n": 495,
+        "correct": 345,
+        "exact_match": 0.696969696969697,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 495,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 495,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.696969696969697,
+        "root_intent_accuracy": 0.9696969696969697,
+        "slot_tp": 846,
+        "slot_fp": 171,
+        "slot_fn": 178,
+        "slot_precision": 0.831858407079646,
+        "slot_recall": 0.826171875,
+        "slot_f1": 0.8290053895149436,
+        "slot_evaluable_examples": 495,
+        "source_checked_examples": 495,
+        "source_valid_rate": 0.997979797979798,
+        "predicted_leaf_spans": 2010,
+        "copied_leaf_spans": 2009,
+        "leaf_copy_rate": 0.9995024875621891,
+        "gold_source_invalid": 0
+      },
+      "messaging:hinglish": {
+        "n": 505,
+        "correct": 291,
+        "exact_match": 0.5762376237623762,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 505,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 505,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5762376237623762,
+        "root_intent_accuracy": 0.9267326732673268,
+        "slot_tp": 777,
+        "slot_fp": 265,
+        "slot_fn": 273,
+        "slot_precision": 0.7456813819577736,
+        "slot_recall": 0.74,
+        "slot_f1": 0.7428298279158699,
+        "slot_evaluable_examples": 505,
+        "source_checked_examples": 505,
+        "source_valid_rate": 0.996039603960396,
+        "predicted_leaf_spans": 1725,
+        "copied_leaf_spans": 1723,
+        "leaf_copy_rate": 0.998840579710145,
+        "gold_source_invalid": 0
+      },
+      "music:english": {
+        "n": 676,
+        "correct": 386,
+        "exact_match": 0.5710059171597633,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 676,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 676,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5710059171597633,
+        "root_intent_accuracy": 0.834319526627219,
+        "slot_tp": 856,
+        "slot_fp": 229,
+        "slot_fn": 217,
+        "slot_precision": 0.7889400921658987,
+        "slot_recall": 0.7977632805219013,
+        "slot_f1": 0.7933271547729379,
+        "slot_evaluable_examples": 676,
+        "source_checked_examples": 676,
+        "source_valid_rate": 0.9985207100591716,
+        "predicted_leaf_spans": 2227,
+        "copied_leaf_spans": 2226,
+        "leaf_copy_rate": 0.9995509654243376,
+        "gold_source_invalid": 0
+      },
+      "music:hinglish": {
+        "n": 704,
+        "correct": 334,
+        "exact_match": 0.4744318181818182,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 704,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 704,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.4744318181818182,
+        "root_intent_accuracy": 0.7471590909090909,
+        "slot_tp": 821,
+        "slot_fp": 288,
+        "slot_fn": 288,
+        "slot_precision": 0.7403065825067628,
+        "slot_recall": 0.7403065825067628,
+        "slot_f1": 0.7403065825067628,
+        "slot_evaluable_examples": 704,
+        "source_checked_examples": 704,
+        "source_valid_rate": 0.9985795454545454,
+        "predicted_leaf_spans": 2400,
+        "copied_leaf_spans": 2399,
+        "leaf_copy_rate": 0.9995833333333334,
+        "gold_source_invalid": 0
+      },
+      "navigation:english": {
+        "n": 996,
+        "correct": 509,
+        "exact_match": 0.5110441767068273,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 996,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 996,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5110441767068273,
+        "root_intent_accuracy": 0.8775100401606426,
+        "slot_tp": 1518,
+        "slot_fp": 578,
+        "slot_fn": 603,
+        "slot_precision": 0.7242366412213741,
+        "slot_recall": 0.7157001414427157,
+        "slot_f1": 0.7199430875029642,
+        "slot_evaluable_examples": 996,
+        "source_checked_examples": 996,
+        "source_valid_rate": 0.9969879518072289,
+        "predicted_leaf_spans": 3668,
+        "copied_leaf_spans": 3665,
+        "leaf_copy_rate": 0.9991821155943293,
+        "gold_source_invalid": 0
+      },
+      "navigation:hinglish": {
+        "n": 996,
+        "correct": 340,
+        "exact_match": 0.3413654618473896,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 996,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 996,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.3413654618473896,
+        "root_intent_accuracy": 0.820281124497992,
+        "slot_tp": 1089,
+        "slot_fp": 878,
+        "slot_fn": 1035,
+        "slot_precision": 0.5536349771225216,
+        "slot_recall": 0.5127118644067796,
+        "slot_f1": 0.5323881691517967,
+        "slot_evaluable_examples": 996,
+        "source_checked_examples": 996,
+        "source_valid_rate": 0.9979919678714859,
+        "predicted_leaf_spans": 3662,
+        "copied_leaf_spans": 3660,
+        "leaf_copy_rate": 0.9994538503549972,
+        "gold_source_invalid": 0
+      },
+      "reminder:english": {
+        "n": 965,
+        "correct": 484,
+        "exact_match": 0.5015544041450777,
+        "generation_failed": 2,
+        "generation_success_rate": 0.9979274611398964,
+        "syntax_valid": 961,
+        "syntax_valid_rate": 0.9958549222797928,
+        "gold_syntax_valid": 965,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5015544041450777,
+        "root_intent_accuracy": 0.8880829015544042,
+        "slot_tp": 2078,
+        "slot_fp": 474,
+        "slot_fn": 762,
+        "slot_precision": 0.8142633228840125,
+        "slot_recall": 0.7316901408450704,
+        "slot_f1": 0.7707715133531158,
+        "slot_evaluable_examples": 965,
+        "source_checked_examples": 965,
+        "source_valid_rate": 0.9958549222797928,
+        "predicted_leaf_spans": 4661,
+        "copied_leaf_spans": 4661,
+        "leaf_copy_rate": 1.0,
+        "gold_source_invalid": 0
+      },
+      "reminder:hinglish": {
+        "n": 964,
+        "correct": 218,
+        "exact_match": 0.22614107883817428,
+        "generation_failed": 1,
+        "generation_success_rate": 0.9989626556016598,
+        "syntax_valid": 963,
+        "syntax_valid_rate": 0.9989626556016598,
+        "gold_syntax_valid": 964,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.22614107883817428,
+        "root_intent_accuracy": 0.8122406639004149,
+        "slot_tp": 1482,
+        "slot_fp": 1030,
+        "slot_fn": 1374,
+        "slot_precision": 0.589968152866242,
+        "slot_recall": 0.5189075630252101,
+        "slot_f1": 0.5521609538002981,
+        "slot_evaluable_examples": 964,
+        "source_checked_examples": 964,
+        "source_valid_rate": 0.9979253112033195,
+        "predicted_leaf_spans": 3904,
+        "copied_leaf_spans": 3903,
+        "leaf_copy_rate": 0.9997438524590164,
+        "gold_source_invalid": 0
+      },
+      "timer:english": {
+        "n": 637,
+        "correct": 377,
+        "exact_match": 0.5918367346938775,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 637,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 637,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.5918367346938775,
+        "root_intent_accuracy": 0.8320251177394035,
+        "slot_tp": 815,
+        "slot_fp": 137,
+        "slot_fn": 250,
+        "slot_precision": 0.8560924369747899,
+        "slot_recall": 0.7652582159624414,
+        "slot_f1": 0.8081308874566188,
+        "slot_evaluable_examples": 637,
+        "source_checked_examples": 637,
+        "source_valid_rate": 0.9984301412872841,
+        "predicted_leaf_spans": 1947,
+        "copied_leaf_spans": 1946,
+        "leaf_copy_rate": 0.9994863893168978,
+        "gold_source_invalid": 0
+      },
+      "timer:hinglish": {
+        "n": 647,
+        "correct": 298,
+        "exact_match": 0.4605873261205564,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 647,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 647,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.4605873261205564,
+        "root_intent_accuracy": 0.7094281298299846,
+        "slot_tp": 752,
+        "slot_fp": 226,
+        "slot_fn": 321,
+        "slot_precision": 0.7689161554192229,
+        "slot_recall": 0.700838769804287,
+        "slot_f1": 0.7333008288639687,
+        "slot_evaluable_examples": 647,
+        "source_checked_examples": 647,
+        "source_valid_rate": 1.0,
+        "predicted_leaf_spans": 2084,
+        "copied_leaf_spans": 2084,
+        "leaf_copy_rate": 1.0,
+        "gold_source_invalid": 0
+      },
+      "weather:english": {
+        "n": 929,
+        "correct": 734,
+        "exact_match": 0.790096878363832,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 929,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 929,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.790096878363832,
+        "root_intent_accuracy": 0.9515608180839612,
+        "slot_tp": 1327,
+        "slot_fp": 164,
+        "slot_fn": 125,
+        "slot_precision": 0.8900067069081153,
+        "slot_recall": 0.9139118457300276,
+        "slot_f1": 0.9018008834522596,
+        "slot_evaluable_examples": 929,
+        "source_checked_examples": 929,
+        "source_valid_rate": 0.9989235737351991,
+        "predicted_leaf_spans": 3194,
+        "copied_leaf_spans": 3193,
+        "leaf_copy_rate": 0.9996869129618033,
+        "gold_source_invalid": 0
+      },
+      "weather:hinglish": {
+        "n": 958,
+        "correct": 644,
+        "exact_match": 0.6722338204592901,
+        "generation_failed": 0,
+        "generation_success_rate": 1.0,
+        "syntax_valid": 958,
+        "syntax_valid_rate": 1.0,
+        "gold_syntax_valid": 958,
+        "gold_syntax_invalid": 0,
+        "valid_gold_exact_match": 0.6722338204592901,
+        "root_intent_accuracy": 0.9457202505219207,
+        "slot_tp": 1250,
+        "slot_fp": 312,
+        "slot_fn": 248,
+        "slot_precision": 0.8002560819462228,
+        "slot_recall": 0.8344459279038718,
+        "slot_f1": 0.8169934640522876,
+        "slot_evaluable_examples": 958,
+        "source_checked_examples": 958,
+        "source_valid_rate": 0.9947807933194155,
+        "predicted_leaf_spans": 3274,
+        "copied_leaf_spans": 3269,
+        "leaf_copy_rate": 0.9984728161270617,
+        "gold_source_invalid": 0
+      }
+    },
+    "gold_issues": []
+  },
+  "deduplication": {
+    "key": "language + NFKC/casefold/whitespace-normalized input text",
+    "representative": "lexicographically smallest id",
+    "removed_ids": [
+      "htop-test-006313-english",
+      "htop-test-004448-english",
+      "htop-test-005126-english",
+      "htop-test-003389-english",
+      "htop-test-004408-english",
+      "htop-test-003489-english",
+      "htop-test-001133-english",
+      "htop-test-005367-english",
+      "htop-test-001461-english",
+      "htop-test-000755-english",
+      "htop-test-001658-english",
+      "htop-test-004970-english",
+      "htop-test-005063-english",
+      "htop-test-003569-english",
+      "htop-test-002493-english",
+      "htop-test-000345-english",
+      "htop-test-003675-english",
+      "htop-test-004634-english",
+      "htop-test-005715-english",
+      "htop-test-006164-english",
+      "htop-test-001993-english",
+      "htop-test-001681-english",
+      "htop-test-001128-english",
+      "htop-test-006346-english",
+      "htop-test-000625-english",
+      "htop-test-002165-english",
+      "htop-test-002194-english",
+      "htop-test-001642-english",
+      "htop-test-003156-english",
+      "htop-test-005834-english",
+      "htop-test-006489-english",
+      "htop-test-004122-english",
+      "htop-test-005597-english",
+      "htop-test-003249-english",
+      "htop-test-003796-english",
+      "htop-test-003617-english",
+      "htop-test-004763-english",
+      "htop-test-006367-english",
+      "htop-test-003743-english",
+      "htop-test-005385-english",
+      "htop-test-000662-english",
+      "htop-test-001205-english",
+      "htop-test-002531-english",
+      "htop-test-002860-english",
+      "htop-test-005229-english",
+      "htop-test-005826-english",
+      "htop-test-000919-english",
+      "htop-test-005817-english",
+      "htop-test-001225-english",
+      "htop-test-001245-english",
+      "htop-test-000382-english",
+      "htop-test-000560-english",
+      "htop-test-000686-english",
+      "htop-test-003816-english",
+      "htop-test-000430-english",
+      "htop-test-000602-english",
+      "htop-test-002496-english",
+      "htop-test-002100-english",
+      "htop-test-006004-english",
+      "htop-test-006369-english",
+      "htop-test-004503-english",
+      "htop-test-000379-english",
+      "htop-test-000793-english",
+      "htop-test-002880-english",
+      "htop-test-004646-english",
+      "htop-test-001691-english",
+      "htop-test-003566-english",
+      "htop-test-006169-english",
+      "htop-test-004287-english",
+      "htop-test-001878-english",
+      "htop-test-002115-english",
+      "htop-test-005104-english",
+      "htop-test-004262-english",
+      "htop-test-005268-english",
+      "htop-test-005324-english",
+      "htop-test-005610-english",
+      "htop-test-006095-english",
+      "htop-test-000452-english",
+      "htop-test-006063-english",
+      "htop-test-003284-english",
+      "htop-test-001547-english",
+      "htop-test-002926-english",
+      "htop-test-004347-english",
+      "htop-test-000155-english",
+      "htop-test-000781-english",
+      "htop-test-000806-english",
+      "htop-test-000533-english",
+      "htop-test-005045-english",
+      "htop-test-001263-english",
+      "htop-test-002267-english",
+      "htop-test-004124-english",
+      "htop-test-000471-english",
+      "htop-test-000736-english",
+      "htop-test-004973-english",
+      "htop-test-002326-english",
+      "htop-test-002981-english",
+      "htop-test-004283-english",
+      "htop-test-002877-english",
+      "htop-test-000814-english",
+      "htop-test-002985-english",
+      "htop-test-002669-english",
+      "htop-test-001782-english",
+      "htop-test-001833-english",
+      "htop-test-002223-english",
+      "htop-test-001741-english",
+      "htop-test-000481-english",
+      "htop-test-001907-english",
+      "htop-test-000974-english",
+      "htop-test-000168-english",
+      "htop-test-002394-english",
+      "htop-test-002820-english",
+      "htop-test-005101-english",
+      "htop-test-005780-english",
+      "htop-test-001247-english",
+      "htop-test-000852-english",
+      "htop-test-001370-english",
+      "htop-test-000417-english",
+      "htop-test-000639-english",
+      "htop-test-000943-english",
+      "htop-test-001805-english",
+      "htop-test-005093-english",
+      "htop-test-005351-english",
+      "htop-test-004370-english",
+      "htop-test-005539-english",
+      "htop-test-000712-english",
+      "htop-test-001662-english",
+      "htop-test-001750-english",
+      "htop-test-003536-english",
+      "htop-test-002734-english",
+      "htop-test-006453-english",
+      "htop-test-002597-english",
+      "htop-test-002031-english",
+      "htop-test-006173-english",
+      "htop-test-005108-english",
+      "htop-test-005170-english",
+      "htop-test-006198-english",
+      "htop-test-002006-english",
+      "htop-test-004056-english",
+      "htop-test-001434-english",
+      "htop-test-005739-english",
+      "htop-test-000671-english",
+      "htop-test-006195-english",
+      "htop-test-000151-english",
+      "htop-test-001319-english",
+      "htop-test-003624-english",
+      "htop-test-000683-english",
+      "htop-test-004675-english",
+      "htop-test-005756-english",
+      "htop-test-001480-english",
+      "htop-test-003667-english",
+      "htop-test-003377-english",
+      "htop-test-003578-english",
+      "htop-test-000099-english",
+      "htop-test-000233-english",
+      "htop-test-000267-english",
+      "htop-test-004113-english",
+      "htop-test-000669-english",
+      "htop-test-004328-english",
+      "htop-test-003523-english",
+      "htop-test-002248-english",
+      "htop-test-002870-english",
+      "htop-test-003259-english",
+      "htop-test-005489-english",
+      "htop-test-004168-english",
+      "htop-test-001619-english",
+      "htop-test-001643-english",
+      "htop-test-000587-english",
+      "htop-test-002718-english",
+      "htop-test-002806-english",
+      "htop-test-005650-english",
+      "htop-test-002268-english",
+      "htop-test-005085-english",
+      "htop-test-005361-english",
+      "htop-test-000756-english",
+      "htop-test-000789-english",
+      "htop-test-000381-english",
+      "htop-test-004495-english",
+      "htop-test-005402-english",
+      "htop-test-004216-english",
+      "htop-test-004396-english",
+      "htop-test-006268-english",
+      "htop-test-004845-english",
+      "htop-test-005611-english",
+      "htop-test-006392-english",
+      "htop-test-004891-english",
+      "htop-test-006354-english",
+      "htop-test-003859-english",
+      "htop-test-005080-english",
+      "htop-test-005064-english",
+      "htop-test-001945-english",
+      "htop-test-001899-english",
+      "htop-test-002088-english",
+      "htop-test-003876-english",
+      "htop-test-001002-english",
+      "htop-test-005613-english",
+      "htop-test-005955-english",
+      "htop-test-006345-english",
+      "htop-test-004530-english",
+      "htop-test-004573-english",
+      "htop-test-002058-english",
+      "htop-test-005583-english",
+      "htop-test-005542-english",
+      "htop-test-005605-english",
+      "htop-test-004410-english",
+      "htop-test-006374-english",
+      "htop-test-002250-english",
+      "htop-test-006271-english",
+      "htop-test-002154-english",
+      "htop-test-002252-english",
+      "htop-test-004260-english",
+      "htop-test-004302-english",
+      "htop-test-005489-hinglish",
+      "htop-test-001750-hinglish",
+      "htop-test-005187-hinglish",
+      "htop-test-001334-hinglish",
+      "htop-test-005581-hinglish",
+      "htop-test-005463-hinglish",
+      "htop-test-005064-hinglish",
+      "htop-test-004278-hinglish",
+      "htop-test-003939-hinglish",
+      "htop-test-005610-hinglish",
+      "htop-test-005324-hinglish",
+      "htop-test-006095-hinglish",
+      "htop-test-001021-hinglish",
+      "htop-test-003855-hinglish",
+      "htop-test-002565-hinglish",
+      "htop-test-001218-hinglish",
+      "htop-test-003709-hinglish",
+      "htop-test-004216-hinglish",
+      "htop-test-004448-hinglish",
+      "htop-test-005550-hinglish",
+      "htop-test-005650-hinglish",
+      "htop-test-001461-hinglish",
+      "htop-test-000680-hinglish",
+      "htop-test-002801-hinglish",
+      "htop-test-003764-hinglish",
+      "htop-test-003938-hinglish",
+      "htop-test-004647-hinglish",
+      "htop-test-005377-hinglish",
+      "htop-test-001105-hinglish",
+      "htop-test-004300-hinglish",
+      "htop-test-002101-hinglish",
+      "htop-test-001725-hinglish",
+      "htop-test-000487-hinglish",
+      "htop-test-002851-hinglish",
+      "htop-test-003667-hinglish",
+      "htop-test-002696-hinglish",
+      "htop-test-005861-hinglish",
+      "htop-test-002735-hinglish",
+      "htop-test-003290-hinglish",
+      "htop-test-004163-hinglish",
+      "htop-test-006510-hinglish",
+      "htop-test-001741-hinglish",
+      "htop-test-006489-hinglish",
+      "htop-test-005402-hinglish",
+      "htop-test-002088-hinglish",
+      "htop-test-004572-hinglish",
+      "htop-test-003596-hinglish",
+      "htop-test-001668-hinglish",
+      "htop-test-006271-hinglish",
+      "htop-test-002154-hinglish",
+      "htop-test-000538-hinglish",
+      "htop-test-005367-hinglish",
+      "htop-test-001232-hinglish",
+      "htop-test-002572-hinglish",
+      "htop-test-001691-hinglish",
+      "htop-test-005122-hinglish",
+      "htop-test-000908-hinglish",
+      "htop-test-000814-hinglish",
+      "htop-test-001101-hinglish",
+      "htop-test-001782-hinglish",
+      "htop-test-003997-hinglish",
+      "htop-test-005826-hinglish",
+      "htop-test-002657-hinglish",
+      "htop-test-001599-hinglish",
+      "htop-test-000587-hinglish",
+      "htop-test-001225-hinglish",
+      "htop-test-001245-hinglish",
+      "htop-test-004806-hinglish",
+      "htop-test-000481-hinglish",
+      "htop-test-000602-hinglish",
+      "htop-test-000430-hinglish",
+      "htop-test-004973-hinglish",
+      "htop-test-001480-hinglish",
+      "htop-test-002346-hinglish",
+      "htop-test-005085-hinglish",
+      "htop-test-005361-hinglish",
+      "htop-test-003284-hinglish",
+      "htop-test-002669-hinglish",
+      "htop-test-002326-hinglish",
+      "htop-test-004283-hinglish",
+      "htop-test-000625-hinglish",
+      "htop-test-004845-hinglish",
+      "htop-test-004675-hinglish",
+      "htop-test-001547-hinglish",
+      "htop-test-003902-hinglish",
+      "htop-test-005170-hinglish",
+      "htop-test-005558-hinglish",
+      "htop-test-005108-hinglish",
+      "htop-test-004573-hinglish",
+      "htop-test-006341-hinglish",
+      "htop-test-000556-hinglish",
+      "htop-test-003675-hinglish",
+      "htop-test-004634-hinglish",
+      "htop-test-005715-hinglish",
+      "htop-test-006164-hinglish",
+      "htop-test-000512-hinglish",
+      "htop-test-001060-hinglish",
+      "htop-test-001102-hinglish",
+      "htop-test-001642-hinglish",
+      "htop-test-000464-hinglish",
+      "htop-test-000781-hinglish",
+      "htop-test-004347-hinglish",
+      "htop-test-000639-hinglish",
+      "htop-test-001805-hinglish",
+      "htop-test-004950-hinglish",
+      "htop-test-005950-hinglish",
+      "htop-test-000890-hinglish",
+      "htop-test-001907-hinglish",
+      "htop-test-002394-hinglish",
+      "htop-test-002820-hinglish",
+      "htop-test-004501-hinglish",
+      "htop-test-000410-hinglish",
+      "htop-test-000852-hinglish",
+      "htop-test-001370-hinglish",
+      "htop-test-001281-hinglish",
+      "htop-test-004168-hinglish",
+      "htop-test-000381-hinglish",
+      "htop-test-000756-hinglish",
+      "htop-test-000677-hinglish",
+      "htop-test-004746-hinglish",
+      "htop-test-005683-hinglish",
+      "htop-test-006369-hinglish",
+      "htop-test-004763-hinglish"
+    ],
+    "removed_count": 334,
+    "conflicting_gold_groups": [
+      {
+        "representative_id": "htop-test-003640-english",
+        "ids": [
+          "htop-test-003640-english",
+          "htop-test-006313-english"
+        ],
+        "targets": [
+          "[IN:ADD_TIME_TIMER add [SL:DATE_TIME 30 seconds ] to my [SL:METHOD_TIMER timer ] ]",
+          "[IN:ADD_TIME_TIMER Add [SL:DATE_TIME 30 seconds ] to my [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000680-english",
+        "ids": [
+          "htop-test-000680-english",
+          "htop-test-004448-english",
+          "htop-test-005126-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM alarm off ]",
+          "[IN:SILENCE_ALARM Alarm off ]",
+          "[IN:SILENCE_ALARM Alarm OFF ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001890-english",
+        "ids": [
+          "htop-test-001890-english",
+          "htop-test-004408-english"
+        ],
+        "targets": [
+          "[IN:GET_INFO_TRAFFIC Are there any accidents ]",
+          "[IN:GET_INFO_TRAFFIC are there any accidents ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000211-english",
+        "ids": [
+          "htop-test-000211-english",
+          "htop-test-001461-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM cancel alarm ]",
+          "[IN:DELETE_ALARM Cancel alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000738-english",
+        "ids": [
+          "htop-test-000738-english",
+          "htop-test-000755-english",
+          "htop-test-001658-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Cancel [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM Cancel [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM cancel [SL:AMOUNT all ] alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004806-english",
+        "ids": [
+          "htop-test-004806-english",
+          "htop-test-005063-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Cancel [SL:AMOUNT all ] my alarms ]",
+          "[IN:DELETE_ALARM cancel [SL:AMOUNT all ] my alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002817-english",
+        "ids": [
+          "htop-test-002817-english",
+          "htop-test-003569-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER cancel [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]",
+          "[IN:DELETE_TIMER Cancel [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001684-english",
+        "ids": [
+          "htop-test-001684-english",
+          "htop-test-002493-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Cancel my Alarm . ]",
+          "[IN:DELETE_ALARM Cancel my alarm . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003295-english",
+        "ids": [
+          "htop-test-003295-english",
+          "htop-test-003675-english",
+          "htop-test-004634-english",
+          "htop-test-005715-english",
+          "htop-test-006164-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER Cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER Cancel the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER Cancel the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000006-english",
+        "ids": [
+          "htop-test-000006-english",
+          "htop-test-001993-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER Cancel [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER cancel [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000273-english",
+        "ids": [
+          "htop-test-000273-english",
+          "htop-test-001681-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER clear [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]",
+          "[IN:DELETE_TIMER Clear [SL:AMOUNT all ] [SL:METHOD_TIMER timers ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000254-english",
+        "ids": [
+          "htop-test-000254-english",
+          "htop-test-000625-english",
+          "htop-test-002165-english",
+          "htop-test-002194-english"
+        ],
+        "targets": [
+          "[IN:DELETE_ALARM Delete [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM Delete [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM delete [SL:AMOUNT all ] alarms ]",
+          "[IN:DELETE_ALARM delete [SL:AMOUNT all ] alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001060-english",
+        "ids": [
+          "htop-test-001060-english",
+          "htop-test-001642-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER Delete the [SL:METHOD_TIMER timer ] ]",
+          "[IN:DELETE_TIMER delete the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001102-english",
+        "ids": [
+          "htop-test-001102-english",
+          "htop-test-003156-english",
+          "htop-test-005834-english"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER delete [SL:METHOD_TIMER timer ] . ]",
+          "[IN:DELETE_TIMER Delete [SL:METHOD_TIMER timer ] . ]",
+          "[IN:DELETE_TIMER Delete [SL:METHOD_TIMER timer ] . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000225-english",
+        "ids": [
+          "htop-test-000225-english",
+          "htop-test-006489-english"
+        ],
+        "targets": [
+          "[IN:DISLIKE_MUSIC Dislike this [SL:MUSIC_TYPE song ] ]",
+          "[IN:DISLIKE_MUSIC dislike this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000842-english",
+        "ids": [
+          "htop-test-000842-english",
+          "htop-test-004122-english",
+          "htop-test-005597-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER do i need a [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER Do i need a [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER do I need a [SL:WEATHER_ATTRIBUTE jacket ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000743-english",
+        "ids": [
+          "htop-test-000743-english",
+          "htop-test-003249-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER do I need an [SL:WEATHER_ATTRIBUTE umbrella ] ]",
+          "[IN:GET_WEATHER do i need an [SL:WEATHER_ATTRIBUTE umbrella ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001834-english",
+        "ids": [
+          "htop-test-001834-english",
+          "htop-test-003617-english"
+        ],
+        "targets": [
+          "[IN:REPLAY_MUSIC Go back two [SL:MUSIC_TYPE songs ] ]",
+          "[IN:REPLAY_MUSIC go back two [SL:MUSIC_TYPE songs ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003095-english",
+        "ids": [
+          "htop-test-003095-english",
+          "htop-test-004763-english"
+        ],
+        "targets": [
+          "[IN:GET_INFO_TRAFFIC How ' s traffic ]",
+          "[IN:GET_INFO_TRAFFIC how ' s traffic ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000264-english",
+        "ids": [
+          "htop-test-000264-english",
+          "htop-test-003743-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001275-english",
+        "ids": [
+          "htop-test-001275-english",
+          "htop-test-005385-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE cold ] will it be [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000620-english",
+        "ids": [
+          "htop-test-000620-english",
+          "htop-test-000662-english",
+          "htop-test-001205-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE hot ] will it be [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE hot ] will it be [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE hot ] will it be [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001697-english",
+        "ids": [
+          "htop-test-001697-english",
+          "htop-test-002531-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER how [SL:WEATHER_ATTRIBUTE hot ] will it get [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER How [SL:WEATHER_ATTRIBUTE hot ] will it get [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000441-english",
+        "ids": [
+          "htop-test-000441-english",
+          "htop-test-000919-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much longer ]",
+          "[IN:GET_TIMER how much longer ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002783-english",
+        "ids": [
+          "htop-test-002783-english",
+          "htop-test-005817-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM how much time before my alarm goes off ]",
+          "[IN:GET_ALARM How much time before my alarm goes off ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000037-english",
+        "ids": [
+          "htop-test-000037-english",
+          "htop-test-001225-english",
+          "htop-test-001245-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] do I have left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] do i have left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] do I have left ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000284-english",
+        "ids": [
+          "htop-test-000284-english",
+          "htop-test-000560-english",
+          "htop-test-000686-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] is left ]",
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] is left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] is left ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003797-english",
+        "ids": [
+          "htop-test-003797-english",
+          "htop-test-003816-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM how much time is left on alarm ]",
+          "[IN:GET_ALARM How much time is left on alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000100-english",
+        "ids": [
+          "htop-test-000100-english",
+          "htop-test-000430-english",
+          "htop-test-000602-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER how much time is left on my [SL:METHOD_TIMER timer ] ]",
+          "[IN:GET_TIMER How much time is left on my [SL:METHOD_TIMER timer ] ]",
+          "[IN:GET_TIMER How much time is left on my [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000265-english",
+        "ids": [
+          "htop-test-000265-english",
+          "htop-test-002496-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much time is left on my [SL:METHOD_TIMER timer ] ? ]",
+          "[IN:GET_TIMER how much time is left on my [SL:METHOD_TIMER timer ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001668-english",
+        "ids": [
+          "htop-test-001668-english",
+          "htop-test-006004-english"
+        ],
+        "targets": [
+          "[IN:GET_TIMER How much [SL:METHOD_TIMER time ] left ]",
+          "[IN:GET_TIMER how much [SL:METHOD_TIMER time ] left ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004419-english",
+        "ids": [
+          "htop-test-004419-english",
+          "htop-test-004503-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER is it [SL:WEATHER_ATTRIBUTE cold ] outside ? ]",
+          "[IN:GET_WEATHER Is it [SL:WEATHER_ATTRIBUTE cold ] outside ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000771-english",
+        "ids": [
+          "htop-test-000771-english",
+          "htop-test-000793-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER is it going to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER Is it going to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000409-english",
+        "ids": [
+          "htop-test-000409-english",
+          "htop-test-002880-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER is it going to [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER Is it going to [SL:WEATHER_ATTRIBUTE snow ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001470-english",
+        "ids": [
+          "htop-test-001470-english",
+          "htop-test-004646-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Is it supposed to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER is it supposed to [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000367-english",
+        "ids": [
+          "htop-test-000367-english",
+          "htop-test-006169-english"
+        ],
+        "targets": [
+          "[IN:LIKE_MUSIC like [SL:MUSIC_TYPE song ] ]",
+          "[IN:LIKE_MUSIC Like [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002897-english",
+        "ids": [
+          "htop-test-002897-english",
+          "htop-test-004287-english"
+        ],
+        "targets": [
+          "[IN:LIKE_MUSIC Like this [SL:MUSIC_TYPE song ] ]",
+          "[IN:LIKE_MUSIC like this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001122-english",
+        "ids": [
+          "htop-test-001122-english",
+          "htop-test-004262-english"
+        ],
+        "targets": [
+          "[IN:REMOVE_FROM_PLAYLIST_MUSIC never play this [SL:MUSIC_TYPE song ] again ]",
+          "[IN:REMOVE_FROM_PLAYLIST_MUSIC Never play this [SL:MUSIC_TYPE song ] again ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003223-english",
+        "ids": [
+          "htop-test-003223-english",
+          "htop-test-005268-english",
+          "htop-test-005324-english",
+          "htop-test-005610-english",
+          "htop-test-006095-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL Next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL Next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL NEXT ] [SL:MUSIC_TYPE SONG ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000098-english",
+        "ids": [
+          "htop-test-000098-english",
+          "htop-test-000452-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC pause [SL:MUSIC_TYPE music ] ]",
+          "[IN:PAUSE_MUSIC Pause [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000729-english",
+        "ids": [
+          "htop-test-000729-english",
+          "htop-test-006063-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC Pause [SL:MUSIC_TYPE song ] ]",
+          "[IN:PAUSE_MUSIC pause [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000666-english",
+        "ids": [
+          "htop-test-000666-english",
+          "htop-test-003284-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC Pause the [SL:MUSIC_TYPE music ] ]",
+          "[IN:PAUSE_MUSIC pause the [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000280-english",
+        "ids": [
+          "htop-test-000280-english",
+          "htop-test-002926-english",
+          "htop-test-004347-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER pause the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER Pause the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER Pause the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000141-english",
+        "ids": [
+          "htop-test-000141-english",
+          "htop-test-000155-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC Pause this [SL:MUSIC_TYPE song ] ]",
+          "[IN:PAUSE_MUSIC pause this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000464-english",
+        "ids": [
+          "htop-test-000464-english",
+          "htop-test-000781-english",
+          "htop-test-000806-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER Pause [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER pause [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER pause [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000259-english",
+        "ids": [
+          "htop-test-000259-english",
+          "htop-test-001263-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_GENRE country ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_GENRE country ] [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002472-english",
+        "ids": [
+          "htop-test-002472-english",
+          "htop-test-004124-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play me some [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play me some [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000443-english",
+        "ids": [
+          "htop-test-000443-english",
+          "htop-test-000471-english",
+          "htop-test-000736-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004673-english",
+        "ids": [
+          "htop-test-004673-english",
+          "htop-test-004973-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play my [SL:MUSIC_PLAYLIST_TITLE cleaning ] [SL:MUSIC_TYPE playlist ] ]",
+          "[IN:PLAY_MUSIC play my [SL:MUSIC_PLAYLIST_TITLE cleaning ] [SL:MUSIC_TYPE playlist ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000309-english",
+        "ids": [
+          "htop-test-000309-english",
+          "htop-test-002326-english",
+          "htop-test-002981-english",
+          "htop-test-004283-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC play [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] ]",
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_GENRE Rock ] [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001108-english",
+        "ids": [
+          "htop-test-001108-english",
+          "htop-test-002877-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC play [SL:MUSIC_ARTIST_NAME taylor swift ] ]",
+          "[IN:PLAY_MUSIC Play [SL:MUSIC_ARTIST_NAME Taylor Swift ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000663-english",
+        "ids": [
+          "htop-test-000663-english",
+          "htop-test-000814-english"
+        ],
+        "targets": [
+          "[IN:PREVIOUS_TRACK_MUSIC play the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] again ]",
+          "[IN:PREVIOUS_TRACK_MUSIC Play the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] again ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001206-english",
+        "ids": [
+          "htop-test-001206-english",
+          "htop-test-002669-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM Please turn off ]",
+          "[IN:SILENCE_ALARM please turn off ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000391-english",
+        "ids": [
+          "htop-test-000391-english",
+          "htop-test-001782-english"
+        ],
+        "targets": [
+          "[IN:PREVIOUS_TRACK_MUSIC Repeat [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:PREVIOUS_TRACK_MUSIC repeat [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001685-english",
+        "ids": [
+          "htop-test-001685-english",
+          "htop-test-001833-english"
+        ],
+        "targets": [
+          "[IN:REPLAY_MUSIC Repeat that [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:PREVIOUS_TRACK_MUSIC repeat that [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000352-english",
+        "ids": [
+          "htop-test-000352-english",
+          "htop-test-002223-english"
+        ],
+        "targets": [
+          "[IN:PREVIOUS_TRACK_MUSIC repeat the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:PREVIOUS_TRACK_MUSIC Repeat the [SL:ORDINAL last ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001301-english",
+        "ids": [
+          "htop-test-001301-english",
+          "htop-test-001741-english"
+        ],
+        "targets": [
+          "[IN:REPLAY_MUSIC repeat this [SL:MUSIC_TYPE song ] ]",
+          "[IN:REPLAY_MUSIC Repeat this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000798-english",
+        "ids": [
+          "htop-test-000798-english",
+          "htop-test-000974-english"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER Reset [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESTART_TIMER reset [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000133-english",
+        "ids": [
+          "htop-test-000133-english",
+          "htop-test-000168-english"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER Reset [SL:METHOD_TIMER timer ] . ]",
+          "[IN:RESTART_TIMER reset [SL:METHOD_TIMER timer ] . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000577-english",
+        "ids": [
+          "htop-test-000577-english",
+          "htop-test-002394-english",
+          "htop-test-002820-english"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER Restart the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESTART_TIMER restart the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESTART_TIMER restart the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001052-english",
+        "ids": [
+          "htop-test-001052-english",
+          "htop-test-001247-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER resume my [SL:METHOD_TIMER timer ] please ]",
+          "[IN:RESUME_TIMER Resume my [SL:METHOD_TIMER timer ] please ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000637-english",
+        "ids": [
+          "htop-test-000637-english",
+          "htop-test-000852-english",
+          "htop-test-001370-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER Resume the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume the [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000410-english",
+        "ids": [
+          "htop-test-000410-english",
+          "htop-test-000417-english",
+          "htop-test-000639-english",
+          "htop-test-000943-english",
+          "htop-test-001805-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER Resume [SL:METHOD_TIMER timer ] ]",
+          "[IN:RESUME_TIMER Resume [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000366-english",
+        "ids": [
+          "htop-test-000366-english",
+          "htop-test-005093-english"
+        ],
+        "targets": [
+          "[IN:RESUME_TIMER Resume [SL:METHOD_TIMER timer ] . ]",
+          "[IN:RESUME_TIMER resume [SL:METHOD_TIMER timer ] . ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000330-english",
+        "ids": [
+          "htop-test-000330-english",
+          "htop-test-003536-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 5 : 30 am ] ]",
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 5 : 30 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002152-english",
+        "ids": [
+          "htop-test-002152-english",
+          "htop-test-002734-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 5 am ] ]",
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 5 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-005604-english",
+        "ids": [
+          "htop-test-005604-english",
+          "htop-test-006453-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 7 am ] ]",
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 7 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000624-english",
+        "ids": [
+          "htop-test-000624-english",
+          "htop-test-002597-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set alarm [SL:DATE_TIME for 7 am tomorrow ] ]",
+          "[IN:CREATE_ALARM Set alarm [SL:DATE_TIME for 7 am tomorrow ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001725-english",
+        "ids": [
+          "htop-test-001725-english",
+          "htop-test-002031-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set an alarm ]",
+          "[IN:CREATE_ALARM Set an alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-005026-english",
+        "ids": [
+          "htop-test-005026-english",
+          "htop-test-005108-english",
+          "htop-test-005170-english",
+          "htop-test-006198-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 6 am ] ]",
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 6 am ] ]",
+          "[IN:CREATE_ALARM set an alarm [SL:DATE_TIME for 6 am ] ]",
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 6 AM ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000910-english",
+        "ids": [
+          "htop-test-000910-english",
+          "htop-test-002006-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set an alarm [SL:DATE_TIME for 7 : 30 am ] ]",
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 7 : 30 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000521-english",
+        "ids": [
+          "htop-test-000521-english",
+          "htop-test-004056-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM Set an alarm [SL:DATE_TIME for 7 am ] ]",
+          "[IN:CREATE_ALARM set an alarm [SL:DATE_TIME for 7 am ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000210-english",
+        "ids": [
+          "htop-test-000210-english",
+          "htop-test-005739-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER set my [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 30 minutes ] ]",
+          "[IN:CREATE_TIMER Set my [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 30 minutes ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000131-english",
+        "ids": [
+          "htop-test-000131-english",
+          "htop-test-000671-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER set [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 2 hours ] ]",
+          "[IN:CREATE_TIMER Set [SL:METHOD_TIMER timer ] [SL:DATE_TIME for 2 hours ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000727-english",
+        "ids": [
+          "htop-test-000727-english",
+          "htop-test-001319-english"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM set up an alarm ]",
+          "[IN:CREATE_ALARM Set up an alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000260-english",
+        "ids": [
+          "htop-test-000260-english",
+          "htop-test-000683-english",
+          "htop-test-004675-english",
+          "htop-test-005756-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM show [SL:AMOUNT all ] alarms ]",
+          "[IN:GET_ALARM show [SL:AMOUNT all ] alarms ]",
+          "[IN:GET_ALARM Show [SL:AMOUNT all ] alarms ]",
+          "[IN:GET_ALARM Show [SL:AMOUNT all ] alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000492-english",
+        "ids": [
+          "htop-test-000492-english",
+          "htop-test-001480-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM Show me my alarms ]",
+          "[IN:GET_ALARM show me my alarms ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000332-english",
+        "ids": [
+          "htop-test-000332-english",
+          "htop-test-003377-english",
+          "htop-test-003578-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC skip the [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC Skip the [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC Skip the [SL:ORDINAL next ] [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000050-english",
+        "ids": [
+          "htop-test-000050-english",
+          "htop-test-000099-english",
+          "htop-test-000233-english",
+          "htop-test-000267-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC Skip this [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC Skip this [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip this [SL:MUSIC_TYPE song ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip this [SL:MUSIC_TYPE song ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000087-english",
+        "ids": [
+          "htop-test-000087-english",
+          "htop-test-000669-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC Skip this [SL:MUSIC_TYPE track ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip this [SL:MUSIC_TYPE track ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001298-english",
+        "ids": [
+          "htop-test-001298-english",
+          "htop-test-003523-english"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC Skip [SL:MUSIC_TYPE track ] ]",
+          "[IN:SKIP_TRACK_MUSIC skip [SL:MUSIC_TYPE track ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000714-english",
+        "ids": [
+          "htop-test-000714-english",
+          "htop-test-002248-english"
+        ],
+        "targets": [
+          "[IN:SNOOZE_ALARM Snooze alarm ]",
+          "[IN:SNOOZE_ALARM snooze alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000312-english",
+        "ids": [
+          "htop-test-000312-english",
+          "htop-test-002870-english"
+        ],
+        "targets": [
+          "[IN:SNOOZE_ALARM Snooze my alarm ]",
+          "[IN:SNOOZE_ALARM snooze my alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000046-english",
+        "ids": [
+          "htop-test-000046-english",
+          "htop-test-004168-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER start [SL:METHOD_TIMER timer ] ]",
+          "[IN:CREATE_TIMER Start [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001082-english",
+        "ids": [
+          "htop-test-001082-english",
+          "htop-test-001619-english",
+          "htop-test-001643-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM stop alarm ]",
+          "[IN:SILENCE_ALARM stop alarm ]",
+          "[IN:SILENCE_ALARM Stop alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000203-english",
+        "ids": [
+          "htop-test-000203-english",
+          "htop-test-000587-english",
+          "htop-test-002718-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM stop my alarm ]",
+          "[IN:SILENCE_ALARM stop my alarm ]",
+          "[IN:SILENCE_ALARM Stop my alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000249-english",
+        "ids": [
+          "htop-test-000249-english",
+          "htop-test-002806-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM stop now ]",
+          "[IN:SILENCE_ALARM Stop now ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001105-english",
+        "ids": [
+          "htop-test-001105-english",
+          "htop-test-005650-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM Stop the alarm ]",
+          "[IN:SILENCE_ALARM stop the alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001645-english",
+        "ids": [
+          "htop-test-001645-english",
+          "htop-test-002268-english",
+          "htop-test-005085-english",
+          "htop-test-005361-english"
+        ],
+        "targets": [
+          "[IN:STOP_MUSIC Stop the [SL:MUSIC_TYPE music ] ]",
+          "[IN:STOP_MUSIC Stop the [SL:MUSIC_TYPE music ] ]",
+          "[IN:STOP_MUSIC stop the [SL:MUSIC_TYPE music ] ]",
+          "[IN:STOP_MUSIC stop the [SL:MUSIC_TYPE music ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000433-english",
+        "ids": [
+          "htop-test-000433-english",
+          "htop-test-000756-english",
+          "htop-test-000789-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER stop the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER Stop the [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER stop the [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000116-english",
+        "ids": [
+          "htop-test-000116-english",
+          "htop-test-000381-english"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER Stop [SL:METHOD_TIMER timer ] ]",
+          "[IN:PAUSE_TIMER stop [SL:METHOD_TIMER timer ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000230-english",
+        "ids": [
+          "htop-test-000230-english",
+          "htop-test-004216-english",
+          "htop-test-004396-english"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM turn off alarm ]",
+          "[IN:SILENCE_ALARM Turn off alarm ]",
+          "[IN:SILENCE_ALARM Turn off alarm ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002245-english",
+        "ids": [
+          "htop-test-002245-english",
+          "htop-test-005611-english"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC turn on the [SL:MUSIC_TYPE radio ] ]",
+          "[IN:PLAY_MUSIC Turn on the [SL:MUSIC_TYPE radio ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001673-english",
+        "ids": [
+          "htop-test-001673-english",
+          "htop-test-006392-english"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER Turn the [SL:METHOD_TIMER timer ] on ]",
+          "[IN:CREATE_TIMER turn the [SL:METHOD_TIMER timer ] on ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000206-english",
+        "ids": [
+          "htop-test-000206-english",
+          "htop-test-006354-english"
+        ],
+        "targets": [
+          "[IN:GET_ALARM What alarms are set ? ]",
+          "[IN:GET_ALARM what alarms are set ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002262-english",
+        "ids": [
+          "htop-test-002262-english",
+          "htop-test-003859-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER what is the [SL:DATE_TIME 10 day ] forecast ? ]",
+          "[IN:GET_WEATHER What is the [SL:DATE_TIME 10 day ] forecast ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002376-english",
+        "ids": [
+          "htop-test-002376-english",
+          "htop-test-005080-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER what is the forecast [SL:DATE_TIME for next week ] ? ]",
+          "[IN:GET_WEATHER What is the forecast [SL:DATE_TIME for next week ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002502-english",
+        "ids": [
+          "htop-test-002502-english",
+          "htop-test-005064-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the high temperature [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER what is the high temperature [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000053-english",
+        "ids": [
+          "htop-test-000053-english",
+          "htop-test-001899-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the temperature [SL:DATE_TIME for today ] ? ]",
+          "[IN:GET_WEATHER what is the temperature [SL:DATE_TIME for today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000272-english",
+        "ids": [
+          "htop-test-000272-english",
+          "htop-test-002088-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the temperature going to be [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER what is the temperature going to be [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003769-english",
+        "ids": [
+          "htop-test-003769-english",
+          "htop-test-003876-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER What is the temperature [SL:DATE_TIME tomorrow ] ]",
+          "[IN:GET_WEATHER what is the temperature [SL:DATE_TIME tomorrow ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000977-english",
+        "ids": [
+          "htop-test-000977-english",
+          "htop-test-001002-english",
+          "htop-test-005613-english"
+        ],
+        "targets": [
+          "[IN:GET_SUNSET What time does the sun set ]",
+          "[IN:GET_SUNSET What time does the sun set ]",
+          "[IN:GET_SUNSET what time does the sun set ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004336-english",
+        "ids": [
+          "htop-test-004336-english",
+          "htop-test-004530-english",
+          "htop-test-004573-english"
+        ],
+        "targets": [
+          "[IN:GET_SUNSET when is sunset ]",
+          "[IN:GET_SUNSET When is sunset ]",
+          "[IN:GET_SUNSET when is sunset ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000763-english",
+        "ids": [
+          "htop-test-000763-english",
+          "htop-test-002058-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER When will it [SL:WEATHER_ATTRIBUTE snow ] again ]",
+          "[IN:GET_WEATHER when will it [SL:WEATHER_ATTRIBUTE snow ] again ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000039-english",
+        "ids": [
+          "htop-test-000039-english",
+          "htop-test-005583-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will I need an [SL:WEATHER_ATTRIBUTE umbrella ] [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER Will i need an [SL:WEATHER_ATTRIBUTE umbrella ] [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001159-english",
+        "ids": [
+          "htop-test-001159-english",
+          "htop-test-005605-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000719-english",
+        "ids": [
+          "htop-test-000719-english",
+          "htop-test-004410-english",
+          "htop-test-006374-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER Will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER Will it be [SL:WEATHER_ATTRIBUTE sunny ] [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002218-english",
+        "ids": [
+          "htop-test-002218-english",
+          "htop-test-002250-english",
+          "htop-test-006271-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]",
+          "[IN:GET_WEATHER Will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000324-english",
+        "ids": [
+          "htop-test-000324-english",
+          "htop-test-002154-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ? ]",
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME today ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000908-english",
+        "ids": [
+          "htop-test-000908-english",
+          "htop-test-002252-english"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]",
+          "[IN:GET_WEATHER will it [SL:WEATHER_ATTRIBUTE rain ] [SL:DATE_TIME tomorrow ] ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001662-hinglish",
+        "ids": [
+          "htop-test-001662-hinglish",
+          "htop-test-001750-hinglish",
+          "htop-test-005187-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER [SL:DATE_TIME 15 minutes ke liye ] [SL:METHOD_TIMER timer ] set kare ]",
+          "[IN:CREATE_TIMER [SL:DATE_TIME 15 minutes ] ke liye [SL:METHOD_TIMER timer ] set kare ]",
+          "[IN:CREATE_TIMER [SL:DATE_TIME 15 minutes ke liye ] [SL:METHOD_TIMER timer ] set kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002502-hinglish",
+        "ids": [
+          "htop-test-002502-hinglish",
+          "htop-test-005064-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER [SL:DATE_TIME aaj ka ] high temperature kya hai ]",
+          "[IN:GET_WEATHER [SL:DATE_TIME aaj ] ka high temperature kya hai ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000246-hinglish",
+        "ids": [
+          "htop-test-000246-hinglish",
+          "htop-test-001021-hinglish"
+        ],
+        "targets": [
+          "[IN:START_SHUFFLE_MUSIC [SL:ORDINAL agle ] five [SL:MUSIC_TYPE songs ] ko shuffle kardo ]",
+          "[IN:START_SHUFFLE_MUSIC agle five [SL:MUSIC_TYPE songs ] ko shuffle kardo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001619-hinglish",
+        "ids": [
+          "htop-test-001619-hinglish",
+          "htop-test-002801-hinglish",
+          "htop-test-003764-hinglish",
+          "htop-test-003938-hinglish",
+          "htop-test-004647-hinglish",
+          "htop-test-005377-hinglish"
+        ],
+        "targets": [
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM alarm ko band karo ]",
+          "[IN:SILENCE_ALARM Alarm ko band karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000608-hinglish",
+        "ids": [
+          "htop-test-000608-hinglish",
+          "htop-test-005861-hinglish"
+        ],
+        "targets": [
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL current ] [SL:MUSIC_TYPE track ] ko skip karo ]",
+          "[IN:SKIP_TRACK_MUSIC [SL:ORDINAL current track ] ko skip karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-004777-hinglish",
+        "ids": [
+          "htop-test-004777-hinglish",
+          "htop-test-006510-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM [SL:PERIOD har ghante ] ke liye alarm set kare ]",
+          "[IN:CREATE_ALARM [SL:PERIOD Har ghante ] ke liye alarm set kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000225-hinglish",
+        "ids": [
+          "htop-test-000225-hinglish",
+          "htop-test-006489-hinglish"
+        ],
+        "targets": [
+          "[IN:DISLIKE_MUSIC Is [SL:MUSIC_TYPE song ] ko dislike kare ]",
+          "[IN:DISLIKE_MUSIC is [SL:MUSIC_TYPE song ] ko dislike kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001900-hinglish",
+        "ids": [
+          "htop-test-001900-hinglish",
+          "htop-test-003596-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM [SL:DATE_TIME kal subha 9 baje ke liye ] alarm set karen ]",
+          "[IN:CREATE_ALARM [SL:DATE_TIME Kal subha 9 baje ke liye ] alarm set karen ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000324-hinglish",
+        "ids": [
+          "htop-test-000324-hinglish",
+          "htop-test-002154-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER Kya [SL:DATE_TIME aaj ] [SL:WEATHER_ATTRIBUTE baarish ] hogi ? ]",
+          "[IN:GET_WEATHER kya [SL:DATE_TIME aaj ] [SL:WEATHER_ATTRIBUTE baarish ] hogi ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000537-hinglish",
+        "ids": [
+          "htop-test-000537-hinglish",
+          "htop-test-000538-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_WEATHER kya [SL:DATE_TIME aaj ] [SL:WEATHER_ATTRIBUTE barf ] padne wali hai ? ]",
+          "[IN:CREATE_REMINDER kya [SL:DATE_TIME aaj ] [SL:TODO barf ] padne wali hai ? ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001792-hinglish",
+        "ids": [
+          "htop-test-001792-hinglish",
+          "htop-test-003997-hinglish"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER [SL:ORDINAL Last ] [SL:METHOD_TIMER timer ] ko repeat karo ]",
+          "[IN:RESTART_TIMER [SL:ORDINAL last ] [SL:METHOD_TIMER timer ] ko repeat karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002382-hinglish",
+        "ids": [
+          "htop-test-002382-hinglish",
+          "htop-test-002657-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_INFO_TRAFFIC [SL:LOCATION [IN:GET_LOCATION [SL:LOCATION_USER Mere ] [SL:SEARCH_RADIUS aas paas ] ] ] traffic kaisa hai ]",
+          "[IN:GET_INFO_TRAFFIC [SL:LOCATION [IN:GET_LOCATION [SL:LOCATION_USER mere ] [SL:SEARCH_RADIUS aas paas ] ] ] traffic kaisa hai ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000037-hinglish",
+        "ids": [
+          "htop-test-000037-hinglish",
+          "htop-test-001225-hinglish",
+          "htop-test-001245-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_TIMER mere paas kitna [SL:METHOD_TIMER time ] bacha hai ]",
+          "[IN:GET_TIMER mere paas kitna [SL:METHOD_TIMER time ] bacha hai ]",
+          "[IN:GET_TIMER Mere paas kitna [SL:METHOD_TIMER time ] bacha hai ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-001830-hinglish",
+        "ids": [
+          "htop-test-001830-hinglish",
+          "htop-test-002346-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_ALARM mujhe [SL:DATE_TIME kal ke liye ] alarms dikhao ]",
+          "[IN:GET_ALARM mujhe [SL:ALARM_NAME [IN:GET_TIME [SL:DATE_TIME kal ke liye ] ] ] alarms dikhao ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000452-hinglish",
+        "ids": [
+          "htop-test-000452-hinglish",
+          "htop-test-003284-hinglish"
+        ],
+        "targets": [
+          "[IN:PAUSE_MUSIC [SL:MUSIC_TYPE Music ] ko pause kare ]",
+          "[IN:PAUSE_MUSIC [SL:MUSIC_TYPE music ] ko pause kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002981-hinglish",
+        "ids": [
+          "htop-test-002981-hinglish",
+          "htop-test-004283-hinglish"
+        ],
+        "targets": [
+          "[IN:PLAY_MUSIC [SL:MUSIC_GENRE rock ] [SL:MUSIC_TYPE music ] play kare ]",
+          "[IN:PLAY_MUSIC [SL:MUSIC_GENRE Rock ] [SL:MUSIC_TYPE music ] play kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-003375-hinglish",
+        "ids": [
+          "htop-test-003375-hinglish",
+          "htop-test-004675-hinglish"
+        ],
+        "targets": [
+          "[IN:GET_ALARM [SL:AMOUNT Sabhi ] alarms dikhao ]",
+          "[IN:GET_ALARM [SL:AMOUNT sabhi ] alarms dikhao ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-002674-hinglish",
+        "ids": [
+          "htop-test-002674-hinglish",
+          "htop-test-003902-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_TIMER [SL:METHOD_TIMER stopwatch ] ko start karo ]",
+          "[IN:CREATE_TIMER [SL:METHOD_TIMER Stopwatch ] ko start karo ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000941-hinglish",
+        "ids": [
+          "htop-test-000941-hinglish",
+          "htop-test-005170-hinglish",
+          "htop-test-005558-hinglish"
+        ],
+        "targets": [
+          "[IN:CREATE_ALARM [SL:DATE_TIME subah 6 baje ke liye ] alarm set kare ]",
+          "[IN:CREATE_ALARM [SL:DATE_TIME Subah 6 baje ke liye ] alarm set kare ]",
+          "[IN:CREATE_ALARM [SL:DATE_TIME subah 6 baje ke liye ] alarm set kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000006-hinglish",
+        "ids": [
+          "htop-test-000006-hinglish",
+          "htop-test-000512-hinglish"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER Timer ] ko cancel kijiye ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko cancel kijiye ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000514-hinglish",
+        "ids": [
+          "htop-test-000514-hinglish",
+          "htop-test-001060-hinglish",
+          "htop-test-001102-hinglish",
+          "htop-test-001642-hinglish"
+        ],
+        "targets": [
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER Timer ] ko delete kare ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko delete kare ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko delete kare ]",
+          "[IN:DELETE_TIMER [SL:METHOD_TIMER timer ] ko delete kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000280-hinglish",
+        "ids": [
+          "htop-test-000280-hinglish",
+          "htop-test-000464-hinglish",
+          "htop-test-000781-hinglish",
+          "htop-test-004347-hinglish"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER Timer ] ko pause kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko pause kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko pause kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko pause kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000577-hinglish",
+        "ids": [
+          "htop-test-000577-hinglish",
+          "htop-test-002394-hinglish",
+          "htop-test-002820-hinglish",
+          "htop-test-004501-hinglish"
+        ],
+        "targets": [
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER Timer ] ko restart kare ]",
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER timer ] ko restart kare ]",
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER timer ] ko restart kare ]",
+          "[IN:RESTART_TIMER [SL:METHOD_TIMER timer ] ko restart kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000223-hinglish",
+        "ids": [
+          "htop-test-000223-hinglish",
+          "htop-test-000381-hinglish",
+          "htop-test-000756-hinglish"
+        ],
+        "targets": [
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER Timer ] ko stop kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko stop kare ]",
+          "[IN:PAUSE_TIMER [SL:METHOD_TIMER timer ] ko stop kare ]"
+        ]
+      },
+      {
+        "representative_id": "htop-test-000495-hinglish",
+        "ids": [
+          "htop-test-000495-hinglish",
+          "htop-test-000677-hinglish"
+        ],
+        "targets": [
+          "[IN:ADD_TIME_TIMER [SL:METHOD_TIMER timer ] me [SL:DATE_TIME 2 minutes ] add karen ]",
+          "[IN:CREATE_TIMER [SL:METHOD_TIMER timer ] me [SL:DATE_TIME 2 minutes ] add karen ]"
+        ]
+      }
+    ]
+  },
+  "paired_comparison": {
+    "original": {
+      "overall": {
+        "metric": "complete_tree_exact_match",
+        "difference_direction": "candidate_minus_baseline",
+        "cluster_key": "group_id (normalized English source)",
+        "n": 13026,
+        "clusters": 6302,
+        "replicates": 2000,
+        "seed": 42,
+        "confidence": 0.95,
+        "baseline_exact_match": 0.09903270382312299,
+        "candidate_exact_match": 0.5488254260709351,
+        "difference": 0.4497927222478121,
+        "ci_low": 0.4393329697035394,
+        "ci_high": 0.46029510338887586,
+        "warning": null
+      },
+      "by_language": {
+        "english": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 6513,
+          "clusters": 6302,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.12267772148011669,
+          "candidate_exact_match": 0.6292031321971442,
+          "difference": 0.5065254107170275,
+          "ci_low": 0.49390199681634755,
+          "ci_high": 0.5193994052885386,
+          "warning": null
+        },
+        "hinglish": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 6513,
+          "clusters": 6302,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.07538768616612929,
+          "candidate_exact_match": 0.46844771994472595,
+          "difference": 0.39306003377859666,
+          "ci_low": 0.3800306420956713,
+          "ci_high": 0.40586659002029174,
+          "warning": null
+        }
+      },
+      "by_domain": {
+        "alarm": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 2390,
+          "clusters": 1144,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.16150627615062763,
+          "candidate_exact_match": 0.6163179916317991,
+          "difference": 0.45481171548117155,
+          "ci_low": 0.43085792404294193,
+          "ci_high": 0.4772194834934164,
+          "warning": null
+        },
+        "event": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 922,
+          "clusters": 460,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.07809110629067245,
+          "candidate_exact_match": 0.559652928416486,
+          "difference": 0.48156182212581344,
+          "ci_low": 0.4426375820491873,
+          "ci_high": 0.521598272138229,
+          "warning": null
+        },
+        "messaging": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1012,
+          "clusters": 495,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.09980237154150198,
+          "candidate_exact_match": 0.6383399209486166,
+          "difference": 0.5385375494071146,
+          "ci_low": 0.5039836685006007,
+          "ci_high": 0.5735301426733715,
+          "warning": null
+        },
+        "music": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1446,
+          "clusters": 676,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.08644536652835408,
+          "candidate_exact_match": 0.5345781466113416,
+          "difference": 0.44813278008298757,
+          "ci_low": 0.4172385216231663,
+          "ci_high": 0.4798945604051681,
+          "warning": null
+        },
+        "navigation": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1996,
+          "clusters": 996,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.09218436873747494,
+          "candidate_exact_match": 0.4273547094188377,
+          "difference": 0.3351703406813627,
+          "ci_low": 0.31010771543086174,
+          "ci_high": 0.3592219599358878,
+          "warning": null
+        },
+        "reminder": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1930,
+          "clusters": 965,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.026424870466321245,
+          "candidate_exact_match": 0.36373056994818653,
+          "difference": 0.3373056994818653,
+          "ci_low": 0.3139896373056995,
+          "ci_high": 0.3611528497409326,
+          "warning": null
+        },
+        "timer": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1386,
+          "clusters": 637,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.09379509379509379,
+          "candidate_exact_match": 0.5454545454545454,
+          "difference": 0.45165945165945165,
+          "ci_low": 0.4177745098039216,
+          "ci_high": 0.48508680946219623,
+          "warning": null
+        },
+        "weather": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1944,
+          "clusters": 929,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.12397119341563786,
+          "candidate_exact_match": 0.73559670781893,
+          "difference": 0.6116255144032922,
+          "ci_low": 0.5859016869433537,
+          "ci_high": 0.6376046985901017,
+          "warning": null
+        }
+      }
+    },
+    "deduplicated": {
+      "overall": {
+        "metric": "complete_tree_exact_match",
+        "difference_direction": "candidate_minus_baseline",
+        "cluster_key": "group_id (normalized English source)",
+        "n": 12692,
+        "clusters": 6302,
+        "replicates": 2000,
+        "seed": 42,
+        "confidence": 0.95,
+        "baseline_exact_match": 0.0958871730223763,
+        "candidate_exact_match": 0.5416797982981406,
+        "difference": 0.44579262527576424,
+        "ci_low": 0.4356259812691506,
+        "ci_high": 0.45611359231577486,
+        "warning": null
+      },
+      "by_language": {
+        "english": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 6302,
+          "clusters": 6302,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.11885115836242463,
+          "candidate_exact_match": 0.621231355125357,
+          "difference": 0.5023801967629324,
+          "ci_low": 0.4898444938114884,
+          "ci_high": 0.5153919390669629,
+          "warning": null
+        },
+        "hinglish": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 6390,
+          "clusters": 6250,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.07323943661971831,
+          "candidate_exact_match": 0.46322378716744916,
+          "difference": 0.38998435054773084,
+          "ci_low": 0.37789959573494974,
+          "ci_high": 0.40231937791036787,
+          "warning": null
+        }
+      },
+      "by_domain": {
+        "alarm": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 2299,
+          "clusters": 1144,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.15397999130056547,
+          "candidate_exact_match": 0.6089604175728578,
+          "difference": 0.4549804262722923,
+          "ci_low": 0.43154830214218454,
+          "ci_high": 0.47718754156014953,
+          "warning": null
+        },
+        "event": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 921,
+          "clusters": 460,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.0781758957654723,
+          "candidate_exact_match": 0.5591748099891423,
+          "difference": 0.4809989142236699,
+          "ci_low": 0.4423913043478261,
+          "ci_high": 0.5200868621064061,
+          "warning": null
+        },
+        "messaging": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1000,
+          "clusters": 495,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.099,
+          "candidate_exact_match": 0.636,
+          "difference": 0.537,
+          "ci_low": 0.5029880478087649,
+          "ci_high": 0.573280484850669,
+          "warning": null
+        },
+        "music": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1380,
+          "clusters": 676,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.08115942028985507,
+          "candidate_exact_match": 0.5217391304347826,
+          "difference": 0.4405797101449275,
+          "ci_low": 0.4104770869670389,
+          "ci_high": 0.472701802507837,
+          "warning": null
+        },
+        "navigation": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1992,
+          "clusters": 996,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.09136546184738956,
+          "candidate_exact_match": 0.42620481927710846,
+          "difference": 0.3348393574297189,
+          "ci_low": 0.30973028855754514,
+          "ci_high": 0.35908173592528714,
+          "warning": null
+        },
+        "reminder": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1929,
+          "clusters": 965,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.026438569206842923,
+          "candidate_exact_match": 0.36391912908242613,
+          "difference": 0.33748055987558323,
+          "ci_low": 0.31431535269709543,
+          "ci_high": 0.3615181105282394,
+          "warning": null
+        },
+        "timer": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1284,
+          "clusters": 637,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.0911214953271028,
+          "candidate_exact_match": 0.5257009345794392,
+          "difference": 0.43457943925233644,
+          "ci_low": 0.40202547042803183,
+          "ci_high": 0.4682875188664885,
+          "warning": null
+        },
+        "weather": {
+          "metric": "complete_tree_exact_match",
+          "difference_direction": "candidate_minus_baseline",
+          "cluster_key": "group_id (normalized English source)",
+          "n": 1887,
+          "clusters": 929,
+          "replicates": 2000,
+          "seed": 42,
+          "confidence": 0.95,
+          "baseline_exact_match": 0.12188659247482776,
+          "candidate_exact_match": 0.730259671436142,
+          "difference": 0.6083730789613142,
+          "ci_low": 0.5839405278713621,
+          "ci_high": 0.6343915343915344,
+          "warning": null
+        }
+      }
+    }
+  }
+}

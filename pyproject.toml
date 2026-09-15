@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "udgam-hinglish"
+version = "0.1.0"
+description = "Local Hinglish and English command parsing with the Udgam Labs adapter"
+requires-python = ">=3.11"
+readme = "README.md"
+authors = [{name = "Udgam Labs"}]
+dependencies = []
+
+[project.optional-dependencies]
+# These are the observed local inference versions, not a fresh-install claim.
+inference = [
+  "torch==2.14.0", "transformers==5.16.1", "peft==0.20.0",
+  "accelerate==1.14.0", "tokenizers==0.23.2", "safetensors==0.8.0",
+  "huggingface-hub==1.30.0",
+]
+
+[project.scripts]
+udgam-hinglish = "udgam_hinglish.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+udgam_hinglish = ["VENDORED_SOURCES.json"]

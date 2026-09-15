@@ -1,0 +1,91 @@
+{
+  "status": "frozen",
+  "protocol": "stage2-v1",
+  "selection_data": "validation_only",
+  "test_data_sha256": [
+    "27b810557f30badbf98729ba71a6388798c2e8744d182402a206be9488c2e48f"
+  ],
+  "allowed_runs": [
+    {
+      "model_id": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "adapter_sha256": null,
+      "shots": 4
+    },
+    {
+      "model_id": "KingNish/Qwen3-0.6b-hinglish-2",
+      "revision": "fecc11f386ae5d30f84cfd8bb90b1512b5ba6188",
+      "adapter_sha256": null,
+      "shots": 4
+    },
+    {
+      "model_id": "udgam/char-tfidf-nearest-neighbour",
+      "revision": "1f72ea41c3c09efc9742d4546ab37ef100774fa7ac22e7f8b40d013d78022979",
+      "adapter_sha256": null,
+      "shots": 0
+    },
+    {
+      "model_id": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "adapter_sha256": "85be8189b09cefa38dc7e50723042d606af19d9f2ad8ceab1cdb123f5eec65af",
+      "shots": 4
+    }
+  ],
+  "run_specs": [
+    {
+      "label": "base",
+      "model_id": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "adapter_sha256": null,
+      "shots": 4
+    },
+    {
+      "label": "kingnish",
+      "model_id": "KingNish/Qwen3-0.6b-hinglish-2",
+      "revision": "fecc11f386ae5d30f84cfd8bb90b1512b5ba6188",
+      "adapter_sha256": null,
+      "shots": 4
+    },
+    {
+      "label": "nearest",
+      "model_id": "udgam/char-tfidf-nearest-neighbour",
+      "revision": "1f72ea41c3c09efc9742d4546ab37ef100774fa7ac22e7f8b40d013d78022979",
+      "adapter_sha256": null,
+      "shots": 0
+    },
+    {
+      "label": "candidate",
+      "model_id": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "adapter_sha256": "85be8189b09cefa38dc7e50723042d606af19d9f2ad8ceab1cdb123f5eec65af",
+      "shots": 4,
+      "adapter": "runs/stage1/human-only-seed20260912/best-adapter"
+    }
+  ],
+  "plan_sha256": "9ced2f7ec2c620587f0215f0e7445c3bc0db3608cab471e05cf4f9402a8aa288",
+  "decision_sha256": "96e11abc8e94d606079a530d1772cf5248d20ac1fbc9359df753171d55f0d55d",
+  "train_sha256": "a5c62edc4bb8e0b395b95c991fc364bf1ad25850d7a46c2bf6edf503f494dc11",
+  "code_sha256": {
+    "udgam_commands/__init__.py": "74a0332ccc26a81c53c25ab57a88ff600c7ea4644ac7465bacb0fde664946b4a",
+    "udgam_commands/prompts.py": "c2b95d095c6864238dd76cbc0418fefd2392d515b470e4454f8d6d5e25b67d5b",
+    "udgam_commands/retrieval.py": "1f72ea41c3c09efc9742d4546ab37ef100774fa7ac22e7f8b40d013d78022979",
+    "udgam_commands/runtime.py": "6136b6cab813441b304b7ee4164165cd04d7dfa87e3e411942affc164a1e8879",
+    "udgam_commands/scoring.py": "de7ee32d346a71dd042cff469b0f17457272bf96e1e335dd1f8c0cef23476e97",
+    "udgam_commands/top.py": "2e70d1eff5c0e291ca11ce557c8fde39fb43cbb691fd547e200f1510d0eecf3b",
+    "scripts/predict.py": "7895c6cc6e1c4c2fd610777aafcf2b6bd04c373d92abcb8e457531ec1fe2e0dc",
+    "scripts/train.py": "6206901f8f1e7c6c3a60abf9ee5f60c962a1620447b03308d41719c636caffa9",
+    "scripts/stage1.py": "1811871aed6ea0d6fe8a22e14008f30aec4d173d521755aaf74fc3c591a2d93b",
+    "scripts/stage2.py": "bbd00e13de15d07852db5439b83b9fda8d130384b1a9bca28cee8c397001e462"
+  },
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "batch_size": 16,
+  "seed": 20260912,
+  "max_new_tokens": 768,
+  "max_input_tokens": 4096,
+  "local_files_only": true,
+  "one_logical_final_run_per_label": true,
+  "interrupted_identical_prediction_resume_allowed": true,
+  "publication_authorized": false,
+  "tuning_after_freeze_authorized": false
+}
