@@ -8,7 +8,7 @@ An English and Romanized Hinglish command parser built by **Udgam Labs**, a fron
 
 For example, **“bed time ka alarm kab hai?”** becomes an alarm lookup with **“bed time”** as the alarm name. Your app handles the lookup, permissions and response. The model does not set alarms, send messages or take actions.
 
-**Release preview:** these files are being prepared for review. Private staging repositories are [GitHub: UdgamLabs/hinglish-commands](https://github.com/UdgamLabs/hinglish-commands) and [Hugging Face: UdgamLabs/hinglish-commands-0.6b](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b). Public release is pending; repository access may be restricted until publication.
+**Release preview:** these files are being prepared for review. Private staging repositories are [GitHub: UdgamLabs/hinglish-commands-0.6b](https://github.com/UdgamLabs/hinglish-commands-0.6b) and [Hugging Face: UdgamLabs/hinglish-commands-0.6b](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b). Public release is pending; repository access may be restricted until publication.
 
 [What it does](#what-it-does) · [Recorded examples](#see-the-difference) · [Benchmarks](#what-improved) · [Get started](#get-started) · [Limits](#know-the-limits) · [Licences](#licences-and-credit)
 
