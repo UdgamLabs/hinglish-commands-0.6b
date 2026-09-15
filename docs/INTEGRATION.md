@@ -34,7 +34,7 @@ parser = CommandParser.from_hub(
 )
 ```
 
-The release commit placeholder must be replaced by an actual 40-character lowercase commit hash. The method downloads a public adapter snapshot at that commit; `allow_base_download=True` separately permits the pinned base download. It does not discover a newest release or accept `main`. The adapter snapshot request explicitly omits Hub credentials; the optional base download uses the preserved loader's normal Hugging Face configuration. Downloads occur only during loading.
+The shown 40-character commit identifies the verified complete adapter package. The method downloads a public adapter snapshot at that commit; `allow_base_download=True` separately permits the pinned base download. It does not discover a newest release or accept `main`. The adapter snapshot request explicitly omits Hub credentials; the optional base download uses the preserved loader's normal Hugging Face configuration. Downloads occur only during loading.
 
 Adapter downloads use Hugging Face's explicit `local_dir` mode to materialize regular files under `HF_HOME/udgam-packages/<org>/<repo>/<commit>/`. Normal Hub cache snapshots contain symlinks into a sibling blob directory, which the preserved export loader correctly rejects as paths outside its package. Materialization retains those containment and byte-integrity checks rather than weakening them. Set `cache_dir=` to override the parent directory of `udgam-packages/`; otherwise the usual `HF_HOME` (or XDG default) is used. The destination and its ancestors must not be symlinks. The base model independently uses the normal Hugging Face cache configured by the environment.
 
