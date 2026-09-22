@@ -5,7 +5,7 @@
   <path d="M44 61H1156M44 435H1156" stroke="#b9c9be"/>
   <g fill="#182724" font-family="Trebuchet MS,Verdana,sans-serif">
     <text x="44" y="40" font-size="13" font-weight="bold" letter-spacing="2">UDGAM LABS</text>
-    <text x="1156" y="40" text-anchor="end" font-size="11" letter-spacing="1">QWEN3-0.6B ADAPTER / RELEASE PREVIEW</text>
+    <text x="1156" y="40" text-anchor="end" font-size="11" letter-spacing="1">QWEN3-0.6B ADAPTER / EXPERIMENTAL RELEASE</text>
     <text x="44" y="113" font-size="11" letter-spacing="1.5" fill="#0b6448">ENGLISH + ROMANIZED HINGLISH</text>
     <text x="44" y="181" font-family="Georgia,serif" font-size="56" letter-spacing="-2">Everyday words.</text>
     <text x="44" y="239" font-family="Georgia,serif" font-size="56" font-style="italic" letter-spacing="-2" fill="#0b6448">Structured intent.</text>

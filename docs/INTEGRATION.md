@@ -38,7 +38,7 @@ The shown 40-character commit identifies the verified complete adapter package. 
 
 Adapter downloads use Hugging Face's explicit `local_dir` mode to materialize regular files under `HF_HOME/udgam-packages/<org>/<repo>/<commit>/`. Normal Hub cache snapshots contain symlinks into a sibling blob directory, which the preserved export loader correctly rejects as paths outside its package. Materialization retains those containment and byte-integrity checks rather than weakening them. Set `cache_dir=` to override the parent directory of `udgam-packages/`; otherwise the usual `HF_HOME` (or XDG default) is used. The destination and its ancestors must not be symlinks. The base model independently uses the normal Hugging Face cache configured by the environment.
 
-For a private repository, explicitly set `token=True` to use your existing Hugging Face authentication, or add CLI `--use-auth`. The default is `token=False`. The SDK accepts only this boolean switch, never a token string, and does not create credentials or persist them. Access must already be configured through Hugging Face tooling.
+The public Udgam release does not require Hub authentication. For other, private repositories, explicitly set `token=True` to use your existing Hugging Face authentication, or add CLI `--use-auth`. The default is `token=False`. The SDK accepts only this boolean switch, never a token string, and does not create credentials or persist them. Access must already be configured through Hugging Face tooling.
 
 ## Result contract
 

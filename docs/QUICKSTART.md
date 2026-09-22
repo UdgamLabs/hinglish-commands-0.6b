@@ -50,7 +50,7 @@ udgam-hinglish parse \
 
 The shown commit identifies the complete reviewed adapter package; `main` and tags are rejected. `--repo-id` opts into downloading that public adapter snapshot. `--allow-base-download` separately permits startup download of the exact pinned Qwen base. Neither is needed for a complete cached local setup. The adapter snapshot request omits Hub credentials; the optional base download uses the preserved loader's normal Hugging Face configuration. The SDK does not import code from the downloaded model directory.
 
-For a private Hub repository you already have access to, add `--use-auth` to explicitly use your existing Hugging Face authentication. Configure that authentication through Hugging Face tooling; the CLI provides no token-string option and does not save credentials.
+The public Udgam release does not require Hub authentication. If you adapt these instructions for a private Hub repository you already have access to, add `--use-auth` to explicitly use your existing Hugging Face authentication. Configure that authentication through Hugging Face tooling; the CLI provides no token-string option and does not save credentials.
 
 Hub loading materializes a self-contained adapter package under `HF_HOME/udgam-packages/<org>/<repo>/<commit>/` (the standard Hugging Face home is used if `HF_HOME` is unset). This avoids the external blob symlinks in normal Hub snapshots while retaining all package integrity checks. Keep that directory writable and free of symlinks. The cached base model still uses the normal Hugging Face cache.
 

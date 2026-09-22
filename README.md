@@ -8,7 +8,7 @@ An English and Romanized Hinglish command parser built by **Udgam Labs**, a fron
 
 For example, **“bed time ka alarm kab hai?”** becomes an alarm lookup with **“bed time”** as the alarm name. Your app handles the lookup, permissions and response. The model does not set alarms, send messages or take actions.
 
-**Release preview:** these files are being prepared for review. Private staging repositories are [GitHub: UdgamLabs/hinglish-commands-0.6b](https://github.com/UdgamLabs/hinglish-commands-0.6b) and [Hugging Face: UdgamLabs/hinglish-commands-0.6b](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b). Public release is pending; repository access may be restricted until publication.
+**Public experimental release:** explore the [visual walkthrough](https://udgamlabs.github.io/hinglish-commands-0.6b/), find the code and documentation on [GitHub](https://github.com/UdgamLabs/hinglish-commands-0.6b), and download the adapter from [Hugging Face](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b).
 
 [What it does](#what-it-does) · [Recorded examples](#see-the-difference) · [Benchmarks](#what-improved) · [Get started](#get-started) · [Limits](#know-the-limits) · [Licences](#licences-and-credit)
 
@@ -20,7 +20,7 @@ The model identifies **what someone is asking for** and **which words describe t
 
 This is a task-specific LoRA adapter for [Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B). We trained it on human-labelled English/Hinglish command pairs and kept the training recipe, comparisons and mistakes available for review.
 
-- **For people exploring the model:** open the [visual walkthrough](docs/index.html) for recorded examples and a plain-language explanation.
+- **For people exploring the model:** open the [visual walkthrough](https://udgamlabs.github.io/hinglish-commands-0.6b/) for recorded examples and a plain-language explanation.
   GitHub displays HTML as source. To view it, download this repository and open `docs/index.html`, or run `python -m http.server 8876 --bind 127.0.0.1 --directory docs` from the checkout and visit `http://127.0.0.1:8876/`.
 - **For developers:** use the [Python quickstart](docs/QUICKSTART.md), [integration guide](docs/INTEGRATION.md), or the local browser demo.
 - **For researchers:** start with the [benchmark report](docs/BENCHMARKS.md) and [model card](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b).
@@ -53,7 +53,7 @@ The reference asks to **create an alarm**. The tuned model incorrectly predicts 
 
 The original model got this one right. Recorded example: `htop-test-003763-hinglish`. A correctly formatted result can still have the wrong meaning.
 
-The [interactive walkthrough](docs/index.html#examples) shows the saved output, its ordered JSON representation and the unchanged human reference. A parser proposes an interpretation; your application must decide whether to use it.
+The [interactive walkthrough](https://udgamlabs.github.io/hinglish-commands-0.6b/#examples) shows the saved output, its ordered JSON representation and the unchanged human reference. A parser proposes an interpretation; your application must decide whether to use it.
 
 ## What improved
 
@@ -84,7 +84,7 @@ source .venv/bin/activate
 python -m pip install -e '.[inference]'
 ```
 
-Download the reviewed **adapter package** from the Hugging Face release once it is available. Keep the whole package, including its configuration, tokenizer, schema and retrieval data.
+Download the reviewed **adapter package** from the [Hugging Face release](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b). Keep the whole package, including its configuration, tokenizer, schema and retrieval data.
 
 ```python
 from udgam_hinglish import CommandParser
@@ -106,7 +106,7 @@ To try your own text in the local browser demo:
 udgam-hinglish demo --model-dir /path/to/adapter-package
 ```
 
-The local demo runs real inference on your computer. The [static walkthrough](docs/index.html) only displays recorded examples.
+The local demo runs real inference on your computer. The [static walkthrough](https://udgamlabs.github.io/hinglish-commands-0.6b/) only displays recorded examples.
 
 ## Know the limits
 
@@ -121,7 +121,7 @@ The local demo runs real inference on your computer. The [static walkthrough](do
 
 The work builds on **Qwen3-0.6B**, **Google’s Hinglish-TOP** and the underlying **TOPv2** work. Keep their original notices and attribution.
 
-Proposed release terms are **CC BY-SA 4.0** for the adapter contribution and prepared/retrieval data, with Qwen and Google Apache notices preserved; **Apache 2.0** for Udgam-written code. The complete package is **not Apache-only**. Publication terms remain subject to the release review; see the [licence review](docs/LICENSES.md) and [model card](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b).
+Release terms are **CC BY-SA 4.0** for the adapter contribution and prepared/retrieval data, with Qwen and Google Apache notices preserved; **Apache 2.0** for Udgam-written code. The complete package is **not Apache-only**. See the [licences and attribution](docs/LICENSES.md) and [model card](https://huggingface.co/UdgamLabs/hinglish-commands-0.6b).
 
 ## Explore the work
 
@@ -131,7 +131,7 @@ Proposed release terms are **CC BY-SA 4.0** for the adapter contribution and pre
 | [Benchmarks](docs/BENCHMARKS.md) | Before/after results and evaluation method |
 | [Quickstart](docs/QUICKSTART.md) | Installation, model loading and local demo |
 | [Integration guide](docs/INTEGRATION.md) | The Python interface and handling outputs |
-| [Visual walkthrough](docs/index.html) | Recorded examples in plain language and JSON |
+| [Visual walkthrough](https://udgamlabs.github.io/hinglish-commands-0.6b/) | Recorded examples in plain language and JSON |
 | [Udgam Labs](https://www.udgamlabs.com/) | The lab behind the experiment |
 
 Built by [Udgam Labs](https://github.com/UdgamLabs). We welcome reproducible bug reports and contributions that make this narrow task more useful. Please remove personal information from examples before sharing them.

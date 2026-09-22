@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <!--
-Release presentation for ordinary readers and developers. Local draft only.
+Public experimental release presentation for ordinary readers and developers.
 Design context: the existing Udgam demo's forest green, pale paper and ink palette.
 The company name is plain text, not a newly invented official logo.
 All examples are stored adapter predictions. Explanations are editorial, JSON is
@@ -20,7 +20,7 @@ One editorial direction follows the concrete parent brief and user autonomy.
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="release-note">Release preview <span aria-hidden="true">/</span> Prepared for review. Publication is pending.</div>
+  <div class="release-note">Public experimental release <span aria-hidden="true">/</span> Recorded examples. Measured results. Known limitations.</div>
   <header class="site-header shell">
     <a class="wordmark" href="https://github.com/UdgamLabs" aria-label="Udgam Labs on GitHub">UDGAM LABS<span>Frontier technology lab · India</span></a>
     <nav aria-label="Main navigation">
@@ -124,7 +124,7 @@ One editorial direction follows the concrete parent brief and user autonomy.
             <li><span class="step-number">2</span><div><h3>The model proposes a structure.</h3><p>It labels the intent and details, preserving an ordered tree. A time phrase such as “kal dopahar” remains a text span.</p></div></li>
             <li><span class="step-number">3</span><div><h3>Your app decides what to do.</h3><p>Resolve dates and names, check permissions, ask for confirmation, and handle mistakes. The model itself executes no actions.</p></div></li>
           </ol>
-          <a class="text-link" href="INTEGRATION.md">Read the integration guide <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/UdgamLabs/hinglish-commands-0.6b/blob/main/docs/INTEGRATION.md">Read the integration guide <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -148,7 +148,7 @@ One editorial direction follows the concrete parent brief and user autonomy.
         <div class="table-scroll"><table><caption>Complete-tree exact match, original held-out view</caption><thead><tr><th scope="col">Commands</th><th scope="col">Count</th><th scope="col">Original Qwen</th><th scope="col">Udgam adapter</th></tr></thead><tbody><tr><th scope="row">English + Romanized Hinglish</th><td>13,026</td><td>9.90%</td><td>54.88%</td></tr><tr><th scope="row">Romanized Hinglish</th><td>6,513</td><td>7.54%</td><td>46.84%</td></tr><tr><th scope="row">English</th><td>6,513</td><td>12.27%</td><td>62.92%</td></tr></tbody></table></div>
       </details>
       <p class="benchmark-method">Both models used the same four retrieved training examples and generation settings. Bilingual rows are paired. Public benchmark overlap with pretraining cannot be ruled out. The score belongs to the selected source adapter.</p>
-      <a class="text-link" href="BENCHMARKS.md">Full benchmark and comparison notes <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="https://github.com/UdgamLabs/hinglish-commands-0.6b/blob/main/docs/BENCHMARKS.md">Full benchmark and comparison notes <span aria-hidden="true">↗</span></a>
     </section>
 
     <section id="build" class="build-section" aria-labelledby="build-title">
@@ -156,9 +156,9 @@ One editorial direction follows the concrete parent brief and user autonomy.
         <div>
           <p class="eyebrow">03 / Build with it</p>
           <h2 id="build-title">Your interface.<br>Your application.</h2>
-          <p>The source package provides a Python interface and a local browser demo. The model weights live separately on Hugging Face once the release is published.</p>
+          <p>The source package provides a Python interface and a local browser demo. Download the adapter package separately from Hugging Face.</p>
           <p class="small">Local loading is offline by default. First-time setup needs the adapter package, exact base weights and dependencies. No PyPI release is advertised.</p>
-          <div class="build-links"><a href="QUICKSTART.md">Installation &amp; quickstart <span aria-hidden="true">↗</span></a><a href="INTEGRATION.md">Python API &amp; integration <span aria-hidden="true">↗</span></a></div>
+          <div class="build-links"><a href="https://github.com/UdgamLabs/hinglish-commands-0.6b/blob/main/docs/QUICKSTART.md">Installation &amp; quickstart <span aria-hidden="true">↗</span></a><a href="https://github.com/UdgamLabs/hinglish-commands-0.6b/blob/main/docs/INTEGRATION.md">Python API &amp; integration <span aria-hidden="true">↗</span></a></div>
         </div>
         <div class="code-panel">
           <div class="code-heading"><span>Python / local adapter package</span></div>
@@ -187,14 +187,14 @@ print(result[<span class="code-string">"checks"</span>])</code></pre>
         <details><summary>Can I trust every well-formed result?</summary><p>No. Format and source-copy checks help detect some failures, but cannot prove the meaning is right. The recorded alarm mistake above produces a valid structure with the wrong intent. Your application needs its own validation, fallback and confirmation flow.</p></details>
         <details><summary>Will it run on my phone or laptop?</summary><p>It needs a compatible runtime and the base model in addition to the adapter. Local desktop integration has been checked, but this release makes no low-end phone claim. See the quickstart for the supported loading options and measure your own workload.</p></details>
         <details><summary>What changed during training?</summary><p>We fine-tuned a small Qwen3 model on 4,620 human-labelled training rows: 2,310 paired English/Hinglish entries. The selected adapter uses human data only. The model card records the recipe and the development comparisons.</p></details>
-        <details><summary>What are the release terms?</summary><p>The proposed terms are CC BY-SA 4.0 for the adapter contribution and prepared/retrieval data, with upstream Qwen and Google Apache notices preserved, and Apache 2.0 for Udgam-written code. The complete package is not Apache-only. These draft terms are subject to release review. Read the <a href="LICENSES.md">licence review</a> before reuse.</p></details>
+        <details><summary>What are the release terms?</summary><p>The release terms are CC BY-SA 4.0 for the adapter contribution and prepared/retrieval data, with upstream Qwen and Google Apache notices preserved, and Apache 2.0 for Udgam-written code. The complete package is not Apache-only. Read the <a href="https://github.com/UdgamLabs/hinglish-commands-0.6b/blob/main/docs/LICENSES.md">licences and attribution</a> before reuse.</p></details>
       </div>
     </section>
     <section class="release-section shell" aria-labelledby="release-title">
-      <div><p class="eyebrow">Source, weights and the full story</p><h2 id="release-title">Take a closer look.</h2><p>Prepared for publication under Udgam Labs. These are the intended release locations; publication is still pending.</p></div>
-      <div class="release-links"><a href="https://github.com/UdgamLabs/hinglish-commands-0.6b"><span>GitHub release target</span><strong>Code &amp; documentation <span aria-hidden="true">↗</span></strong></a><a href="https://huggingface.co/UdgamLabs/hinglish-commands-0.6b"><span>Hugging Face release target</span><strong>Adapter &amp; model card <span aria-hidden="true">↗</span></strong></a></div>
+      <div><p class="eyebrow">Source, weights and the full story</p><h2 id="release-title">Take a closer look.</h2><p>Explore the public experimental release from Udgam Labs: code and documentation on GitHub, adapter weights and model card on Hugging Face.</p></div>
+      <div class="release-links"><a href="https://github.com/UdgamLabs/hinglish-commands-0.6b"><span>GitHub</span><strong>Code &amp; documentation <span aria-hidden="true">↗</span></strong></a><a href="https://huggingface.co/UdgamLabs/hinglish-commands-0.6b"><span>Hugging Face</span><strong>Adapter &amp; model card <span aria-hidden="true">↗</span></strong></a></div>
     </section>
   </main>
-  <footer class="site-footer shell"><div><strong>UDGAM LABS</strong><p>Frontier technology lab · India</p></div><nav aria-label="Footer navigation"><a href="https://huggingface.co/UdgamLabs/hinglish-commands-0.6b">Model card</a><a href="BENCHMARKS.md">Benchmarks</a><a href="https://www.udgamlabs.com/">The lab</a><a href="#main">Back to top ↑</a></nav><p class="footer-note">Built on Qwen3-0.6B and Hinglish-TOP / TOPv2. Static recorded examples. No inference, tracking or external assets on this page.</p></footer>
+  <footer class="site-footer shell"><div><strong>UDGAM LABS</strong><p>Frontier technology lab · India</p></div><nav aria-label="Footer navigation"><a href="https://huggingface.co/UdgamLabs/hinglish-commands-0.6b">Model card</a><a href="https://github.com/UdgamLabs/hinglish-commands-0.6b/blob/main/docs/BENCHMARKS.md">Benchmarks</a><a href="https://www.udgamlabs.com/">The lab</a><a href="#main">Back to top ↑</a></nav><p class="footer-note">Built on Qwen3-0.6B and Hinglish-TOP / TOPv2. Static recorded examples. No inference, tracking or external assets on this page.</p></footer>
 </body>
 </html>

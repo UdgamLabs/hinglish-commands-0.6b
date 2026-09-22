@@ -1,8 +1,8 @@
 # Licences and attribution
 
-These are the proposed component terms for the owner-reviewed release. Preparation of these files does not itself publish a model or resolve every legal question about training. The project is an adaptation of Qwen using a dataset with Google and original TOPv2 notices; **the complete package must not be presented as Apache-only**.
+These are the component terms for this public experimental release. The project is an adaptation of Qwen using a dataset with Google and original TOPv2 notices; **the complete package must not be presented as Apache-only**.
 
-| Component | Proposed release treatment |
+| Component | Release terms |
 | --- | --- |
 | Udgam's trained adapter contribution | CC BY-SA 4.0 as a conservative distribution choice |
 | Prepared Hinglish-TOP and retrieval examples | CC BY-SA 4.0, retaining Google and TOPv2 notices |
@@ -23,7 +23,7 @@ Hinglish-TOP accompanies **CST5: Data Augmentation for Code-Switched Semantic Pa
 
 TOPv2 accompanies **Low-Resource Domain Adaptation for Compositional Task-Oriented Semantic Parsing**, Xilun Chen, Asish Ghoshal, Yashar Mehdad, Luke Zettlemoyer and Sonal Gupta (2020). [Paper](https://aclanthology.org/2020.emnlp-main.413/). Its original archive contains CC BY-SA 4.0 terms.
 
-The measured comparator was [KingNish/Qwen3-0.6b-hinglish-2](https://huggingface.co/KingNish/Qwen3-0.6b-hinglish-2/tree/fecc11f386ae5d30f84cfd8bb90b1512b5ba6188), revision `fecc11f386ae5d30f84cfd8bb90b1512b5ba6188`. It was evaluated as a baseline; its weights are not included in the proposed release.
+The measured comparator was [KingNish/Qwen3-0.6b-hinglish-2](https://huggingface.co/KingNish/Qwen3-0.6b-hinglish-2/tree/fecc11f386ae5d30f84cfd8bb90b1512b5ba6188), revision `fecc11f386ae5d30f84cfd8bb90b1512b5ba6188`. It was evaluated as a baseline; its weights are not included in this release.
 
 ## Changes made by Udgam
 
