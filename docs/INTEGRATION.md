@@ -28,7 +28,7 @@ Local loading is offline by default. A complete adapter package includes its sea
 ```python
 parser = CommandParser.from_hub(
     "UdgamLabs/hinglish-commands-0.6b",
-    revision="584f51c3421e1efb3fdb6996f769013572dd709d",
+    revision="4b45809cc31814a2dd4f39f388e4b74a428e4ca2",
     device="auto",
     allow_base_download=True,
 )
